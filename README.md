@@ -1,1 +1,1 @@
-# scalajs-crud
+# scalajs-react-crud
