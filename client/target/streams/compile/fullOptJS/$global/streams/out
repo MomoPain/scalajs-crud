@@ -1,0 +1,20 @@
+[0m[[0minfo[0m] [0mFull Optimizing /home/matsushita/workspace/git-repo/tierline/project/example/scalajs-react-crud/client/target/scala-2.11/client-opt.js[0m
+[0m[[0mdebug[0m] [0mLinker: Read info: 212882 us[0m
+[0m[[0mdebug[0m] [0mLinker: Compute reachability: 155096 us[0m
+[0m[[0mdebug[0m] [0mLinker: Assemble LinkedClasses: 533001 us[0m
+[0m[[0mdebug[0m] [0mLinker: cache stats: reused: 0 -- invalidated: 4156 -- trees read: 241[0m
+[0m[[0mdebug[0m] [0mLinker: 912128 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Batch mode: true[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Incremental part: 249754 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Optimizing 724 methods.[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Optimizer part: 212873 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: 475874 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Compute reachability: 60905 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Assemble LinkedClasses: 10026 us[0m
+[0m[[0mdebug[0m] [0mRefiner: 72412 us[0m
+[0m[[0mdebug[0m] [0mEmitter: Class tree cache stats: reused: 0 -- invalidated: 36[0m
+[0m[[0mdebug[0m] [0mEmitter: Method tree cache stats: resued: 0 -- invalidated: 102[0m
+[0m[[0mdebug[0m] [0mEmitter (write output): 256217 us[0m
+[0m[[0minfo[0m] [0mClosure: 0 error(s), 0 warning(s)[0m
+[0m[[0mdebug[0m] [0mClosure: Compiler pass: 1633035 us[0m
+[0m[[0mdebug[0m] [0mClosure: Write result: 85929 us[0m
