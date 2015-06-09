@@ -4,7 +4,7 @@ import org.scalatra.sbt._
 import org.scalatra.sbt.PluginKeys._
 import org.scalajs.sbtplugin.ScalaJSPlugin
 import org.scalajs.sbtplugin.ScalaJSPlugin.autoImport._
-import com.earldouglas.xsbtwebplugin.PluginKeys.webappResources
+import com.earldouglas.xwp.XwpPlugin._
 import java.io.{File, FileOutputStream}
 import java.nio.file._
 
@@ -19,11 +19,13 @@ object ScalaWUIBuild extends Build {
     "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
   )
 
-  lazy val shared = project.in(file("./shared")).settings(
-    scalaVersion := ScalaVersion
+  lazy val shared = Project(
+    "shared",
+    file("./shared"),
+    settings = Seq(
+      scalaVersion := ScalaVersion      
+    )
   )
-  
-//  resolvers in ThisBuild += Resolvers
 
   lazy val client = Project(
     "client",
@@ -35,11 +37,15 @@ object ScalaWUIBuild extends Build {
       libraryDependencies ++= Seq(
         "com.lihaoyi" %%% "autowire" % "0.2.5",
         "com.lihaoyi" %%% "upickle" % "0.2.7",
-        "com.lihaoyi" %%% "scalatags" % "0.5.2",
-        "com.lihaoyi" %%% "scalarx" % "0.2.8",
-        "fr.iscpif" %%% "scaladget" % "0.5.0-SNAPSHOT",
-        "org.scala-js" %%% "scalajs-dom" % "0.8.0"
-      )
+        //"com.lihaoyi" %%% "scalarx" % "0.2.8",
+        //"fr.iscpif" %%% "scaladget" % "0.5.0-SNAPSHOT",
+        "org.scala-js" %%% "scalajs-dom" % "0.8.0",
+        "be.doeraene" %%% "scalajs-jquery" % "0.8.0",
+        "com.github.japgolly.scalacss" %%% "core" % "0.2.0",
+        "com.github.japgolly.scalacss" %%% "ext-react" % "0.2.0",
+        "com.lihaoyi" %%% "scalatags" % "0.5.2"
+      ),
+      jsDependencies += "org.webjars" % "react" % "0.12.2" / "react-with-addons.js" commonJSName "React"
     )
   ).dependsOn(shared) enablePlugins (ScalaJSPlugin)
 
@@ -52,7 +58,10 @@ object ScalaWUIBuild extends Build {
       version := Version,
       scalaVersion := ScalaVersion,
       resolvers ++= Resolvers,
-      webappResources in Compile := Seq(target.value / "webapp"),
+      javaOptions in container ++= Seq(
+        "-Xdebug",
+        "-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8000"
+      ),
       libraryDependencies ++= Seq(
         "com.lihaoyi" %% "autowire" % "0.2.5",
         "com.lihaoyi" %% "upickle" % "0.2.7",
@@ -60,10 +69,9 @@ object ScalaWUIBuild extends Build {
         "org.scalatra" %% "scalatra" % ScalatraVersion,
         "org.scalatra" %% "scalatra-specs2" % ScalatraVersion % "test",
         "ch.qos.logback" % "logback-classic" % "1.0.12" % "runtime",
-        "org.eclipse.jetty" % "jetty-webapp" % "8.1.17.v20150415" % "container",
-        "org.eclipse.jetty.orbit" % "javax.servlet" % "3.0.0.v201112011016" % "container;provided;test"
+        "javax.servlet" % "javax.servlet-api" % "3.1.0" % "container;provided;test"
       )
-    )
+    ) ++ jetty(options = new ForkOptions(runJVMOptions = Seq("-Xdebug","-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8000")))
   ).dependsOn(shared)
 
   lazy val go = taskKey[Unit]("go")
@@ -76,10 +84,14 @@ object ScalaWUIBuild extends Build {
       scalaVersion := ScalaVersion,
       (go <<= (fullOptJS in client in Compile, resourceDirectory in client in Compile, target in server in Compile) map { (ct, r, st) =>
         copy(ct, r, new File(st,"webapp"))
-      }
-        )
+      }) 
+      ,
+     javaOptions in container ++= Seq(
+        "-Xdebug",
+        "-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8000"
+      )
     )
-  ) dependsOn(client, server)
+  ) dependsOn(client, server) 
 
 
   private def copy(clientTarget: Attributed[File], resources: File, webappServerTarget: File) = {

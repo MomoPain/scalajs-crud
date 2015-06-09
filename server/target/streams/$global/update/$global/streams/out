@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/matsushita/workspace/git-repo/tierline/project/example/scalajs-react-crud/}server...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/matsushita/workspace/github/scalajs-react-crud/}server...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, container][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@24c6dc18[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1a4059a3[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.6[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.6] org.scala-lang#scala-library;2.11.6[0m
@@ -704,6 +704,10 @@
 [0m[[0mdebug[0m] [0m	found javax.servlet#javax.servlet-api;3.1.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;9.2.1.v20140609->javax.servlet#javax.servlet-api;3.1.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;9.2.1.v20140609->javax.servlet#javax.servlet-api;3.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;9.2.1.v20140609->javax.servlet#javax.servlet-api;3.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;9.2.1.v20140609->javax.servlet#javax.servlet-api;3.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;9.2.1.v20140609->javax.servlet#javax.servlet-api;3.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;9.2.1.v20140609->javax.servlet#javax.servlet-api;3.1.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;9.2.1.v20140609->org.eclipse.jetty#jetty-http;9.2.1.v20140609 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.eclipse.jetty#jetty-http;9.2.1.v20140609 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-http;9.2.1.v20140609 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -1093,20 +1097,16 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalatra#scalatra-specs2_2.11;2.3.0->org.specs2#specs2_2.11;2.3.12 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalatra#scalatra-specs2_2.11;2.3.0->org.specs2#specs2_2.11;2.3.12 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.scalatra#scalatra-specs2_2.11;2.3.0 [test->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [test->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 {container=[default(compile)], provided=[default(compile)], test=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016[0m
-[0m[[0mdebug[0m] [0m	found org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 in public[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [test->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [test->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [test->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [provided->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
@@ -1276,10 +1276,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.scalatra#scalatra_2.11;2.3.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [provided->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT [runtime-internal][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT [runtime][0m
@@ -1948,16 +1948,16 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2_2.11;2.3.12->org.specs2#classycle;1.4.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2_2.11;2.3.12->org.specs2#classycle;1.4.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.scalatra#scalatra-specs2_2.11;2.3.0 [test->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [test->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [test->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [test->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [test->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [provided->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT [plugin][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
@@ -2048,94 +2048,18 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'container'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT [container][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty#jetty-webapp;8.1.17.v20150415 [container->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.eclipse.jetty#jetty-webapp;8.1.17.v20150415 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-webapp;8.1.17.v20150415 {container=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.eclipse.jetty#jetty-webapp;8.1.17.v20150415[0m
-[0m[[0mdebug[0m] [0m	found org.eclipse.jetty#jetty-webapp;8.1.17.v20150415 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty#jetty-webapp;8.1.17.v20150415 [container->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty#jetty-webapp;8.1.17.v20150415 [container->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-webapp;8.1.17.v20150415->org.eclipse.jetty#jetty-xml;8.1.17.v20150415 [compile->master(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.eclipse.jetty#jetty-xml;8.1.17.v20150415 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-xml;8.1.17.v20150415 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.eclipse.jetty#jetty-xml;8.1.17.v20150415[0m
-[0m[[0mdebug[0m] [0m	found org.eclipse.jetty#jetty-xml;8.1.17.v20150415 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-webapp;8.1.17.v20150415->org.eclipse.jetty#jetty-xml;8.1.17.v20150415 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-xml;8.1.17.v20150415->org.eclipse.jetty#jetty-util;8.1.17.v20150415 [compile->master(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.eclipse.jetty#jetty-util;8.1.17.v20150415 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-util;8.1.17.v20150415 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.eclipse.jetty#jetty-util;8.1.17.v20150415[0m
-[0m[[0mdebug[0m] [0m	found org.eclipse.jetty#jetty-util;8.1.17.v20150415 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-xml;8.1.17.v20150415->org.eclipse.jetty#jetty-util;8.1.17.v20150415 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-webapp;8.1.17.v20150415->org.eclipse.jetty#jetty-xml;8.1.17.v20150415 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-webapp;8.1.17.v20150415->org.eclipse.jetty#jetty-xml;8.1.17.v20150415 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-xml;8.1.17.v20150415->org.eclipse.jetty#jetty-util;8.1.17.v20150415 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-xml;8.1.17.v20150415->org.eclipse.jetty#jetty-util;8.1.17.v20150415 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-webapp;8.1.17.v20150415->org.eclipse.jetty#jetty-servlet;8.1.17.v20150415 [compile->master(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.eclipse.jetty#jetty-servlet;8.1.17.v20150415 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-servlet;8.1.17.v20150415 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.eclipse.jetty#jetty-servlet;8.1.17.v20150415[0m
-[0m[[0mdebug[0m] [0m	found org.eclipse.jetty#jetty-servlet;8.1.17.v20150415 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-webapp;8.1.17.v20150415->org.eclipse.jetty#jetty-servlet;8.1.17.v20150415 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-servlet;8.1.17.v20150415->org.eclipse.jetty#jetty-security;8.1.17.v20150415 [compile->master(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.eclipse.jetty#jetty-security;8.1.17.v20150415 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-security;8.1.17.v20150415 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.eclipse.jetty#jetty-security;8.1.17.v20150415[0m
-[0m[[0mdebug[0m] [0m	found org.eclipse.jetty#jetty-security;8.1.17.v20150415 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-servlet;8.1.17.v20150415->org.eclipse.jetty#jetty-security;8.1.17.v20150415 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-security;8.1.17.v20150415->org.eclipse.jetty#jetty-server;8.1.17.v20150415 [compile->master(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.eclipse.jetty#jetty-server;8.1.17.v20150415 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-server;8.1.17.v20150415 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.eclipse.jetty#jetty-server;8.1.17.v20150415[0m
-[0m[[0mdebug[0m] [0m	found org.eclipse.jetty#jetty-server;8.1.17.v20150415 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-security;8.1.17.v20150415->org.eclipse.jetty#jetty-server;8.1.17.v20150415 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;8.1.17.v20150415->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;8.1.17.v20150415->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;8.1.17.v20150415->org.eclipse.jetty#jetty-continuation;8.1.17.v20150415 [compile->master(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.eclipse.jetty#jetty-continuation;8.1.17.v20150415 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-continuation;8.1.17.v20150415 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.eclipse.jetty#jetty-continuation;8.1.17.v20150415[0m
-[0m[[0mdebug[0m] [0m	found org.eclipse.jetty#jetty-continuation;8.1.17.v20150415 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;8.1.17.v20150415->org.eclipse.jetty#jetty-continuation;8.1.17.v20150415 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;8.1.17.v20150415->org.eclipse.jetty#jetty-http;8.1.17.v20150415 [compile->master(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.eclipse.jetty#jetty-http;8.1.17.v20150415 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-http;8.1.17.v20150415 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.eclipse.jetty#jetty-http;8.1.17.v20150415[0m
-[0m[[0mdebug[0m] [0m	found org.eclipse.jetty#jetty-http;8.1.17.v20150415 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;8.1.17.v20150415->org.eclipse.jetty#jetty-http;8.1.17.v20150415 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.17.v20150415->org.eclipse.jetty#jetty-io;8.1.17.v20150415 [compile->master(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.eclipse.jetty#jetty-io;8.1.17.v20150415 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-io;8.1.17.v20150415 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.eclipse.jetty#jetty-io;8.1.17.v20150415[0m
-[0m[[0mdebug[0m] [0m	found org.eclipse.jetty#jetty-io;8.1.17.v20150415 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.17.v20150415->org.eclipse.jetty#jetty-io;8.1.17.v20150415 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.17.v20150415->org.eclipse.jetty#jetty-util;8.1.17.v20150415 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.17.v20150415->org.eclipse.jetty#jetty-util;8.1.17.v20150415 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-webapp;8.1.17.v20150415->org.eclipse.jetty#jetty-servlet;8.1.17.v20150415 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-webapp;8.1.17.v20150415->org.eclipse.jetty#jetty-servlet;8.1.17.v20150415 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-servlet;8.1.17.v20150415->org.eclipse.jetty#jetty-security;8.1.17.v20150415 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-servlet;8.1.17.v20150415->org.eclipse.jetty#jetty-security;8.1.17.v20150415 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-security;8.1.17.v20150415->org.eclipse.jetty#jetty-server;8.1.17.v20150415 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-security;8.1.17.v20150415->org.eclipse.jetty#jetty-server;8.1.17.v20150415 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;8.1.17.v20150415->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;8.1.17.v20150415->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;8.1.17.v20150415->org.eclipse.jetty#jetty-continuation;8.1.17.v20150415 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;8.1.17.v20150415->org.eclipse.jetty#jetty-continuation;8.1.17.v20150415 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;8.1.17.v20150415->org.eclipse.jetty#jetty-http;8.1.17.v20150415 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-server;8.1.17.v20150415->org.eclipse.jetty#jetty-http;8.1.17.v20150415 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.17.v20150415->org.eclipse.jetty#jetty-io;8.1.17.v20150415 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-http;8.1.17.v20150415->org.eclipse.jetty#jetty-io;8.1.17.v20150415 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.17.v20150415->org.eclipse.jetty#jetty-util;8.1.17.v20150415 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-io;8.1.17.v20150415->org.eclipse.jetty#jetty-util;8.1.17.v20150415 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-webapp;8.1.17.v20150415->org.eclipse.jetty#jetty-xml;8.1.17.v20150415 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-webapp;8.1.17.v20150415->org.eclipse.jetty#jetty-xml;8.1.17.v20150415 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-webapp;8.1.17.v20150415->org.eclipse.jetty#jetty-servlet;8.1.17.v20150415 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.eclipse.jetty#jetty-webapp;8.1.17.v20150415->org.eclipse.jetty#jetty-servlet;8.1.17.v20150415 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty#jetty-webapp;8.1.17.v20150415 [container->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [container->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [container->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [container->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [container->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty#jetty-runner;9.2.1.v20140609 [container->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.eclipse.jetty#jetty-runner;9.2.1.v20140609 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@e42ab51[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.eclipse.jetty#jetty-runner;9.2.1.v20140609[0m
+[0m[[0mdebug[0m] [0m	found org.eclipse.jetty#jetty-runner;9.2.1.v20140609 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty#jetty-runner;9.2.1.v20140609 [container->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty#jetty-runner;9.2.1.v20140609 [container->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->org.eclipse.jetty#jetty-runner;9.2.1.v20140609 [container->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [container->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [container->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [container->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT->javax.servlet#javax.servlet-api;3.1.0 [container->master][0m
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.11.6!scala-library.jar[0m
@@ -2158,11 +2082,10 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] ch.qos.logback#logback-classic;1.0.12!logback-classic.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] ch.qos.logback#logback-core;1.0.12!logback-core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalatra#scalatra-specs2_2.11;2.3.0!scalatra-specs2_2.11.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016!javax.servlet.jar(orbit)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] javax.servlet#javax.servlet-api;3.1.0!javax.servlet-api.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalatra#scalatra-test_2.11;2.3.0!scalatra-test_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.specs2#specs2_2.11;2.3.12!specs2_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.eclipse.jetty#jetty-webapp;9.2.1.v20140609!jetty-webapp.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] javax.servlet#javax.servlet-api;3.1.0!javax.servlet-api.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.mockito#mockito-all;1.9.5!mockito-all.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-lang3;3.3.2!commons-lang3.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.3.4!httpclient.jar[0m
@@ -2200,29 +2123,21 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.3!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3!scala-parser-combinators_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.eclipse.jetty#jetty-webapp;8.1.17.v20150415!jetty-webapp.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.eclipse.jetty#jetty-xml;8.1.17.v20150415!jetty-xml.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.eclipse.jetty#jetty-servlet;8.1.17.v20150415!jetty-servlet.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.eclipse.jetty#jetty-util;8.1.17.v20150415!jetty-util.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.eclipse.jetty#jetty-security;8.1.17.v20150415!jetty-security.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.eclipse.jetty#jetty-server;8.1.17.v20150415!jetty-server.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.eclipse.jetty#jetty-continuation;8.1.17.v20150415!jetty-continuation.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.eclipse.jetty#jetty-http;8.1.17.v20150415!jetty-http.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.eclipse.jetty#jetty-io;8.1.17.v20150415!jetty-io.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1105ms :: artifacts dl 38ms[0m
-[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT compile produced in /home/matsushita/workspace/git-repo/tierline/project/example/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT runtime produced in /home/matsushita/workspace/git-repo/tierline/project/example/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT test produced in /home/matsushita/workspace/git-repo/tierline/project/example/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT provided produced in /home/matsushita/workspace/git-repo/tierline/project/example/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT optional produced in /home/matsushita/workspace/git-repo/tierline/project/example/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT compile-internal produced in /home/matsushita/workspace/git-repo/tierline/project/example/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT runtime-internal produced in /home/matsushita/workspace/git-repo/tierline/project/example/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT test-internal produced in /home/matsushita/workspace/git-repo/tierline/project/example/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT plugin produced in /home/matsushita/workspace/git-repo/tierline/project/example/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT sources produced in /home/matsushita/workspace/git-repo/tierline/project/example/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT docs produced in /home/matsushita/workspace/git-repo/tierline/project/example/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT pom produced in /home/matsushita/workspace/git-repo/tierline/project/example/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT scala-tool produced in /home/matsushita/workspace/git-repo/tierline/project/example/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT container produced in /home/matsushita/workspace/git-repo/tierline/project/example/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-container.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1105ms resolve - 38ms download)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.eclipse.jetty#jetty-runner;9.2.1.v20140609!jetty-runner.jar[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1422ms :: artifacts dl 30ms[0m
+[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT compile produced in /home/matsushita/workspace/github/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT runtime produced in /home/matsushita/workspace/github/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT test produced in /home/matsushita/workspace/github/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT provided produced in /home/matsushita/workspace/github/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT optional produced in /home/matsushita/workspace/github/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT compile-internal produced in /home/matsushita/workspace/github/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT runtime-internal produced in /home/matsushita/workspace/github/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT test-internal produced in /home/matsushita/workspace/github/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT plugin produced in /home/matsushita/workspace/github/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT sources produced in /home/matsushita/workspace/github/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT docs produced in /home/matsushita/workspace/github/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT pom produced in /home/matsushita/workspace/github/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT scala-tool produced in /home/matsushita/workspace/github/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.tierline#scalajs-react-crud_2.11;0.1.0-SNAPSHOT container produced in /home/matsushita/workspace/github/scalajs-react-crud/server/target/resolution-cache/reports/com.tierline-scalajs-react-crud_2.11-container.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (1422ms resolve - 30ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

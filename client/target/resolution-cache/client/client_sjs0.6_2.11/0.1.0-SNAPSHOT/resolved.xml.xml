@@ -4,7 +4,7 @@
 		module="client_sjs0.6_2.11"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20150606163647"
+		publication="20150608182719"
 	>
 		<description>
 		client
@@ -38,13 +38,15 @@
 		<dependency org="shared" name="shared_2.11" rev="0.1-SNAPSHOT" conf="compile->default(compile)"/>
 		<dependency org="org.eclipse.jetty" name="jetty-websocket" rev="8.1.16.v20140903" conf="phantom-js-jetty->default(compile)"/>
 		<dependency org="org.eclipse.jetty" name="jetty-server" rev="8.1.16.v20140903" conf="phantom-js-jetty->default(compile)"/>
+		<dependency org="org.webjars" name="react" rev="0.12.2" conf="compile->default(compile)"/>
 		<dependency org="org.scala-js" name="scalajs-compiler_2.11.6" rev="0.6.3" conf="plugin->default(compile)"/>
 		<dependency org="org.scala-js" name="scalajs-library_2.11" rev="0.6.3" conf="compile->default(compile)"/>
 		<dependency org="com.lihaoyi" name="autowire_sjs0.6_2.11" rev="0.2.5" conf="compile->default(compile)"/>
 		<dependency org="com.lihaoyi" name="upickle_sjs0.6_2.11" rev="0.2.7" conf="compile->default(compile)"/>
-		<dependency org="com.lihaoyi" name="scalatags_sjs0.6_2.11" rev="0.5.2" conf="compile->default(compile)"/>
-		<dependency org="com.lihaoyi" name="scalarx_sjs0.6_2.11" rev="0.2.8" conf="compile->default(compile)"/>
-		<dependency org="fr.iscpif" name="scaladget_sjs0.6_2.11" rev="0.5.0-SNAPSHOT" conf="compile->default(compile)"/>
 		<dependency org="org.scala-js" name="scalajs-dom_sjs0.6_2.11" rev="0.8.0" conf="compile->default(compile)"/>
+		<dependency org="be.doeraene" name="scalajs-jquery_sjs0.6_2.11" rev="0.8.0" conf="compile->default(compile)"/>
+		<dependency org="com.github.japgolly.scalacss" name="core_sjs0.6_2.11" rev="0.2.0" conf="compile->default(compile)"/>
+		<dependency org="com.github.japgolly.scalacss" name="ext-react_sjs0.6_2.11" rev="0.2.0" conf="compile->default(compile)"/>
+		<dependency org="com.lihaoyi" name="scalatags_sjs0.6_2.11" rev="0.5.2" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
