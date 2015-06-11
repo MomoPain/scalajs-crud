@@ -7,7 +7,43 @@
 		revision="0.1-SNAPSHOT"
 		conf="provided"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150608173637"/>
+		date="20150610183635"/>
 	<dependencies>
+		<module organisation="org.webjars" name="bootstrap">
+			<revision name="3.3.2" status="release" pubdate="20150120032556" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://webjars.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3877" time="0" location="/home/matsushita/.ivy2/cache/org.webjars/bootstrap/ivy-3.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/webjars/bootstrap/3.3.2/bootstrap-3.3.2.pom"/>
+				<caller organisation="shared" name="shared_2.11" conf="provided" rev="3.3.2" rev-constraint-default="3.3.2" rev-constraint-dynamic="3.3.2" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="bootstrap" type="jar" ext="jar" status="no" details="" size="388386" time="0" location="/home/matsushita/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/webjars/bootstrap/3.3.2/bootstrap-3.3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.webjars" name="jquery">
+			<revision name="1.11.1" status="release" pubdate="20140504031849" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://webjars.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="MIT License" url="https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3628" time="0" location="/home/matsushita/.ivy2/cache/org.webjars/jquery/ivy-1.11.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/webjars/jquery/1.11.1/jquery-1.11.1.pom"/>
+				<caller organisation="org.webjars" name="bootstrap" conf="default, compile, runtime, master" rev="1.11.1" rev-constraint-default="1.11.1" rev-constraint-dynamic="1.11.1" callerrev="3.3.2"/>
+				<artifacts>
+					<artifact name="jquery" type="jar" ext="jar" status="no" details="" size="178233" time="0" location="/home/matsushita/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/webjars/jquery/1.11.1/jquery-1.11.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.webjars" name="font-awesome">
+			<revision name="4.3.0-1" status="release" pubdate="20150123234304" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://webjars.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="CC BY 3.0" url="http://creativecommons.org/licenses/by/3.0/"/>
+				<metadata-artifact status="no" details="" size="3473" time="0" location="/home/matsushita/.ivy2/cache/org.webjars/font-awesome/ivy-4.3.0-1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/webjars/font-awesome/4.3.0-1/font-awesome-4.3.0-1.pom"/>
+				<caller organisation="shared" name="shared_2.11" conf="provided" rev="4.3.0-1" rev-constraint-default="4.3.0-1" rev-constraint-dynamic="4.3.0-1" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="font-awesome" type="jar" ext="jar" status="no" details="" size="488407" time="0" location="/home/matsushita/.ivy2/cache/org.webjars/font-awesome/jars/font-awesome-4.3.0-1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/webjars/font-awesome/4.3.0-1/font-awesome-4.3.0-1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 	</dependencies>
 </ivy-report>

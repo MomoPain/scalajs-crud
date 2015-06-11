@@ -8,7 +8,7 @@ import com.earldouglas.xwp.XwpPlugin._
 import java.io.{File, FileOutputStream}
 import java.nio.file._
 
-object ScalaWUIBuild extends Build {
+object Build extends Build {
   val Organization = "com.tierline"
   val Name = "scalajs-react-crud"
   val Version = "0.1.0-SNAPSHOT"
@@ -23,7 +23,14 @@ object ScalaWUIBuild extends Build {
     "shared",
     file("./shared"),
     settings = Seq(
-      scalaVersion := ScalaVersion      
+      scalaVersion := ScalaVersion,
+      libraryDependencies ++= Seq(
+        "com.lihaoyi" %%% "autowire" % "0.2.5",
+        "me.chrons" %%% "boopickle" % "0.1.3",
+        "com.lihaoyi" %%% "utest" % "0.3.1",
+        "org.webjars" % "font-awesome" % "4.3.0-1" % Provided,
+        "org.webjars" % "bootstrap" % "3.3.2" % Provided
+      )
     )
   )
 
@@ -36,7 +43,8 @@ object ScalaWUIBuild extends Build {
       resolvers in ThisBuild ++= Resolvers,
       libraryDependencies ++= Seq(
         "com.lihaoyi" %%% "autowire" % "0.2.5",
-        "com.lihaoyi" %%% "upickle" % "0.2.7",
+//        "com.lihaoyi" %%% "upickle" % "0.2.7",
+        "me.chrons" %%% "boopickle" % "0.1.3",
         //"com.lihaoyi" %%% "scalarx" % "0.2.8",
         //"fr.iscpif" %%% "scaladget" % "0.5.0-SNAPSHOT",
         "org.scala-js" %%% "scalajs-dom" % "0.8.0",
@@ -64,7 +72,8 @@ object ScalaWUIBuild extends Build {
       ),
       libraryDependencies ++= Seq(
         "com.lihaoyi" %% "autowire" % "0.2.5",
-        "com.lihaoyi" %% "upickle" % "0.2.7",
+//        "com.lihaoyi" %% "upickle" % "0.2.7",
+        "me.chrons" %%% "boopickle" % "0.1.3",        
         "com.lihaoyi" %% "scalatags" % "0.5.2",
         "org.scalatra" %% "scalatra" % ScalatraVersion,
         "org.scalatra" %% "scalatra-specs2" % ScalatraVersion % "test",
@@ -82,7 +91,7 @@ object ScalaWUIBuild extends Build {
     settings = Seq(
       version := Version,
       scalaVersion := ScalaVersion,
-      (go <<= (fullOptJS in client in Compile, resourceDirectory in client in Compile, target in server in Compile) map { (ct, r, st) =>
+      (go <<= (fastOptJS in client in Compile, resourceDirectory in client in Compile, target in server in Compile) map { (ct, r, st) =>
         copy(ct, r, new File(st,"webapp"))
       }) 
       ,

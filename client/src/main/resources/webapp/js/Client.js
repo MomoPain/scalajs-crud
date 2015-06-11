@@ -42,34 +42,37 @@ var CommentForm = React.createClass({
 
 var CommentBox = React.createClass({
 	  loadCommentsFromServer: function() {
-	    $.ajax({
-	      url: this.props.url,
-	      dataType: 'json',
-	      cache: false,
-	      success: function(data) {
-	        this.setState({data: data});
-	      }.bind(this),
-	      error: function(xhr, status, err) {
-	        console.error(this.props.url, status, err.toString());
-	      }.bind(this)
-	    });
+//	    $.ajax({
+//	      url: this.props.url,
+//	      dataType: 'json',
+//	      cache: false,
+//	      success: function(data) {
+//	        this.setState({data: data});
+//	      }.bind(this),
+//	      error: function(xhr, status, err) {
+//	        console.error(this.props.url, status, err.toString());
+//	      }.bind(this)
+//	    });
 	  },
 	  handleCommentSubmit: function(comment) {
 		  var comments = this.state.data;
 		  var newComments = comments.concat([comment]);
 		  this.setState({data: newComments});
-		  $.ajax({
-		      url: '/post/'+this.props.url,
-		      dataType: 'json',
-		      type: 'POST',
-		      data: comment,
-		      success: function(data) {
-		        this.setState({data: data});
-		      }.bind(this),
-		      error: function(xhr, status, err) {
-		        console.error(this.props.url, status, err.toString());
-		      }.bind(this)
-		    });
+		  var result = com.tierline.example.scalajs.react.client.Client().get();
+		  
+		  this.setState(result);
+//		  $.ajax({
+//		      url: '/post/'+this.props.url,
+//		      dataType: 'json',
+//		      type: 'POST',
+//		      data: comment,
+//		      success: function(data) {
+//		        this.setState({data: data});
+//		      }.bind(this),
+//		      error: function(xhr, status, err) {
+//		        console.error(this.props.url, status, err.toString());
+//		      }.bind(this)
+//		    });
 	  },
 	  getInitialState: function() {
 	    return {data: []};

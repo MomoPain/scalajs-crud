@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for client#client_sjs0.6_2.11;0.1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3bfafcc6[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@74ba852d[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.6[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.6] org.scala-lang#scala-library;2.11.6[0m
@@ -23,6 +23,80 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.lihaoyi#autowire_2.11;0.2.5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.lihaoyi#autowire_2.11;0.2.5 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.lihaoyi#autowire_2.11;0.2.5[0m
+[0m[[0mdebug[0m] [0m	found com.lihaoyi#autowire_2.11;0.2.5 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.11.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.11.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.4[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.11.4 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[2.11.4] org.scala-lang#scala-reflect;2.11.4[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving me.chrons#boopickle_2.11;0.1.3 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: me.chrons#boopickle_2.11;0.1.3 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: me.chrons#boopickle_2.11;0.1.3[0m
+[0m[[0mdebug[0m] [0m	found me.chrons#boopickle_2.11;0.1.3 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.lihaoyi#utest_2.11;0.3.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.lihaoyi#utest_2.11;0.3.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.lihaoyi#utest_2.11;0.3.1[0m
+[0m[[0mdebug[0m] [0m	found com.lihaoyi#utest_2.11;0.3.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-sbt#test-interface;1.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-sbt#test-interface;1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-sbt#test-interface;1.0[0m
+[0m[[0mdebug[0m] [0m	found org.scala-sbt#test-interface;1.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.webjars#react;0.12.2 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.webjars#react;0.12.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.webjars#react;0.12.2 {compile=[default(compile)]}[0m
@@ -40,8 +114,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#scalajs-library_2.11;0.6.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#scalajs-library_2.11;0.6.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#scalajs-library_2.11;0.6.3->org.scala-lang#scala-library;2.11.6 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#scalajs-library_2.11;0.6.3->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#scalajs-library_2.11;0.6.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#scalajs-library_2.11;0.6.3->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-js#scalajs-library_2.11;0.6.3 [compile->master][0m
@@ -61,21 +133,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-js#scalajs-library_2.11;0.6.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.11.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.11.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.4[0m
-[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.11.4 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m	[2.11.4] org.scala-lang#scala-reflect;2.11.4[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
@@ -85,28 +143,25 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#autowire_sjs0.6_2.11;0.2.5 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.lihaoyi#upickle_sjs0.6_2.11;0.2.7[0m
-[0m[[0mdebug[0m] [0m	found com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving me.chrons#boopickle_sjs0.6_2.11;0.1.3 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: me.chrons#boopickle_sjs0.6_2.11;0.1.3 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: me.chrons#boopickle_sjs0.6_2.11;0.1.3[0m
+[0m[[0mdebug[0m] [0m	found me.chrons#boopickle_sjs0.6_2.11;0.1.3 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0 {compile=[default(compile)]}[0m
@@ -352,6 +407,55 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.webjars#react;0.12.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.webjars#react;0.12.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.webjars#react;0.12.2 [compile->compile][0m
@@ -377,10 +481,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
@@ -389,28 +489,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#autowire_sjs0.6_2.11;0.2.5 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0 [compile->compile][0m
@@ -601,6 +695,55 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.webjars#react;0.12.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.webjars#react;0.12.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.webjars#react;0.12.2 [compile->compile][0m
@@ -626,10 +769,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
@@ -638,28 +777,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#autowire_sjs0.6_2.11;0.2.5 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0 [compile->compile][0m
@@ -853,6 +986,55 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.webjars#react;0.12.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.webjars#react;0.12.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.webjars#react;0.12.2 [compile->compile][0m
@@ -878,10 +1060,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
@@ -890,28 +1068,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#autowire_sjs0.6_2.11;0.2.5 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0 [compile->compile][0m
@@ -1104,6 +1276,55 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.webjars#react;0.12.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.webjars#react;0.12.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.webjars#react;0.12.2 [compile->compile][0m
@@ -1129,10 +1350,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
@@ -1141,28 +1358,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#autowire_sjs0.6_2.11;0.2.5 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0 [compile->compile][0m
@@ -1355,6 +1566,55 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#autowire_2.11;0.2.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->me.chrons#boopickle_2.11;0.1.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-lang#scala-reflect;2.11.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#utest_2.11;0.3.1->org.scala-sbt#test-interface;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies shared#shared_2.11;0.1-SNAPSHOT->com.lihaoyi#utest_2.11;0.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.webjars#react;0.12.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.webjars#react;0.12.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.webjars#react;0.12.2 [compile->compile][0m
@@ -1380,10 +1640,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
@@ -1392,28 +1648,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#autowire_sjs0.6_2.11;0.2.5->org.scala-lang#scala-reflect;2.11.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#autowire_sjs0.6_2.11;0.2.5 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.lihaoyi#upickle_sjs0.6_2.11;0.2.7->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->com.lihaoyi#upickle_sjs0.6_2.11;0.2.7 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies me.chrons#boopickle_sjs0.6_2.11;0.1.3->org.scala-js#scalajs-library_2.11;0.6.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->me.chrons#boopickle_sjs0.6_2.11;0.1.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies client#client_sjs0.6_2.11;0.1.0-SNAPSHOT->org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0 [compile->compile][0m
@@ -1819,13 +2069,17 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#react;0.12.2!react.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-js#scalajs-library_2.11;0.6.3!scalajs-library_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.lihaoyi#autowire_sjs0.6_2.11;0.2.5!autowire_sjs0.6_2.11.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.lihaoyi#upickle_sjs0.6_2.11;0.2.7!upickle_sjs0.6_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] me.chrons#boopickle_sjs0.6_2.11;0.1.3!boopickle_sjs0.6_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-js#scalajs-dom_sjs0.6_2.11;0.8.0!scalajs-dom_sjs0.6_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] be.doeraene#scalajs-jquery_sjs0.6_2.11;0.8.0!scalajs-jquery_sjs0.6_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.japgolly.scalacss#core_sjs0.6_2.11;0.2.0!core_sjs0.6_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.japgolly.scalacss#ext-react_sjs0.6_2.11;0.2.0!ext-react_sjs0.6_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.lihaoyi#scalatags_sjs0.6_2.11;0.5.2!scalatags_sjs0.6_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.lihaoyi#autowire_2.11;0.2.5!autowire_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] me.chrons#boopickle_2.11;0.1.3!boopickle_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.lihaoyi#utest_2.11;0.3.1!utest_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.4!scala-reflect.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#jquery;2.1.3!jquery.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.japgolly.fork.scalaz#scalaz-core_sjs0.6_2.11;7.1.1-2!scalaz-core_sjs0.6_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.japgolly.fork.shapeless#shapeless_sjs0.6_2.11;2.1.0-2!shapeless_sjs0.6_2.11.jar(bundle)[0m
@@ -1845,7 +2099,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.eclipse.jetty#jetty-http;8.1.16.v20140903!jetty-http.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016!javax.servlet.jar(orbit)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.eclipse.jetty#jetty-continuation;8.1.16.v20140903!jetty-continuation.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 832ms :: artifacts dl 34ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 590ms :: artifacts dl 10ms[0m
 [0m[[0mdebug[0m] [0m	report for client#client_sjs0.6_2.11;0.1.0-SNAPSHOT compile produced in /home/matsushita/workspace/github/scalajs-react-crud/client/target/resolution-cache/reports/client-client_sjs0.6_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for client#client_sjs0.6_2.11;0.1.0-SNAPSHOT runtime produced in /home/matsushita/workspace/github/scalajs-react-crud/client/target/resolution-cache/reports/client-client_sjs0.6_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for client#client_sjs0.6_2.11;0.1.0-SNAPSHOT test produced in /home/matsushita/workspace/github/scalajs-react-crud/client/target/resolution-cache/reports/client-client_sjs0.6_2.11-test.xml[0m
@@ -1860,5 +2114,5 @@
 [0m[[0mdebug[0m] [0m	report for client#client_sjs0.6_2.11;0.1.0-SNAPSHOT pom produced in /home/matsushita/workspace/github/scalajs-react-crud/client/target/resolution-cache/reports/client-client_sjs0.6_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for client#client_sjs0.6_2.11;0.1.0-SNAPSHOT scala-tool produced in /home/matsushita/workspace/github/scalajs-react-crud/client/target/resolution-cache/reports/client-client_sjs0.6_2.11-scala-tool.xml[0m
 [0m[[0mdebug[0m] [0m	report for client#client_sjs0.6_2.11;0.1.0-SNAPSHOT phantom-js-jetty produced in /home/matsushita/workspace/github/scalajs-react-crud/client/target/resolution-cache/reports/client-client_sjs0.6_2.11-phantom-js-jetty.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (832ms resolve - 34ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (590ms resolve - 10ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

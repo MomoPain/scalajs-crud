@@ -11,8 +11,7 @@
   <classpathentry kind="src" path="/shared" exported="true" combineaccessrules="false"/>
   <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
   <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.lihaoyi/autowire_2.11/jars/autowire_2.11-0.2.5.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.lihaoyi/upickle_2.11/jars/upickle_2.11-0.2.7.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.spire-math/jawn-parser_2.11/jars/jawn-parser_2.11-0.7.0.jar"/>
+  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/me.chrons/boopickle_2.11/jars/boopickle_2.11-0.1.3.jar"/>
   <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.lihaoyi/scalatags_2.11/jars/scalatags_2.11-0.5.2.jar"/>
   <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.scalatra/scalatra_2.11/jars/scalatra_2.11-2.3.0.jar"/>
   <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.scalatra/scalatra-common_2.11/jars/scalatra-common_2.11-2.3.0.jar"/>
@@ -64,7 +63,6 @@
   <classpathentry kind="lib" path="/opt/activator-1.3.2/repository/org.objenesis/objenesis/1.0/jars/objenesis.jar"/>
   <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/junit/junit/jars/junit-4.11.jar"/>
   <classpathentry kind="lib" path="/opt/activator-1.3.2/repository/org.specs2/classycle/1.4.3/jars/classycle.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.eclipse.jetty.orbit/javax.servlet/orbits/javax.servlet-3.0.0.v201112011016.jar"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="output" path="bin"/>
 </classpath>

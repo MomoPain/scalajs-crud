@@ -9,7 +9,7 @@
 		extra-sbtVersion="0.13"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150608180816"/>
+		date="20150610183627"/>
 	<dependencies>
 		<module organisation="com.github.ddispaltro" name="sbt-reactjs">
 			<revision name="0.5.0" status="release" pubdate="20150312175504" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="34">
