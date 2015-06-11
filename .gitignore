@@ -22,4 +22,4 @@ doc/_book
 /server/
 /shared/
 .cache*
-/target
+target

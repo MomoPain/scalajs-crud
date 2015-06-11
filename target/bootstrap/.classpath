@@ -1,34 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-  <classpathentry kind="src" path="/client" exported="true" combineaccessrules="false"/>
-  <classpathentry kind="src" path="/scalajs-react-crud" exported="true" combineaccessrules="false"/>
-  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.webjars/react/jars/react-0.12.2.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.scala-js/scalajs-library_2.11/jars/scalajs-library_2.11-0.6.3.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.lihaoyi/autowire_sjs0.6_2.11/jars/autowire_sjs0.6_2.11-0.2.5.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/me.chrons/boopickle_sjs0.6_2.11/jars/boopickle_sjs0.6_2.11-0.1.3.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.11/jars/scalajs-dom_sjs0.6_2.11-0.8.0.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/be.doeraene/scalajs-jquery_sjs0.6_2.11/jars/scalajs-jquery_sjs0.6_2.11-0.8.0.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.webjars/jquery/jars/jquery-2.1.3.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.github.japgolly.scalacss/core_sjs0.6_2.11/jars/core_sjs0.6_2.11-0.2.0.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.github.japgolly.fork.scalaz/scalaz-core_sjs0.6_2.11/bundles/scalaz-core_sjs0.6_2.11-7.1.1-2.jar"/>
-  <classpathentry kind="lib" path="/opt/activator-1.3.2/repository/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.2/bundles/scala-parser-combinators_2.11.jar"/>
-  <classpathentry kind="lib" path="/opt/activator-1.3.2/repository/org.scala-lang.modules/scala-xml_2.11/1.0.2/bundles/scala-xml_2.11.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.github.japgolly.fork.shapeless/shapeless_sjs0.6_2.11/bundles/shapeless_sjs0.6_2.11-2.1.0-2.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.github.japgolly.scalacss/ext-react_sjs0.6_2.11/jars/ext-react_sjs0.6_2.11-0.2.0.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.github.japgolly.scalajs-react/core_sjs0.6_2.11/jars/core_sjs0.6_2.11-0.8.2.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.lihaoyi/scalatags_sjs0.6_2.11/jars/scalatags_sjs0.6_2.11-0.5.2.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.lihaoyi/autowire_2.11/jars/autowire_2.11-0.2.5.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/me.chrons/boopickle_2.11/jars/boopickle_2.11-0.1.3.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.lihaoyi/scalatags_2.11/jars/scalatags_2.11-0.5.2.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.scalatra/scalatra_2.11/jars/scalatra_2.11-2.3.0.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.scalatra/scalatra-common_2.11/jars/scalatra-common_2.11-2.3.0.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.7.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.clapper/grizzled-slf4j_2.11/jars/grizzled-slf4j_2.11-1.0.2.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.scalatra.rl/rl_2.11/jars/rl_2.11-0.4.10.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.googlecode.juniversalchardet/juniversalchardet/jars/juniversalchardet-1.0.3.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/eu.medsea.mimeutil/mime-util/bundles/mime-util-2.1.3.jar"/>
-  <classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar"/>
-  <classpathentry kind="lib" path="/opt/activator-1.3.2/repository/org.joda/joda-convert/1.6/jars/joda-convert.jar"/>
-  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-  <classpathentry kind="output" path="bin"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/client"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/server"/>
+	<classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.webjars/react/jars/react-0.12.2.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.scala-js/scalajs-library_2.11/jars/scalajs-library_2.11-0.6.3.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.lihaoyi/autowire_sjs0.6_2.11/jars/autowire_sjs0.6_2.11-0.2.5.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/me.chrons/boopickle_sjs0.6_2.11/jars/boopickle_sjs0.6_2.11-0.1.3.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.11/jars/scalajs-dom_sjs0.6_2.11-0.8.0.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/be.doeraene/scalajs-jquery_sjs0.6_2.11/jars/scalajs-jquery_sjs0.6_2.11-0.8.0.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.webjars/jquery/jars/jquery-2.1.3.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.github.japgolly.scalacss/core_sjs0.6_2.11/jars/core_sjs0.6_2.11-0.2.0.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.github.japgolly.fork.scalaz/scalaz-core_sjs0.6_2.11/bundles/scalaz-core_sjs0.6_2.11-7.1.1-2.jar"/>
+	<classpathentry kind="lib" path="/opt/activator-1.3.2/repository/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.2/bundles/scala-parser-combinators_2.11.jar"/>
+	<classpathentry kind="lib" path="/opt/activator-1.3.2/repository/org.scala-lang.modules/scala-xml_2.11/1.0.2/bundles/scala-xml_2.11.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.github.japgolly.fork.shapeless/shapeless_sjs0.6_2.11/bundles/shapeless_sjs0.6_2.11-2.1.0-2.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.github.japgolly.scalacss/ext-react_sjs0.6_2.11/jars/ext-react_sjs0.6_2.11-0.2.0.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.github.japgolly.scalajs-react/core_sjs0.6_2.11/jars/core_sjs0.6_2.11-0.8.2.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.lihaoyi/scalatags_sjs0.6_2.11/jars/scalatags_sjs0.6_2.11-0.5.2.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.lihaoyi/autowire_2.11/jars/autowire_2.11-0.2.5.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/me.chrons/boopickle_2.11/jars/boopickle_2.11-0.1.3.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.lihaoyi/scalatags_2.11/jars/scalatags_2.11-0.5.2.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.scalatra/scalatra_2.11/jars/scalatra_2.11-2.3.0.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.scalatra/scalatra-common_2.11/jars/scalatra-common_2.11-2.3.0.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.7.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.clapper/grizzled-slf4j_2.11/jars/grizzled-slf4j_2.11-1.0.2.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/org.scalatra.rl/rl_2.11/jars/rl_2.11-0.4.10.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/com.googlecode.juniversalchardet/juniversalchardet/jars/juniversalchardet-1.0.3.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/eu.medsea.mimeutil/mime-util/bundles/mime-util-2.1.3.jar"/>
+	<classpathentry kind="lib" path="/home/matsushita/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar"/>
+	<classpathentry kind="lib" path="/opt/activator-1.3.2/repository/org.joda/joda-convert/1.6/jars/joda-convert.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>
