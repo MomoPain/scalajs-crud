@@ -24,3 +24,4 @@ doc/_book
 .cache*
 target
 /.project
+/.settings/
