@@ -23,5 +23,7 @@ doc/_book
 /shared/
 .cache*
 target
-/.project
-/.settings/
+.project
+.settings
+.classpath
+/.idea/

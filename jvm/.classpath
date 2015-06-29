@@ -9,6 +9,7 @@
   <classpathentry kind="src" path="src/test/resources"/>
   <classpathentry output="-home-matsushita-workspace-github-scalajs-react-crud-shared-src-main-scala" kind="src" path="-home-matsushita-workspace-github-scalajs-react-crud-shared-src-main-scala"/>
   <classpathentry output="-home-matsushita-workspace-github-scalajs-react-crud-shared-src-test-scala" kind="src" path="-home-matsushita-workspace-github-scalajs-react-crud-shared-src-test-scala"/>
+  <classpathentry kind="src" path="/shared" exported="true" combineaccessrules="false"/>
   <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
   <classpathentry sourcepath="/home/matsushita/.ivy2/cache/com.lihaoyi/autowire_2.11/srcs/autowire_2.11-0.2.5-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/com.lihaoyi/autowire_2.11/jars/autowire_2.11-0.2.5.jar"/>
   <classpathentry sourcepath="/home/matsushita/.ivy2/cache/me.chrons/boopickle_2.11/srcs/boopickle_2.11-0.1.3-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/me.chrons/boopickle_2.11/jars/boopickle_2.11-0.1.3.jar"/>
