@@ -28,13 +28,8 @@ object Build extends Build {
       scalacOptions ++= Seq("-unchecked", "-deprecation"),
       publish := {},
       publishLocal := {},
-      //      jettySettings,
       addCommandAlias("compileAll", ";compile;fastOptJS"))
-  //
-  //  (go <<= (fullOptJS in client in Compile, resourceDirectory in client in Compile, target in server in Compile) map
-  //    { (ct, r, st) =>
-  //    copy(ct, r, new File(st,"webapp"))
-  //    })
+
 
   lazy val server = crossPoejct.jvm.settings(
     jettySettings,
@@ -58,34 +53,33 @@ object Build extends Build {
       version := Version,
       scalaVersion := ScalaVersion,
       EclipseKeys.useProjectId := false,
-      EclipseKeys.withSource := true).
-      jvmSettings(
+      EclipseKeys.withSource := true,
+      EclipseKeys.createSrc := EclipseCreateSrc.Default + EclipseCreateSrc.Resource
+      ).jvmSettings(
         name := "server",
         libraryDependencies ++= Seq(
           "com.lihaoyi" %% "autowire" % "0.2.5",
           "com.lihaoyi" %% "upickle" % "0.2.7",
-          "me.chrons" %%% "boopickle" % "0.1.3",
+          //"me.chrons" %%% "boopickle" % "0.1.3",
           "com.lihaoyi" %% "scalatags" % "0.5.2",
           "org.scalatra" %% "scalatra" % ScalatraVersion,
           "org.scalatra" %% "scalatra-specs2" % ScalatraVersion % "test",
           "ch.qos.logback" % "logback-classic" % "1.0.12" % "runtime",
-          "javax.servlet" % "javax.servlet-api" % "3.0.1" % "provided;test") //    javacOptions in compile ++= Seq("-target", "8", "-source", "8")
+          "javax.servlet" % "javax.servlet-api" % "3.1.0" % "provided;test")
           ).
         jsSettings(
           name := "client",
           scalaVersion := ScalaVersion,
           libraryDependencies ++= Seq(
             "com.lihaoyi" %%% "autowire" % "0.2.5",
-            "org.scala-lang.modules" %% "scala-async" % "0.9.2",
+            //"org.scala-lang.modules" %% "scala-async" % "0.9.2",
             "com.lihaoyi" %%% "upickle" % "0.2.7",
-            "me.chrons" %%% "boopickle" % "0.1.3",
-            //"com.lihaoyi" %%% "scalarx" % "0.2.8",
-            //"fr.iscpif" %%% "scaladget" % "0.5.0-SNAPSHOT",
-            "org.scala-js" %%% "scalajs-dom" % "0.8.0",
-            "be.doeraene" %%% "scalajs-jquery" % "0.8.0",
-            "com.github.japgolly.scalajs-react" %%% "core" % "0.9.0",
-            "com.github.japgolly.scalacss" %%% "core" % "0.2.0",
-            "com.github.japgolly.scalacss" %%% "ext-react" % "0.2.0",
+            //"me.chrons" %%% "boopickle" % "0.1.3",
+            //"org.scala-js" %%% "scalajs-dom" % "0.8.0",
+            //"be.doeraene" %%% "scalajs-jquery" % "0.8.0",
+            //"com.github.japgolly.scalajs-react" %%% "core" % "0.9.0",
+            //"com.github.japgolly.scalacss" %%% "core" % "0.2.0",
+            //"com.github.japgolly.scalacss" %%% "ext-react" % "0.2.0",
             "com.lihaoyi" %%% "scalatags" % "0.5.2"),
           scalaJSStage in Global := FastOptStage,
           jsDependencies += "org.webjars" % "react" % "0.12.2" / "react-with-addons.js" commonJSName "React",

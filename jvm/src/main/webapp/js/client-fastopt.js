@@ -1014,133 +1014,63 @@ var $asArrayOf_sc_GenTraversableOnce = (function(obj, depth) {
   return (($isArrayOf_sc_GenTraversableOnce(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.collection.GenTraversableOnce;", depth))
 });
 /** @constructor */
-var $c_Lclient_TodoAction$ = (function() {
+var $c_Lclient_CommentAction$ = (function() {
   $c_O.call(this)
 });
-$c_Lclient_TodoAction$.prototype = new $h_O();
-$c_Lclient_TodoAction$.prototype.constructor = $c_Lclient_TodoAction$;
+$c_Lclient_CommentAction$.prototype = new $h_O();
+$c_Lclient_CommentAction$.prototype.constructor = $c_Lclient_CommentAction$;
 /** @constructor */
-var $h_Lclient_TodoAction$ = (function() {
+var $h_Lclient_CommentAction$ = (function() {
   /*<skip>*/
 });
-$h_Lclient_TodoAction$.prototype = $c_Lclient_TodoAction$.prototype;
-$c_Lclient_TodoAction$.prototype.$$js$exported$meth$updateTodo__Lmodel_TodoItem__O = (function(item) {
-  return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$()))
-});
-$c_Lclient_TodoAction$.prototype.$$js$exported$meth$getTodos__Lclient_RComp__O = (function(c) {
-  this.getTodos__Lclient_RComp__V(c)
-});
-$c_Lclient_TodoAction$.prototype.getTodos__Lclient_RComp__V = (function(c) {
+$h_Lclient_CommentAction$.prototype = $c_Lclient_CommentAction$.prototype;
+$c_Lclient_CommentAction$.prototype.getTodos__Lclient_RiactComponent__V = (function(c) {
   var this$1 = $m_Lclient_Post$();
-  var this$2 = new $c_Lautowire_ClientProxy().init___Lautowire_Client(this$1).self$1.doCall__Lautowire_Core$Request__s_concurrent_Future(new $c_Lautowire_Core$Request().init___sc_Seq__sci_Map($as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["api", "Api", "getTodos"]))), $as_sci_Map($m_s_Predef$().Map$2.apply__sc_Seq__sc_GenMap($m_sci_Nil$()))));
-  var f = new $c_Lclient_TodoAction$$anonfun$getTodos$2().init___();
+  var this$2 = new $c_Lautowire_ClientProxy().init___Lautowire_Client(this$1).self$1.doCall__Lautowire_Core$Request__s_concurrent_Future(new $c_Lautowire_Core$Request().init___sc_Seq__sci_Map($as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["api", "CommentApi", "list"]))), $as_sci_Map($m_s_Predef$().Map$2.apply__sc_Seq__sc_GenMap($m_sci_Nil$()))));
+  var f = new $c_Lclient_CommentAction$$anonfun$getTodos$2().init___();
   var executor = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
   var this$3 = $s_s_concurrent_Future$class__map__s_concurrent_Future__F1__s_concurrent_ExecutionContext__s_concurrent_Future(this$2, f, executor);
-  var pf = new $c_Lclient_TodoAction$$anonfun$getTodos$1().init___Lclient_RComp(c);
+  var pf = new $c_Lclient_CommentAction$$anonfun$getTodos$1().init___Lclient_RiactComponent(c);
   var executor$1 = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
   $s_s_concurrent_Future$class__onSuccess__s_concurrent_Future__s_PartialFunction__s_concurrent_ExecutionContext__V(this$3, pf, executor$1)
 });
-$c_Lclient_TodoAction$.prototype.$$js$exported$meth$deleteTodo__T__O = (function(itemId) {
+$c_Lclient_CommentAction$.prototype.$$js$exported$meth$update__Lmodel_Comment__O = (function(item) {
   return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$()))
 });
-$c_Lclient_TodoAction$.prototype["getTodos"] = (function(arg$1) {
+$c_Lclient_CommentAction$.prototype.$$js$exported$meth$getTodos__Lclient_RiactComponent__O = (function(c) {
+  this.getTodos__Lclient_RiactComponent__V(c)
+});
+$c_Lclient_CommentAction$.prototype.$$js$exported$meth$delete__T__O = (function(itemId) {
+  return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$()))
+});
+$c_Lclient_CommentAction$.prototype["getTodos"] = (function(arg$1) {
   var prep0 = arg$1;
-  return this.$$js$exported$meth$getTodos__Lclient_RComp__O(prep0)
+  return this.$$js$exported$meth$getTodos__Lclient_RiactComponent__O(prep0)
 });
-$c_Lclient_TodoAction$.prototype["updateTodo"] = (function(arg$1) {
-  var prep0 = $as_Lmodel_TodoItem(arg$1);
-  return this.$$js$exported$meth$updateTodo__Lmodel_TodoItem__O(prep0)
+$c_Lclient_CommentAction$.prototype["update"] = (function(arg$1) {
+  var prep0 = $as_Lmodel_Comment(arg$1);
+  return this.$$js$exported$meth$update__Lmodel_Comment__O(prep0)
 });
-$c_Lclient_TodoAction$.prototype["deleteTodo"] = (function(arg$1) {
+$c_Lclient_CommentAction$.prototype["delete"] = (function(arg$1) {
   var prep0 = $as_T(arg$1);
-  return this.$$js$exported$meth$deleteTodo__T__O(prep0)
+  return this.$$js$exported$meth$delete__T__O(prep0)
 });
-var $d_Lclient_TodoAction$ = new $TypeData().initClass({
-  Lclient_TodoAction$: 0
-}, false, "client.TodoAction$", {
-  Lclient_TodoAction$: 1,
+var $d_Lclient_CommentAction$ = new $TypeData().initClass({
+  Lclient_CommentAction$: 0
+}, false, "client.CommentAction$", {
+  Lclient_CommentAction$: 1,
   O: 1
 });
-$c_Lclient_TodoAction$.prototype.$classData = $d_Lclient_TodoAction$;
-var $n_Lclient_TodoAction$ = (void 0);
-var $m_Lclient_TodoAction$ = (function() {
-  if ((!$n_Lclient_TodoAction$)) {
-    $n_Lclient_TodoAction$ = new $c_Lclient_TodoAction$().init___()
+$c_Lclient_CommentAction$.prototype.$classData = $d_Lclient_CommentAction$;
+var $n_Lclient_CommentAction$ = (void 0);
+var $m_Lclient_CommentAction$ = (function() {
+  if ((!$n_Lclient_CommentAction$)) {
+    $n_Lclient_CommentAction$ = new $c_Lclient_CommentAction$().init___()
   };
-  return $n_Lclient_TodoAction$
+  return $n_Lclient_CommentAction$
 });
 $e["client"] = ($e["client"] || {});
-$e["client"]["TodoAction"] = $m_Lclient_TodoAction$;
-/** @constructor */
-var $c_Lclient_TodoStore$ = (function() {
-  $c_O.call(this)
-});
-$c_Lclient_TodoStore$.prototype = new $h_O();
-$c_Lclient_TodoStore$.prototype.constructor = $c_Lclient_TodoStore$;
-/** @constructor */
-var $h_Lclient_TodoStore$ = (function() {
-  /*<skip>*/
-});
-$h_Lclient_TodoStore$.prototype = $c_Lclient_TodoStore$.prototype;
-$c_Lclient_TodoStore$.prototype.$$js$exported$meth$bar__O = (function() {
-  return "***"
-});
-$c_Lclient_TodoStore$.prototype["bar"] = (function() {
-  return this.$$js$exported$meth$bar__O()
-});
-var $d_Lclient_TodoStore$ = new $TypeData().initClass({
-  Lclient_TodoStore$: 0
-}, false, "client.TodoStore$", {
-  Lclient_TodoStore$: 1,
-  O: 1
-});
-$c_Lclient_TodoStore$.prototype.$classData = $d_Lclient_TodoStore$;
-var $n_Lclient_TodoStore$ = (void 0);
-var $m_Lclient_TodoStore$ = (function() {
-  if ((!$n_Lclient_TodoStore$)) {
-    $n_Lclient_TodoStore$ = new $c_Lclient_TodoStore$().init___()
-  };
-  return $n_Lclient_TodoStore$
-});
-$e["client"] = ($e["client"] || {});
-$e["client"]["TodoStore"] = $m_Lclient_TodoStore$;
-/** @constructor */
-var $c_Ljapgolly_scalajs_react_package$ = (function() {
-  $c_O.call(this);
-  this.preventDefaultF$1 = null;
-  this.stopPropagationF$1 = null
-});
-$c_Ljapgolly_scalajs_react_package$.prototype = new $h_O();
-$c_Ljapgolly_scalajs_react_package$.prototype.constructor = $c_Ljapgolly_scalajs_react_package$;
-/** @constructor */
-var $h_Ljapgolly_scalajs_react_package$ = (function() {
-  /*<skip>*/
-});
-$h_Ljapgolly_scalajs_react_package$.prototype = $c_Ljapgolly_scalajs_react_package$.prototype;
-$c_Ljapgolly_scalajs_react_package$.prototype.init___ = (function() {
-  $n_Ljapgolly_scalajs_react_package$ = this;
-  this.preventDefaultF$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2) {
-    x$1$2["preventDefault"]()
-  }));
-  this.stopPropagationF$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$2$2) {
-    x$2$2["stopPropagation"]()
-  }));
-  return this
-});
-var $d_Ljapgolly_scalajs_react_package$ = new $TypeData().initClass({
-  Ljapgolly_scalajs_react_package$: 0
-}, false, "japgolly.scalajs.react.package$", {
-  Ljapgolly_scalajs_react_package$: 1,
-  O: 1
-});
-$c_Ljapgolly_scalajs_react_package$.prototype.$classData = $d_Ljapgolly_scalajs_react_package$;
-var $n_Ljapgolly_scalajs_react_package$ = (void 0);
-var $m_Ljapgolly_scalajs_react_package$ = (function() {
-  if ((!$n_Ljapgolly_scalajs_react_package$)) {
-    $n_Ljapgolly_scalajs_react_package$ = new $c_Ljapgolly_scalajs_react_package$().init___()
-  };
-  return $n_Ljapgolly_scalajs_react_package$
-});
+$e["client"]["CommentAction"] = $m_Lclient_CommentAction$;
 /** @constructor */
 var $c_Lorg_scalajs_dom_ext_Ajax$ = (function() {
   $c_O.call(this)
@@ -11351,20 +11281,20 @@ var $d_Lautowire_Core$Request = new $TypeData().initClass({
 });
 $c_Lautowire_Core$Request.prototype.$classData = $d_Lautowire_Core$Request;
 /** @constructor */
-var $c_Lclient_TodoAction$$anonfun$getTodos$2 = (function() {
+var $c_Lclient_CommentAction$$anonfun$getTodos$2 = (function() {
   $c_sr_AbstractFunction1.call(this)
 });
-$c_Lclient_TodoAction$$anonfun$getTodos$2.prototype = new $h_sr_AbstractFunction1();
-$c_Lclient_TodoAction$$anonfun$getTodos$2.prototype.constructor = $c_Lclient_TodoAction$$anonfun$getTodos$2;
+$c_Lclient_CommentAction$$anonfun$getTodos$2.prototype = new $h_sr_AbstractFunction1();
+$c_Lclient_CommentAction$$anonfun$getTodos$2.prototype.constructor = $c_Lclient_CommentAction$$anonfun$getTodos$2;
 /** @constructor */
-var $h_Lclient_TodoAction$$anonfun$getTodos$2 = (function() {
+var $h_Lclient_CommentAction$$anonfun$getTodos$2 = (function() {
   /*<skip>*/
 });
-$h_Lclient_TodoAction$$anonfun$getTodos$2.prototype = $c_Lclient_TodoAction$$anonfun$getTodos$2.prototype;
-$c_Lclient_TodoAction$$anonfun$getTodos$2.prototype.apply__O__O = (function(v1) {
+$h_Lclient_CommentAction$$anonfun$getTodos$2.prototype = $c_Lclient_CommentAction$$anonfun$getTodos$2.prototype;
+$c_Lclient_CommentAction$$anonfun$getTodos$2.prototype.apply__O__O = (function(v1) {
   return this.apply__T__sc_Seq($as_T(v1))
 });
-$c_Lclient_TodoAction$$anonfun$getTodos$2.prototype.apply__T__sc_Seq = (function(x$2) {
+$c_Lclient_CommentAction$$anonfun$getTodos$2.prototype.apply__T__sc_Seq = (function(x$1) {
   var this$1 = $m_Lclient_Post$();
   new $c_Lautowire_ClientProxy().init___Lautowire_Client(this$1).self$1;
   var this$5 = $m_Lupickle_package$();
@@ -11374,7 +11304,7 @@ $c_Lclient_TodoAction$$anonfun$getTodos$2.prototype.apply__T__sc_Seq = (function
   var f = new $c_sjsr_AnonFunction2().init___sjs_js_Function2((function(author$2, text$2) {
     var author = $as_T(author$2);
     var text = $as_T(text$2);
-    return new $c_Lmodel_TodoItem().init___T__T(author, text)
+    return new $c_Lmodel_Comment().init___T__T(author, text)
   }));
   var names = $asArrayOf_T($m_s_Array$().apply__sc_Seq__s_reflect_ClassTag__O(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["author", "text"]), $m_s_reflect_ClassTag$().apply__jl_Class__s_reflect_ClassTag($d_T.getClassOf())), 1);
   var defaults = $asArrayOf_Lupickle_Js$Value($m_s_Array$().apply__sc_Seq__s_reflect_ClassTag__O(new $c_sjs_js_WrappedArray().init___sjs_js_Array([null, null]), $m_s_reflect_ClassTag$().apply__jl_Class__s_reflect_ClassTag($d_Lupickle_Js$Value.getClassOf())), 1);
@@ -11382,59 +11312,59 @@ $c_Lclient_TodoAction$$anonfun$getTodos$2.prototype.apply__T__sc_Seq = (function
   var evidence$510 = $as_Lupickle_Reader($m_Lupickle_package$().StringRW$1);
   var x$macro$2 = $s_Lupickle_GeneratedInternal$class__Case2R__Lupickle_GeneratedInternal__F2__AT__ALupickle_Js$Value__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader(this$3, f, names, defaults, evidence$509, evidence$510);
   v1.$$undread$1 = $s_Lupickle_Reader$class__read__Lupickle_Reader__s_PartialFunction(x$macro$2);
-  var evidence$7 = jsx$1.validateReader__T__Lupickle_Reader__Lupickle_Reader("Tagged Object model.TodoItem", x$macro$2);
+  var evidence$7 = jsx$1.validateReader__T__Lupickle_Reader__Lupickle_Reader("Tagged Object model.Comment", x$macro$2);
   var this$4 = $m_s_Predef$();
   var cbf = new $c_s_LowPriorityImplicits$$anon$4().init___s_LowPriorityImplicits(this$4);
   var evidence$1 = $s_Lupickle_Implicits$class__SeqishR__Lupickle_Implicits__Lupickle_Reader__scg_CanBuildFrom__Lupickle_Reader(this$5, evidence$7, cbf);
   var this$7 = $m_Lupickle_package$();
-  return $as_sc_Seq($s_Lupickle_Types$class__read__Lupickle_Types__T__Lupickle_Reader__O(this$7, x$2, evidence$1))
+  return $as_sc_Seq($s_Lupickle_Types$class__read__Lupickle_Types__T__Lupickle_Reader__O(this$7, x$1, evidence$1))
 });
-var $d_Lclient_TodoAction$$anonfun$getTodos$2 = new $TypeData().initClass({
-  Lclient_TodoAction$$anonfun$getTodos$2: 0
-}, false, "client.TodoAction$$anonfun$getTodos$2", {
-  Lclient_TodoAction$$anonfun$getTodos$2: 1,
+var $d_Lclient_CommentAction$$anonfun$getTodos$2 = new $TypeData().initClass({
+  Lclient_CommentAction$$anonfun$getTodos$2: 0
+}, false, "client.CommentAction$$anonfun$getTodos$2", {
+  Lclient_CommentAction$$anonfun$getTodos$2: 1,
   sr_AbstractFunction1: 1,
   O: 1,
   F1: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lclient_TodoAction$$anonfun$getTodos$2.prototype.$classData = $d_Lclient_TodoAction$$anonfun$getTodos$2;
+$c_Lclient_CommentAction$$anonfun$getTodos$2.prototype.$classData = $d_Lclient_CommentAction$$anonfun$getTodos$2;
 /** @constructor */
-var $c_Lmodel_TodoItem = (function() {
+var $c_Lmodel_Comment = (function() {
   $c_O.call(this);
   this.author$1 = null;
   this.text$1 = null
 });
-$c_Lmodel_TodoItem.prototype = new $h_O();
-$c_Lmodel_TodoItem.prototype.constructor = $c_Lmodel_TodoItem;
+$c_Lmodel_Comment.prototype = new $h_O();
+$c_Lmodel_Comment.prototype.constructor = $c_Lmodel_Comment;
 /** @constructor */
-var $h_Lmodel_TodoItem = (function() {
+var $h_Lmodel_Comment = (function() {
   /*<skip>*/
 });
-$h_Lmodel_TodoItem.prototype = $c_Lmodel_TodoItem.prototype;
-$c_Lmodel_TodoItem.prototype.init___T__T = (function(author, text) {
+$h_Lmodel_Comment.prototype = $c_Lmodel_Comment.prototype;
+$c_Lmodel_Comment.prototype.init___T__T = (function(author, text) {
   this.author$1 = author;
   this.text$1 = text;
   return this
 });
-$c_Lmodel_TodoItem.prototype.productPrefix__T = (function() {
-  return "TodoItem"
+$c_Lmodel_Comment.prototype.productPrefix__T = (function() {
+  return "Comment"
 });
-$c_Lmodel_TodoItem.prototype.productArity__I = (function() {
+$c_Lmodel_Comment.prototype.productArity__I = (function() {
   return 2
 });
-$c_Lmodel_TodoItem.prototype.equals__O__Z = (function(x$1) {
+$c_Lmodel_Comment.prototype.equals__O__Z = (function(x$1) {
   if ((this === x$1)) {
     return true
-  } else if ($is_Lmodel_TodoItem(x$1)) {
-    var TodoItem$1 = $as_Lmodel_TodoItem(x$1);
-    return ((this.author$1 === TodoItem$1.author$1) && (this.text$1 === TodoItem$1.text$1))
+  } else if ($is_Lmodel_Comment(x$1)) {
+    var Comment$1 = $as_Lmodel_Comment(x$1);
+    return ((this.author$1 === Comment$1.author$1) && (this.text$1 === Comment$1.text$1))
   } else {
     return false
   }
 });
-$c_Lmodel_TodoItem.prototype.productElement__I__O = (function(x$1) {
+$c_Lmodel_Comment.prototype.productElement__I__O = (function(x$1) {
   switch (x$1) {
     case 0: {
       return this.author$1;
@@ -11449,39 +11379,39 @@ $c_Lmodel_TodoItem.prototype.productElement__I__O = (function(x$1) {
     }
   }
 });
-$c_Lmodel_TodoItem.prototype.toString__T = (function() {
+$c_Lmodel_Comment.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
 });
-$c_Lmodel_TodoItem.prototype.hashCode__I = (function() {
+$c_Lmodel_Comment.prototype.hashCode__I = (function() {
   var this$2 = $m_s_util_hashing_MurmurHash3$();
   return this$2.productHash__s_Product__I__I(this, (-889275714))
 });
-$c_Lmodel_TodoItem.prototype.productIterator__sc_Iterator = (function() {
+$c_Lmodel_Comment.prototype.productIterator__sc_Iterator = (function() {
   return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
 });
-var $is_Lmodel_TodoItem = (function(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lmodel_TodoItem)))
+var $is_Lmodel_Comment = (function(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lmodel_Comment)))
 });
-var $as_Lmodel_TodoItem = (function(obj) {
-  return (($is_Lmodel_TodoItem(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "model.TodoItem"))
+var $as_Lmodel_Comment = (function(obj) {
+  return (($is_Lmodel_Comment(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "model.Comment"))
 });
-var $isArrayOf_Lmodel_TodoItem = (function(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lmodel_TodoItem)))
+var $isArrayOf_Lmodel_Comment = (function(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lmodel_Comment)))
 });
-var $asArrayOf_Lmodel_TodoItem = (function(obj, depth) {
-  return (($isArrayOf_Lmodel_TodoItem(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lmodel.TodoItem;", depth))
+var $asArrayOf_Lmodel_Comment = (function(obj, depth) {
+  return (($isArrayOf_Lmodel_Comment(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lmodel.Comment;", depth))
 });
-var $d_Lmodel_TodoItem = new $TypeData().initClass({
-  Lmodel_TodoItem: 0
-}, false, "model.TodoItem", {
-  Lmodel_TodoItem: 1,
+var $d_Lmodel_Comment = new $TypeData().initClass({
+  Lmodel_Comment: 0
+}, false, "model.Comment", {
+  Lmodel_Comment: 1,
   O: 1,
   s_Product: 1,
   s_Equals: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lmodel_TodoItem.prototype.$classData = $d_Lmodel_TodoItem;
+$c_Lmodel_Comment.prototype.$classData = $d_Lmodel_Comment;
 /** @constructor */
 var $c_Lupickle_Implicits$$anonfun$MapW$1 = (function() {
   $c_sr_AbstractFunction1.call(this);
@@ -13463,31 +13393,31 @@ var $d_sr_ScalaRunTime$$anon$1 = new $TypeData().initClass({
 });
 $c_sr_ScalaRunTime$$anon$1.prototype.$classData = $d_sr_ScalaRunTime$$anon$1;
 /** @constructor */
-var $c_Lclient_TodoAction$$anonfun$getTodos$1 = (function() {
+var $c_Lclient_CommentAction$$anonfun$getTodos$1 = (function() {
   $c_sr_AbstractPartialFunction.call(this);
   this.c$1$2 = null
 });
-$c_Lclient_TodoAction$$anonfun$getTodos$1.prototype = new $h_sr_AbstractPartialFunction();
-$c_Lclient_TodoAction$$anonfun$getTodos$1.prototype.constructor = $c_Lclient_TodoAction$$anonfun$getTodos$1;
+$c_Lclient_CommentAction$$anonfun$getTodos$1.prototype = new $h_sr_AbstractPartialFunction();
+$c_Lclient_CommentAction$$anonfun$getTodos$1.prototype.constructor = $c_Lclient_CommentAction$$anonfun$getTodos$1;
 /** @constructor */
-var $h_Lclient_TodoAction$$anonfun$getTodos$1 = (function() {
+var $h_Lclient_CommentAction$$anonfun$getTodos$1 = (function() {
   /*<skip>*/
 });
-$h_Lclient_TodoAction$$anonfun$getTodos$1.prototype = $c_Lclient_TodoAction$$anonfun$getTodos$1.prototype;
-$c_Lclient_TodoAction$$anonfun$getTodos$1.prototype.init___Lclient_RComp = (function(c$1) {
+$h_Lclient_CommentAction$$anonfun$getTodos$1.prototype = $c_Lclient_CommentAction$$anonfun$getTodos$1.prototype;
+$c_Lclient_CommentAction$$anonfun$getTodos$1.prototype.init___Lclient_RiactComponent = (function(c$1) {
   this.c$1$2 = c$1;
   return this
 });
-$c_Lclient_TodoAction$$anonfun$getTodos$1.prototype.isDefinedAt__sc_Seq__Z = (function(x1) {
+$c_Lclient_CommentAction$$anonfun$getTodos$1.prototype.isDefinedAt__sc_Seq__Z = (function(x1) {
   return true
 });
-$c_Lclient_TodoAction$$anonfun$getTodos$1.prototype.isDefinedAt__O__Z = (function(x) {
+$c_Lclient_CommentAction$$anonfun$getTodos$1.prototype.isDefinedAt__O__Z = (function(x) {
   return this.isDefinedAt__sc_Seq__Z($as_sc_Seq(x))
 });
-$c_Lclient_TodoAction$$anonfun$getTodos$1.prototype.applyOrElse__O__F1__O = (function(x, default$2) {
+$c_Lclient_CommentAction$$anonfun$getTodos$1.prototype.applyOrElse__O__F1__O = (function(x, default$2) {
   return this.applyOrElse__sc_Seq__F1__O($as_sc_Seq(x), default$2)
 });
-$c_Lclient_TodoAction$$anonfun$getTodos$1.prototype.applyOrElse__sc_Seq__F1__O = (function(x1, default$2) {
+$c_Lclient_CommentAction$$anonfun$getTodos$1.prototype.applyOrElse__sc_Seq__F1__O = (function(x1, default$2) {
   if (x1.isEmpty__Z()) {
     var this$2 = $m_s_Console$();
     var this$3 = this$2.outVar$2;
@@ -13496,14 +13426,12 @@ $c_Lclient_TodoAction$$anonfun$getTodos$1.prototype.applyOrElse__sc_Seq__F1__O =
     return (void 0)
   } else {
     var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(t$2) {
-      var t = $as_Lmodel_TodoItem(t$2);
-      $m_Ljapgolly_scalajs_react_package$();
-      var v = t.author$1;
-      $m_Ljapgolly_scalajs_react_package$();
-      var v$1 = t.text$1;
+      var t = $as_Lmodel_Comment(t$2);
+      var s = t.author$1;
+      var s$1 = t.text$1;
       return {
-        "author": v,
-        "text": v$1
+        "author": s,
+        "text": s$1
       }
     }));
     var this$6 = $m_sc_Seq$();
@@ -13533,10 +13461,10 @@ $c_Lclient_TodoAction$$anonfun$getTodos$1.prototype.applyOrElse__sc_Seq__F1__O =
     return (void 0)
   }
 });
-var $d_Lclient_TodoAction$$anonfun$getTodos$1 = new $TypeData().initClass({
-  Lclient_TodoAction$$anonfun$getTodos$1: 0
-}, false, "client.TodoAction$$anonfun$getTodos$1", {
-  Lclient_TodoAction$$anonfun$getTodos$1: 1,
+var $d_Lclient_CommentAction$$anonfun$getTodos$1 = new $TypeData().initClass({
+  Lclient_CommentAction$$anonfun$getTodos$1: 0
+}, false, "client.CommentAction$$anonfun$getTodos$1", {
+  Lclient_CommentAction$$anonfun$getTodos$1: 1,
   sr_AbstractPartialFunction: 1,
   O: 1,
   F1: 1,
@@ -13544,7 +13472,7 @@ var $d_Lclient_TodoAction$$anonfun$getTodos$1 = new $TypeData().initClass({
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lclient_TodoAction$$anonfun$getTodos$1.prototype.$classData = $d_Lclient_TodoAction$$anonfun$getTodos$1;
+$c_Lclient_CommentAction$$anonfun$getTodos$1.prototype.$classData = $d_Lclient_CommentAction$$anonfun$getTodos$1;
 /** @constructor */
 var $c_Ljava_io_PrintStream = (function() {
   $c_Ljava_io_FilterOutputStream.call(this);
