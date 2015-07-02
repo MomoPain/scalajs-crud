@@ -1,9 +1,11 @@
 var CommentList = React.createClass({
   render: function() {
+	console.log('Comment List ' + this.props.data);
     var commentNodes = this.props.data.map(function (comment) {
+      console.log('Comment create ' + comment.text);
       return (
-        <Comment author={comment.author}>
-          {comment.text}
+        <Comment author={comment.author} comment={comment.text}>
+          
         </Comment>
       );
     });
@@ -42,17 +44,8 @@ var CommentForm = React.createClass({
 
 var CommentBox = React.createClass({
 	  loadCommentsFromServer: function() {
-	    $.ajax({
-	      url: this.props.url,
-	      dataType: 'json',
-	      cache: false,
-	      success: function(data) {
-	        this.setState({data: data});
-	      }.bind(this),
-	      error: function(xhr, status, err) {
-	        console.error(this.props.url, status, err.toString());
-	      }.bind(this)
-	    });
+		console.log('todo action');
+		client.TodoAction().getTodos(this);
 	  },
 	  handleCommentSubmit: function(comment) {
 		  var comments = this.state.data;
@@ -91,19 +84,21 @@ var CommentBox = React.createClass({
 
 var Comment = React.createClass({
 	  render: function() {
-	    var rawMarkup = marked(this.props.children.toString(), {sanitize: true});
+		console.log('Comment ' + this.props.author);
+// var rawMarkup = marked(this.props.children.toString(), {sanitize: true});
 	    return (
 	      <div className="comment">
 	        <h2 className="commentAuthor">
 	          {this.props.author}
 	        </h2>
-	        <span dangerouslySetInnerHTML={{__html: rawMarkup}} />
+	        <span>{this.props.comment}</span>  
 	      </div>
+	      
 	    );
 	  }
 	});
 
 React.render(
-		  <CommentBox url="comments.json" />,
-		  document.getElementById('content')
-		);
+  <CommentBox url="url" pollInterval={10000} />,
+  document.getElementById('content')
+);
