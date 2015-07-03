@@ -15,6 +15,7 @@
   <classpathentry sourcepath="/home/matsushita/.ivy2/cache/com.lihaoyi/upickle_2.11/srcs/upickle_2.11-0.2.7-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/com.lihaoyi/upickle_2.11/jars/upickle_2.11-0.2.7.jar"/>
   <classpathentry sourcepath="/home/matsushita/.ivy2/cache/org.spire-math/jawn-parser_2.11/srcs/jawn-parser_2.11-0.7.0-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/org.spire-math/jawn-parser_2.11/jars/jawn-parser_2.11-0.7.0.jar"/>
   <classpathentry sourcepath="/home/matsushita/.ivy2/cache/com.lihaoyi/scalatags_2.11/srcs/scalatags_2.11-0.5.2-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/com.lihaoyi/scalatags_2.11/jars/scalatags_2.11-0.5.2.jar"/>
+  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_COMPILER_CONTAINER"/>
   <classpathentry sourcepath="/home/matsushita/.ivy2/cache/org.scalatra/scalatra_2.11/srcs/scalatra_2.11-2.3.1-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/org.scalatra/scalatra_2.11/jars/scalatra_2.11-2.3.1.jar"/>
   <classpathentry sourcepath="/home/matsushita/.ivy2/cache/org.scalatra/scalatra-common_2.11/srcs/scalatra-common_2.11-2.3.1-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/org.scalatra/scalatra-common_2.11/jars/scalatra-common_2.11-2.3.1.jar"/>
   <classpathentry sourcepath="/home/matsushita/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.10-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.10.jar"/>
@@ -26,6 +27,9 @@
   <classpathentry sourcepath="/home/matsushita/.ivy2/cache/org.joda/joda-convert/srcs/joda-convert-1.7-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar"/>
   <classpathentry sourcepath="/home/matsushita/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/srcs/scala-parser-combinators_2.11-1.0.3-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.3.jar"/>
   <classpathentry sourcepath="/home/matsushita/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/srcs/scala-xml_2.11-1.0.3-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.3.jar"/>
+  <classpathentry sourcepath="/home/matsushita/.ivy2/cache/org.scalatra/scalatra-scalate_2.11/srcs/scalatra-scalate_2.11-2.3.1-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/org.scalatra/scalatra-scalate_2.11/jars/scalatra-scalate_2.11-2.3.1.jar"/>
+  <classpathentry sourcepath="/home/matsushita/.ivy2/cache/org.scalatra.scalate/scalate-core_2.11/srcs/scalate-core_2.11-1.7.1-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/org.scalatra.scalate/scalate-core_2.11/bundles/scalate-core_2.11-1.7.1.jar"/>
+  <classpathentry sourcepath="/home/matsushita/.ivy2/cache/org.scalatra.scalate/scalate-util_2.11/srcs/scalate-util_2.11-1.7.1-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/org.scalatra.scalate/scalate-util_2.11/bundles/scalate-util_2.11-1.7.1.jar"/>
   <classpathentry sourcepath="/home/matsushita/.ivy2/cache/ch.qos.logback/logback-classic/srcs/logback-classic-1.0.12-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.12.jar"/>
   <classpathentry sourcepath="/home/matsushita/.ivy2/cache/ch.qos.logback/logback-core/srcs/logback-core-1.0.12-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.12.jar"/>
   <classpathentry sourcepath="/home/matsushita/.ivy2/cache/org.scalatra/scalatra-scalatest_2.11/srcs/scalatra-scalatest_2.11-2.3.1-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/org.scalatra/scalatra-scalatest_2.11/jars/scalatra-scalatest_2.11-2.3.1.jar"/>
@@ -54,7 +58,6 @@
   <classpathentry sourcepath="/home/matsushita/.ivy2/cache/org.json4s/json4s-ast_2.11/srcs/json4s-ast_2.11-3.2.11-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/org.json4s/json4s-ast_2.11/jars/json4s-ast_2.11-3.2.11.jar"/>
   <classpathentry sourcepath="/home/matsushita/.ivy2/cache/com.thoughtworks.paranamer/paranamer/srcs/paranamer-2.6-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.6.jar"/>
   <classpathentry sourcepath="/home/matsushita/.ivy2/cache/org.scala-lang/scalap/srcs/scalap-2.11.0-sources.jar" kind="lib" path="/home/matsushita/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.11.0.jar"/>
-  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_COMPILER_CONTAINER"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="output" path="bin"/>
 </classpath>

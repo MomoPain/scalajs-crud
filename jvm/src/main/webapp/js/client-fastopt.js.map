@@ -949,6 +949,18 @@ var $isArrayOf_Lupickle_Reader = (function(obj, depth) {
 var $asArrayOf_Lupickle_Reader = (function(obj, depth) {
   return (($isArrayOf_Lupickle_Reader(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lupickle.Reader;", depth))
 });
+var $is_Lupickle_Writer = (function(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lupickle_Writer)))
+});
+var $as_Lupickle_Writer = (function(obj) {
+  return (($is_Lupickle_Writer(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "upickle.Writer"))
+});
+var $isArrayOf_Lupickle_Writer = (function(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lupickle_Writer)))
+});
+var $asArrayOf_Lupickle_Writer = (function(obj, depth) {
+  return (($isArrayOf_Lupickle_Writer(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lupickle.Writer;", depth))
+});
 /** @constructor */
 var $c_O = (function() {
   /*<skip>*/
@@ -1024,36 +1036,184 @@ var $h_Lclient_CommentAction$ = (function() {
   /*<skip>*/
 });
 $h_Lclient_CommentAction$.prototype = $c_Lclient_CommentAction$.prototype;
-$c_Lclient_CommentAction$.prototype.$$js$exported$meth$update__Lshared_model_Comment__O = (function(item) {
-  return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$()))
+$c_Lclient_CommentAction$.prototype.$$js$exported$meth$update__sjs_js_Dictionary__Lclient_RiactComponent__O = (function(c, comp) {
+  this.update__sjs_js_Dictionary__Lclient_RiactComponent__V(c, comp)
 });
-$c_Lclient_CommentAction$.prototype.$$js$exported$meth$list__Lclient_RiactComponent__O = (function(c) {
-  this.list__Lclient_RiactComponent__V(c)
+$c_Lclient_CommentAction$.prototype.$delete__I__Lclient_RiactComponent__V = (function(id, comp) {
+  var this$1 = $m_Lclient_PostClient$();
+  var jsx$2 = new $c_Lautowire_ClientProxy().init___Lautowire_Client(this$1).self$1;
+  var jsx$1 = $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["shared", "api", "CommentApi", "delete"])));
+  var this$3 = $m_Lclient_PostClient$();
+  new $c_Lautowire_ClientProxy().init___Lautowire_Client(this$3).self$1;
+  var evidence$2 = $m_Lupickle_package$().IntRW$1;
+  var evidence$2$1 = $as_Lupickle_Writer(evidence$2);
+  var this$5 = $m_Lupickle_package$();
+  var y = $s_Lupickle_Types$class__write__Lupickle_Types__O__Lupickle_Writer__T(this$5, id, evidence$2$1);
+  var array = [new $c_T2().init___O__O("id", y)];
+  var this$8 = new $c_scm_MapBuilder().init___sc_GenMap($m_sci_Map$EmptyMap$());
+  matchEnd4: {
+    var i = 0;
+    var len = $uI(array["length"]);
+    while ((i < len)) {
+      var index = i;
+      var arg1 = array[index];
+      this$8.$$plus$eq__T2__scm_MapBuilder($as_T2(arg1));
+      i = ((1 + i) | 0)
+    };
+    break matchEnd4
+  };
+  var this$9 = jsx$2.doCall__Lautowire_Core$Request__s_concurrent_Future(new $c_Lautowire_Core$Request().init___sc_Seq__sci_Map(jsx$1, $as_sci_Map(this$8.elems$1)));
+  var f = new $c_Lclient_CommentAction$$anonfun$delete$2().init___();
+  var executor = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
+  var this$10 = $s_s_concurrent_Future$class__map__s_concurrent_Future__F1__s_concurrent_ExecutionContext__s_concurrent_Future(this$9, f, executor);
+  var pf = new $c_Lclient_CommentAction$$anonfun$delete$1().init___Lclient_RiactComponent(comp);
+  var executor$1 = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
+  $s_s_concurrent_Future$class__onSuccess__s_concurrent_Future__s_PartialFunction__s_concurrent_ExecutionContext__V(this$10, pf, executor$1)
 });
-$c_Lclient_CommentAction$.prototype.list__Lclient_RiactComponent__V = (function(c) {
+$c_Lclient_CommentAction$.prototype.setComments__Lclient_RiactComponent__sc_Seq__V = (function(comp, comments) {
+  if (comments.isEmpty__Z()) {
+    comp["setState"]([])
+  } else {
+    var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(t$2) {
+      var t = $as_Lshared_model_Comment(t$2);
+      var value = t.id$1;
+      var s = t.author$1;
+      var s$1 = t.text$1;
+      return {
+        "key": value,
+        "author": s,
+        "text": s$1
+      }
+    }));
+    var this$4 = $m_sc_Seq$();
+    var $$this = $as_sc_GenTraversableOnce(comments.map__F1__scg_CanBuildFrom__O(jsx$1, this$4.ReusableCBFInstance$2));
+    var this$7 = $m_sjsr_package$();
+    if ($is_sjs_js_ArrayOps($$this)) {
+      var x2 = $as_sjs_js_ArrayOps($$this);
+      var data = x2.scala$scalajs$js$ArrayOps$$array$f
+    } else if ($is_sjs_js_WrappedArray($$this)) {
+      var x3 = $as_sjs_js_WrappedArray($$this);
+      var data = x3.array$6
+    } else {
+      var result = [];
+      $$this.foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1, result$1) {
+        return (function(x$2) {
+          return $uI(result$1["push"](x$2))
+        })
+      })(this$7, result)));
+      var data = result
+    };
+    comp["setState"]({
+      "data": data
+    })
+  }
+});
+$c_Lclient_CommentAction$.prototype.$$js$exported$meth$delete__I__Lclient_RiactComponent__O = (function(id, comp) {
+  this.$delete__I__Lclient_RiactComponent__V(id, comp)
+});
+$c_Lclient_CommentAction$.prototype.$$js$exported$meth$list__Lclient_RiactComponent__O = (function(comp) {
+  this.list__Lclient_RiactComponent__V(comp)
+});
+$c_Lclient_CommentAction$.prototype.list__Lclient_RiactComponent__V = (function(comp) {
   var this$1 = $m_Lclient_PostClient$();
   var this$2 = new $c_Lautowire_ClientProxy().init___Lautowire_Client(this$1).self$1.doCall__Lautowire_Core$Request__s_concurrent_Future(new $c_Lautowire_Core$Request().init___sc_Seq__sci_Map($as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["shared", "api", "CommentApi", "list"]))), $as_sci_Map($m_s_Predef$().Map$2.apply__sc_Seq__sc_GenMap($m_sci_Nil$()))));
   var f = new $c_Lclient_CommentAction$$anonfun$list$2().init___();
   var executor = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
   var this$3 = $s_s_concurrent_Future$class__map__s_concurrent_Future__F1__s_concurrent_ExecutionContext__s_concurrent_Future(this$2, f, executor);
-  var pf = new $c_Lclient_CommentAction$$anonfun$list$1().init___Lclient_RiactComponent(c);
+  var pf = new $c_Lclient_CommentAction$$anonfun$list$1().init___Lclient_RiactComponent(comp);
   var executor$1 = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
   $s_s_concurrent_Future$class__onSuccess__s_concurrent_Future__s_PartialFunction__s_concurrent_ExecutionContext__V(this$3, pf, executor$1)
 });
-$c_Lclient_CommentAction$.prototype.$$js$exported$meth$delete__T__O = (function(itemId) {
-  return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$()))
+$c_Lclient_CommentAction$.prototype.update__sjs_js_Dictionary__Lclient_RiactComponent__V = (function(c, comp) {
+  var x1 = ($uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1["call"](c, "author")) ? new $c_s_Some().init___O(c["author"]) : $m_s_None$());
+  if ($is_s_Some(x1)) {
+    var x2 = $as_s_Some(x1);
+    var v = x2.x$2;
+    var jsx$3 = v
+  } else {
+    var x = $m_s_None$();
+    if ((x === x1)) {
+      var jsx$3 = ""
+    } else {
+      var jsx$3;
+      throw new $c_s_MatchError().init___O(x1)
+    }
+  };
+  var jsx$2 = $as_T(jsx$3);
+  var x1$1 = ($uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1["call"](c, "text")) ? new $c_s_Some().init___O(c["text"]) : $m_s_None$());
+  if ($is_s_Some(x1$1)) {
+    var x2$1 = $as_s_Some(x1$1);
+    var v$1 = x2$1.x$2;
+    var jsx$1 = v$1
+  } else {
+    var x$1 = $m_s_None$();
+    if ((x$1 === x1$1)) {
+      var jsx$1 = ""
+    } else {
+      var jsx$1;
+      throw new $c_s_MatchError().init___O(x1$1)
+    }
+  };
+  var comment = new $c_Lshared_model_Comment().init___T__T(jsx$2, $as_T(jsx$1));
+  var this$5 = $m_Lclient_PostClient$();
+  var jsx$5 = new $c_Lautowire_ClientProxy().init___Lautowire_Client(this$5).self$1;
+  var jsx$4 = $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["shared", "api", "CommentApi", "update"])));
+  var this$7 = $m_Lclient_PostClient$();
+  new $c_Lautowire_ClientProxy().init___Lautowire_Client(this$7).self$1;
+  var v1 = new $c_Lupickle_Knot$W().init___F1(null);
+  var this$9 = $m_Lupickle_Internal$();
+  var g = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$0$2) {
+    var x$0 = $as_Lshared_model_Comment(x$0$2);
+    return $m_Lshared_model_Comment$().unapply__Lshared_model_Comment__s_Option(x$0)
+  }));
+  var names = $asArrayOf_T($m_s_Array$().apply__sc_Seq__s_reflect_ClassTag__O(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["id", "author", "text"]), $m_s_reflect_ClassTag$().apply__jl_Class__s_reflect_ClassTag($d_T.getClassOf())), 1);
+  var defaults = $asArrayOf_Lupickle_Js$Value($m_s_Array$().apply__sc_Seq__s_reflect_ClassTag__O(new $c_sjs_js_WrappedArray().init___sjs_js_Array([null, null, null]), $m_s_reflect_ClassTag$().apply__jl_Class__s_reflect_ClassTag($d_Lupickle_Js$Value.getClassOf())), 1);
+  var evidence$516 = $as_Lupickle_Writer($m_Lupickle_package$().IntRW$1);
+  var evidence$517 = $m_Lupickle_package$().StringRW$1;
+  var evidence$518 = $m_Lupickle_package$().StringRW$1;
+  var x$macro$4 = $s_Lupickle_GeneratedInternal$class__Case3W__Lupickle_GeneratedInternal__F1__AT__ALupickle_Js$Value__Lupickle_Writer__Lupickle_Writer__Lupickle_Writer__Lupickle_Writer(this$9, g, names, defaults, evidence$516, evidence$517, evidence$518);
+  v1.$$undwrite$1 = $s_Lupickle_Writer$class__write__Lupickle_Writer__F1(x$macro$4);
+  var this$11 = $m_Lupickle_package$();
+  var y = $s_Lupickle_Types$class__write__Lupickle_Types__O__Lupickle_Writer__T(this$11, comment, x$macro$4);
+  var array = [new $c_T2().init___O__O("model", y)];
+  var this$14 = new $c_scm_MapBuilder().init___sc_GenMap($m_sci_Map$EmptyMap$());
+  matchEnd4: {
+    var i = 0;
+    var len = $uI(array["length"]);
+    while ((i < len)) {
+      var index = i;
+      var arg1 = array[index];
+      this$14.$$plus$eq__T2__scm_MapBuilder($as_T2(arg1));
+      i = ((1 + i) | 0)
+    };
+    break matchEnd4
+  };
+  var this$15 = jsx$5.doCall__Lautowire_Core$Request__s_concurrent_Future(new $c_Lautowire_Core$Request().init___sc_Seq__sci_Map(jsx$4, $as_sci_Map(this$14.elems$1)));
+  var f = new $c_Lclient_CommentAction$$anonfun$update$3().init___();
+  var executor = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
+  var this$16 = $s_s_concurrent_Future$class__map__s_concurrent_Future__F1__s_concurrent_ExecutionContext__s_concurrent_Future(this$15, f, executor);
+  var pf = new $c_Lclient_CommentAction$$anonfun$update$1().init___Lclient_RiactComponent(comp);
+  var executor$1 = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
+  $s_s_concurrent_Future$class__onSuccess__s_concurrent_Future__s_PartialFunction__s_concurrent_ExecutionContext__V(this$16, pf, executor$1)
 });
 $c_Lclient_CommentAction$.prototype["list"] = (function(arg$1) {
   var prep0 = arg$1;
   return this.$$js$exported$meth$list__Lclient_RiactComponent__O(prep0)
 });
-$c_Lclient_CommentAction$.prototype["update"] = (function(arg$1) {
-  var prep0 = $as_Lshared_model_Comment(arg$1);
-  return this.$$js$exported$meth$update__Lshared_model_Comment__O(prep0)
+$c_Lclient_CommentAction$.prototype["update"] = (function(arg$1, arg$2) {
+  var prep0 = arg$1;
+  var prep1 = arg$2;
+  return this.$$js$exported$meth$update__sjs_js_Dictionary__Lclient_RiactComponent__O(prep0, prep1)
 });
-$c_Lclient_CommentAction$.prototype["delete"] = (function(arg$1) {
-  var prep0 = $as_T(arg$1);
-  return this.$$js$exported$meth$delete__T__O(prep0)
+$c_Lclient_CommentAction$.prototype["delete"] = (function(arg$1, arg$2) {
+  if ((arg$1 === null)) {
+    var prep0;
+    throw "Found null, expected Int"
+  } else {
+    var prep0 = $uI(arg$1)
+  };
+  var prep1 = arg$2;
+  return this.$$js$exported$meth$delete__I__Lclient_RiactComponent__O(prep0, prep1)
 });
 var $d_Lclient_CommentAction$ = new $TypeData().initClass({
   Lclient_CommentAction$: 0
@@ -1175,14 +1335,79 @@ var $s_Lupickle_Generated$class__Tuple2W__Lupickle_Generated__Lupickle_Writer__L
   })($$this, evidence$3, evidence$4));
   return new $c_Lupickle_Writer$$anon$2().init___F1(_write)
 });
-var $s_Lupickle_Generated$class__Tuple2R__Lupickle_Generated__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader = (function($$this, evidence$5, evidence$6) {
+var $s_Lupickle_Generated$class__Tuple3W__Lupickle_Generated__Lupickle_Writer__Lupickle_Writer__Lupickle_Writer__Lupickle_Writer = (function($$this, evidence$7, evidence$8, evidence$9) {
+  $m_Lupickle_Aliases$().W$1;
+  var _write = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer, evidence$7$1, evidence$8$1, evidence$9$1) {
+    return (function(x$2) {
+      var x = $as_T3(x$2);
+      var jsx$3 = $m_s_Predef$();
+      var expr = x.$$und1$1;
+      var jsx$2 = $s_Lupickle_Types$class__writeJs__Lupickle_Types__O__Lupickle_Writer__Lupickle_Js$Value(arg$outer, expr, evidence$7$1);
+      var expr$1 = x.$$und2$1;
+      var jsx$1 = $s_Lupickle_Types$class__writeJs__Lupickle_Types__O__Lupickle_Writer__Lupickle_Js$Value(arg$outer, expr$1, evidence$8$1);
+      var expr$2 = x.$$und3$1;
+      return new $c_Lupickle_Js$Arr().init___sc_Seq(jsx$3.genericWrapArray__O__scm_WrappedArray($makeNativeArrayWrapper($d_Lupickle_Js$Value.getArrayOf(), [jsx$2, jsx$1, $s_Lupickle_Types$class__writeJs__Lupickle_Types__O__Lupickle_Writer__Lupickle_Js$Value(arg$outer, expr$2, evidence$9$1)])))
+    })
+  })($$this, evidence$7, evidence$8, evidence$9));
+  return new $c_Lupickle_Writer$$anon$2().init___F1(_write)
+});
+var $s_Lupickle_Generated$class__Tuple3R__Lupickle_Generated__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader = (function($$this, evidence$10, evidence$11, evidence$12) {
   $m_Lupickle_Aliases$().R$1;
-  var _read = $$this.validate__T__s_PartialFunction__s_PartialFunction("Array(2)", new $c_Lupickle_Generated$$anonfun$Tuple2R$1().init___Lupickle_Generated__Lupickle_Reader__Lupickle_Reader($$this, evidence$5, evidence$6));
+  var _read = $$this.validate__T__s_PartialFunction__s_PartialFunction("Array(3)", new $c_Lupickle_Generated$$anonfun$Tuple3R$1().init___Lupickle_Generated__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader($$this, evidence$10, evidence$11, evidence$12));
   return new $c_Lupickle_Reader$$anon$3().init___s_PartialFunction(_read)
 });
-var $s_Lupickle_GeneratedInternal$class__Case2R__Lupickle_GeneratedInternal__F2__AT__ALupickle_Js$Value__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader = (function($$this, f, names, defaults, evidence$509, evidence$510) {
-  var read = new $c_Lupickle_GeneratedInternal$$anonfun$Case2R$1().init___Lupickle_GeneratedInternal__F2__Lupickle_Reader__Lupickle_Reader($$this, f, evidence$509, evidence$510);
+var $s_Lupickle_GeneratedInternal$class__Case3W__Lupickle_GeneratedInternal__F1__AT__ALupickle_Js$Value__Lupickle_Writer__Lupickle_Writer__Lupickle_Writer__Lupickle_Writer = (function($$this, g, names, defaults, evidence$516, evidence$517, evidence$518) {
+  var write = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer, g$3, evidence$516$1, evidence$517$1, evidence$518$1) {
+    return (function(x$2) {
+      var expr = $as_s_Option(g$3.apply__O__O(x$2)).get__O();
+      var evidence$2 = $s_Lupickle_Generated$class__Tuple3W__Lupickle_Generated__Lupickle_Writer__Lupickle_Writer__Lupickle_Writer__Lupickle_Writer(arg$outer, evidence$516$1, evidence$517$1, evidence$518$1);
+      return $s_Lupickle_Types$class__writeJs__Lupickle_Types__O__Lupickle_Writer__Lupickle_Js$Value(arg$outer, expr, evidence$2)
+    })
+  })($$this, g, evidence$516, evidence$517, evidence$518));
+  return $s_Lupickle_GeneratedUtil$class__WCase__Lupickle_GeneratedUtil__AT__ALupickle_Js$Value__F1__Lupickle_Writer($$this, names, defaults, write)
+});
+var $s_Lupickle_GeneratedInternal$class__Case3R__Lupickle_GeneratedInternal__F3__AT__ALupickle_Js$Value__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader = (function($$this, f, names, defaults, evidence$513, evidence$514, evidence$515) {
+  var read = new $c_Lupickle_GeneratedInternal$$anonfun$Case3R$1().init___Lupickle_GeneratedInternal__F3__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader($$this, f, evidence$513, evidence$514, evidence$515);
   return $s_Lupickle_GeneratedUtil$class__RCase__Lupickle_GeneratedUtil__AT__ALupickle_Js$Value__s_PartialFunction__Lupickle_Reader($$this, names, defaults, read)
+});
+var $s_Lupickle_GeneratedUtil$class__WCase__Lupickle_GeneratedUtil__AT__ALupickle_Js$Value__F1__Lupickle_Writer = (function($$this, names, defaults, write) {
+  var _write = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer, names$2, defaults$2, write$1) {
+    return (function(x$2) {
+      var ev$1 = write$1.apply__O__O(x$2);
+      return new $c_Lupickle_Js$Obj().init___sc_Seq($s_Lupickle_GeneratedUtil$class__upickle$GeneratedUtil$$arrayToMap__Lupickle_GeneratedUtil__sc_Seq__AT__ALupickle_Js$Value__sc_Seq(arg$outer, ((ev$1 === null) ? null : $as_Lupickle_Js$Arr(ev$1).value$1), names$2, defaults$2))
+    })
+  })($$this, names, defaults, write));
+  return new $c_Lupickle_Writer$$anon$2().init___F1(_write)
+});
+var $s_Lupickle_GeneratedUtil$class__upickle$GeneratedUtil$$arrayToMap__Lupickle_GeneratedUtil__sc_Seq__AT__ALupickle_Js$Value__sc_Seq = (function($$this, a, names, defaults) {
+  var accumulated = $newArrayObject($d_T2.getArrayOf(), [names.u["length"]]);
+  var i = 0;
+  var l = a.length__I();
+  while ((i < l)) {
+    var x = defaults.u[i];
+    var x$2 = a.apply__I__O(i);
+    if ((!((x === null) ? (x$2 === null) : x.equals__O__Z(x$2)))) {
+      var jsx$1 = i;
+      var $$this$1 = names.u[i];
+      var y = a.apply__I__O(i);
+      accumulated.u[jsx$1] = new $c_T2().init___O__O($$this$1, y)
+    };
+    i = ((1 + i) | 0)
+  };
+  var jsx$2 = $m_s_Predef$();
+  var b = $m_scm_ArrayOps$ofRef$().newBuilder$extension__AO__scm_ArrayBuilder$ofRef(accumulated);
+  var i$1 = 0;
+  var len = accumulated.u["length"];
+  while ((i$1 < len)) {
+    var index = i$1;
+    var arg1 = accumulated.u[index];
+    var x$1 = $as_T2(arg1);
+    if ((x$1 !== null)) {
+      b.$$plus$eq__O__scm_ArrayBuilder$ofRef(arg1)
+    };
+    i$1 = ((1 + i$1) | 0)
+  };
+  return jsx$2.wrapRefArray__AO__scm_WrappedArray(b.result__AO())
 });
 var $s_Lupickle_GeneratedUtil$class__upickle$GeneratedUtil$$mapToArray__Lupickle_GeneratedUtil__sc_Seq__AT__ALupickle_Js$Value__sc_Seq = (function($$this, o, names, defaults) {
   var accumulated = $newArrayObject($d_Lupickle_Js$Value.getArrayOf(), [names.u["length"]]);
@@ -2313,14 +2538,15 @@ var $h_s_FallbackArrayBuilding = (function() {
   /*<skip>*/
 });
 $h_s_FallbackArrayBuilding.prototype = $c_s_FallbackArrayBuilding.prototype;
-var $s_s_Function2$class__tupled__F2__F1 = (function($$this) {
+var $s_s_Function3$class__tupled__F3__F1 = (function($$this) {
   return new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($$this$1) {
     return (function(x0$1$2) {
-      var x0$1 = $as_T2(x0$1$2);
+      var x0$1 = $as_T3(x0$1$2);
       if ((x0$1 !== null)) {
-        var x1$2 = x0$1.$$und1$f;
-        var x2 = x0$1.$$und2$f;
-        return $$this$1.apply__O__O__O(x1$2, x2)
+        var x1$2 = x0$1.$$und1$1;
+        var x2 = x0$1.$$und2$1;
+        var x3 = x0$1.$$und3$1;
+        return $$this$1.apply__O__O__O__O(x1$2, x2, x3)
       } else {
         throw new $c_s_MatchError().init___O(x0$1)
       }
@@ -2372,6 +2598,16 @@ var $h_s_LowPriorityImplicits = (function() {
   /*<skip>*/
 });
 $h_s_LowPriorityImplicits.prototype = $c_s_LowPriorityImplicits.prototype;
+$c_s_LowPriorityImplicits.prototype.wrapRefArray__AO__scm_WrappedArray = (function(xs) {
+  if ((xs === null)) {
+    return null
+  } else if ((xs.u["length"] === 0)) {
+    var this$1 = $m_scm_WrappedArray$();
+    return this$1.EmptyWrappedArray$1
+  } else {
+    return new $c_scm_WrappedArray$ofRef().init___AO(xs)
+  }
+});
 $c_s_LowPriorityImplicits.prototype.genericWrapArray__O__scm_WrappedArray = (function(xs) {
   return ((xs === null) ? null : $m_scm_WrappedArray$().make__O__scm_WrappedArray(xs))
 });
@@ -2456,6 +2692,25 @@ var $s_s_Product2$class__productElement__s_Product2__I__O = (function($$this, n)
     }
     case 1: {
       return $$this.$$und2$f;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + n))
+    }
+  }
+});
+var $s_s_Product3$class__productElement__s_Product3__I__O = (function($$this, n) {
+  switch (n) {
+    case 0: {
+      return $$this.$$und1$1;
+      break
+    }
+    case 1: {
+      return $$this.$$und2$1;
+      break
+    }
+    case 2: {
+      return $$this.$$und3$1;
       break
     }
     default: {
@@ -4225,6 +4480,34 @@ var $m_sci_WrappedString$ = (function() {
     $n_sci_WrappedString$ = new $c_sci_WrappedString$().init___()
   };
   return $n_sci_WrappedString$
+});
+/** @constructor */
+var $c_scm_ArrayOps$ofRef$ = (function() {
+  $c_O.call(this)
+});
+$c_scm_ArrayOps$ofRef$.prototype = new $h_O();
+$c_scm_ArrayOps$ofRef$.prototype.constructor = $c_scm_ArrayOps$ofRef$;
+/** @constructor */
+var $h_scm_ArrayOps$ofRef$ = (function() {
+  /*<skip>*/
+});
+$h_scm_ArrayOps$ofRef$.prototype = $c_scm_ArrayOps$ofRef$.prototype;
+$c_scm_ArrayOps$ofRef$.prototype.newBuilder$extension__AO__scm_ArrayBuilder$ofRef = (function($$this) {
+  return new $c_scm_ArrayBuilder$ofRef().init___s_reflect_ClassTag($m_s_reflect_ClassTag$().apply__jl_Class__s_reflect_ClassTag($m_sr_ScalaRunTime$().arrayElementClass__O__jl_Class($objectGetClass($$this))))
+});
+var $d_scm_ArrayOps$ofRef$ = new $TypeData().initClass({
+  scm_ArrayOps$ofRef$: 0
+}, false, "scala.collection.mutable.ArrayOps$ofRef$", {
+  scm_ArrayOps$ofRef$: 1,
+  O: 1
+});
+$c_scm_ArrayOps$ofRef$.prototype.$classData = $d_scm_ArrayOps$ofRef$;
+var $n_scm_ArrayOps$ofRef$ = (void 0);
+var $m_scm_ArrayOps$ofRef$ = (function() {
+  if ((!$n_scm_ArrayOps$ofRef$)) {
+    $n_scm_ArrayOps$ofRef$ = new $c_scm_ArrayOps$ofRef$().init___()
+  };
+  return $n_scm_ArrayOps$ofRef$
 });
 var $s_scm_Builder$class__sizeHint__scm_Builder__sc_TraversableLike__V = (function($$this, coll) {
   if ($is_sc_IndexedSeqLike(coll)) {
@@ -5997,6 +6280,80 @@ var $m_sr_ScalaRunTime$ = (function() {
   return $n_sr_ScalaRunTime$
 });
 /** @constructor */
+var $c_sr_Statics$ = (function() {
+  $c_O.call(this)
+});
+$c_sr_Statics$.prototype = new $h_O();
+$c_sr_Statics$.prototype.constructor = $c_sr_Statics$;
+/** @constructor */
+var $h_sr_Statics$ = (function() {
+  /*<skip>*/
+});
+$h_sr_Statics$.prototype = $c_sr_Statics$.prototype;
+$c_sr_Statics$.prototype.mixLast__I__I__I = (function(hash, data) {
+  var k = data;
+  k = $imul((-862048943), k);
+  k = $m_jl_Integer$().rotateLeft__I__I__I(k, 15);
+  k = $imul(461845907, k);
+  return (hash ^ k)
+});
+$c_sr_Statics$.prototype.floatHash__F__I = (function(fv) {
+  return (fv | 0)
+});
+$c_sr_Statics$.prototype.doubleHash__D__I = (function(dv) {
+  return (dv | 0)
+});
+$c_sr_Statics$.prototype.anyHash__O__I = (function(x) {
+  if ((x === null)) {
+    return 0
+  } else if ($is_sjsr_RuntimeLong(x)) {
+    var x3 = $uJ(x);
+    return this.longHash__J__I(x3)
+  } else if (((typeof x) === "number")) {
+    var x4 = $uD(x);
+    return this.doubleHash__D__I(x4)
+  } else if ($isFloat(x)) {
+    var x5 = $uF(x);
+    return this.floatHash__F__I(x5)
+  } else {
+    return $objectHashCode(x)
+  }
+});
+$c_sr_Statics$.prototype.avalanche__I__I = (function(h0) {
+  var h = h0;
+  h = (h ^ ((h >>> 16) | 0));
+  h = $imul((-2048144789), h);
+  h = (h ^ ((h >>> 13) | 0));
+  h = $imul((-1028477387), h);
+  h = (h ^ ((h >>> 16) | 0));
+  return h
+});
+$c_sr_Statics$.prototype.mix__I__I__I = (function(hash, data) {
+  var h = this.mixLast__I__I__I(hash, data);
+  h = $m_jl_Integer$().rotateLeft__I__I__I(h, 13);
+  return (((-430675100) + $imul(5, h)) | 0)
+});
+$c_sr_Statics$.prototype.longHash__J__I = (function(lv) {
+  return lv.toInt__I()
+});
+$c_sr_Statics$.prototype.finalizeHash__I__I__I = (function(hash, length) {
+  return this.avalanche__I__I((hash ^ length))
+});
+var $d_sr_Statics$ = new $TypeData().initClass({
+  sr_Statics$: 0
+}, false, "scala.runtime.Statics$", {
+  sr_Statics$: 1,
+  O: 1
+});
+$c_sr_Statics$.prototype.$classData = $d_sr_Statics$;
+var $n_sr_Statics$ = (void 0);
+var $m_sr_Statics$ = (function() {
+  if ((!$n_sr_Statics$)) {
+    $n_sr_Statics$ = new $c_sr_Statics$().init___()
+  };
+  return $n_sr_Statics$
+});
+/** @constructor */
 var $c_Lupickle_Knot$R = (function() {
   $c_O.call(this);
   this.$$undread$1 = null
@@ -6023,6 +6380,33 @@ var $d_Lupickle_Knot$R = new $TypeData().initClass({
   Lupickle_Reader: 1
 });
 $c_Lupickle_Knot$R.prototype.$classData = $d_Lupickle_Knot$R;
+/** @constructor */
+var $c_Lupickle_Knot$W = (function() {
+  $c_O.call(this);
+  this.$$undwrite$1 = null
+});
+$c_Lupickle_Knot$W.prototype = new $h_O();
+$c_Lupickle_Knot$W.prototype.constructor = $c_Lupickle_Knot$W;
+/** @constructor */
+var $h_Lupickle_Knot$W = (function() {
+  /*<skip>*/
+});
+$h_Lupickle_Knot$W.prototype = $c_Lupickle_Knot$W.prototype;
+$c_Lupickle_Knot$W.prototype.init___F1 = (function(_write) {
+  this.$$undwrite$1 = _write;
+  return this
+});
+$c_Lupickle_Knot$W.prototype.write0__F1 = (function() {
+  return this.$$undwrite$1
+});
+var $d_Lupickle_Knot$W = new $TypeData().initClass({
+  Lupickle_Knot$W: 0
+}, false, "upickle.Knot$W", {
+  Lupickle_Knot$W: 1,
+  O: 1,
+  Lupickle_Writer: 1
+});
+$c_Lupickle_Knot$W.prototype.$classData = $d_Lupickle_Knot$W;
 /** @constructor */
 var $c_Lupickle_Reader$$anon$3 = (function() {
   $c_O.call(this);
@@ -6942,6 +7326,23 @@ $c_sr_AbstractFunction2.prototype.toString__T = (function() {
   return "<function2>"
 });
 /** @constructor */
+var $c_sr_AbstractFunction3 = (function() {
+  $c_O.call(this)
+});
+$c_sr_AbstractFunction3.prototype = new $h_O();
+$c_sr_AbstractFunction3.prototype.constructor = $c_sr_AbstractFunction3;
+/** @constructor */
+var $h_sr_AbstractFunction3 = (function() {
+  /*<skip>*/
+});
+$h_sr_AbstractFunction3.prototype = $c_sr_AbstractFunction3.prototype;
+$c_sr_AbstractFunction3.prototype.init___ = (function() {
+  return this
+});
+$c_sr_AbstractFunction3.prototype.toString__T = (function() {
+  return "<function3>"
+});
+/** @constructor */
 var $c_sr_BooleanRef = (function() {
   $c_O.call(this);
   this.elem$1 = false
@@ -7189,6 +7590,12 @@ $c_jl_Exception.prototype.init___ = (function() {
 $c_jl_Exception.prototype.init___T = (function(s) {
   $c_jl_Exception.prototype.init___T__jl_Throwable.call(this, s, null);
   return this
+});
+var $isArrayOf_jl_Float = (function(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.jl_Float)))
+});
+var $asArrayOf_jl_Float = (function(obj, depth) {
+  return (($isArrayOf_jl_Float(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.lang.Float;", depth))
 });
 var $d_jl_Float = new $TypeData().initClass({
   jl_Float: 0
@@ -9385,6 +9792,34 @@ var $d_sjsr_AnonFunction2 = new $TypeData().initClass({
 });
 $c_sjsr_AnonFunction2.prototype.$classData = $d_sjsr_AnonFunction2;
 /** @constructor */
+var $c_sjsr_AnonFunction3 = (function() {
+  $c_sr_AbstractFunction3.call(this);
+  this.f$2 = null
+});
+$c_sjsr_AnonFunction3.prototype = new $h_sr_AbstractFunction3();
+$c_sjsr_AnonFunction3.prototype.constructor = $c_sjsr_AnonFunction3;
+/** @constructor */
+var $h_sjsr_AnonFunction3 = (function() {
+  /*<skip>*/
+});
+$h_sjsr_AnonFunction3.prototype = $c_sjsr_AnonFunction3.prototype;
+$c_sjsr_AnonFunction3.prototype.init___sjs_js_Function3 = (function(f) {
+  this.f$2 = f;
+  return this
+});
+$c_sjsr_AnonFunction3.prototype.apply__O__O__O__O = (function(arg1, arg2, arg3) {
+  return (0, this.f$2)(arg1, arg2, arg3)
+});
+var $d_sjsr_AnonFunction3 = new $TypeData().initClass({
+  sjsr_AnonFunction3: 0
+}, false, "scala.scalajs.runtime.AnonFunction3", {
+  sjsr_AnonFunction3: 1,
+  sr_AbstractFunction3: 1,
+  O: 1,
+  F3: 1
+});
+$c_sjsr_AnonFunction3.prototype.$classData = $d_sjsr_AnonFunction3;
+/** @constructor */
 var $c_sjsr_RuntimeLong = (function() {
   $c_jl_Number.call(this);
   this.l$2 = 0;
@@ -11281,6 +11716,58 @@ var $d_Lautowire_Core$Request = new $TypeData().initClass({
 });
 $c_Lautowire_Core$Request.prototype.$classData = $d_Lautowire_Core$Request;
 /** @constructor */
+var $c_Lclient_CommentAction$$anonfun$delete$2 = (function() {
+  $c_sr_AbstractFunction1.call(this)
+});
+$c_Lclient_CommentAction$$anonfun$delete$2.prototype = new $h_sr_AbstractFunction1();
+$c_Lclient_CommentAction$$anonfun$delete$2.prototype.constructor = $c_Lclient_CommentAction$$anonfun$delete$2;
+/** @constructor */
+var $h_Lclient_CommentAction$$anonfun$delete$2 = (function() {
+  /*<skip>*/
+});
+$h_Lclient_CommentAction$$anonfun$delete$2.prototype = $c_Lclient_CommentAction$$anonfun$delete$2.prototype;
+$c_Lclient_CommentAction$$anonfun$delete$2.prototype.apply__O__O = (function(v1) {
+  return this.apply__T__sc_Seq($as_T(v1))
+});
+$c_Lclient_CommentAction$$anonfun$delete$2.prototype.apply__T__sc_Seq = (function(x$3) {
+  var this$1 = $m_Lclient_PostClient$();
+  new $c_Lautowire_ClientProxy().init___Lautowire_Client(this$1).self$1;
+  var this$5 = $m_Lupickle_package$();
+  var jsx$1 = $m_Lupickle_Internal$();
+  var v1 = new $c_Lupickle_Knot$R().init___s_PartialFunction(null);
+  var this$3 = $m_Lupickle_Internal$();
+  var f = new $c_sjsr_AnonFunction3().init___sjs_js_Function3((function(id$2, author$2, text$2) {
+    var id = $uI(id$2);
+    var author = $as_T(author$2);
+    var text = $as_T(text$2);
+    return new $c_Lshared_model_Comment().init___I__T__T(id, author, text)
+  }));
+  var names = $asArrayOf_T($m_s_Array$().apply__sc_Seq__s_reflect_ClassTag__O(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["id", "author", "text"]), $m_s_reflect_ClassTag$().apply__jl_Class__s_reflect_ClassTag($d_T.getClassOf())), 1);
+  var defaults = $asArrayOf_Lupickle_Js$Value($m_s_Array$().apply__sc_Seq__s_reflect_ClassTag__O(new $c_sjs_js_WrappedArray().init___sjs_js_Array([null, null, null]), $m_s_reflect_ClassTag$().apply__jl_Class__s_reflect_ClassTag($d_Lupickle_Js$Value.getClassOf())), 1);
+  var evidence$513 = $m_Lupickle_package$().IntRW$1;
+  var evidence$514 = $as_Lupickle_Reader($m_Lupickle_package$().StringRW$1);
+  var evidence$515 = $as_Lupickle_Reader($m_Lupickle_package$().StringRW$1);
+  var x$macro$8 = $s_Lupickle_GeneratedInternal$class__Case3R__Lupickle_GeneratedInternal__F3__AT__ALupickle_Js$Value__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader(this$3, f, names, defaults, evidence$513, evidence$514, evidence$515);
+  v1.$$undread$1 = $s_Lupickle_Reader$class__read__Lupickle_Reader__s_PartialFunction(x$macro$8);
+  var evidence$7 = jsx$1.validateReader__T__Lupickle_Reader__Lupickle_Reader("Tagged Object shared.model.Comment", x$macro$8);
+  var this$4 = $m_s_Predef$();
+  var cbf = new $c_s_LowPriorityImplicits$$anon$4().init___s_LowPriorityImplicits(this$4);
+  var evidence$1 = $s_Lupickle_Implicits$class__SeqishR__Lupickle_Implicits__Lupickle_Reader__scg_CanBuildFrom__Lupickle_Reader(this$5, evidence$7, cbf);
+  var this$7 = $m_Lupickle_package$();
+  return $as_sc_Seq($s_Lupickle_Types$class__read__Lupickle_Types__T__Lupickle_Reader__O(this$7, x$3, evidence$1))
+});
+var $d_Lclient_CommentAction$$anonfun$delete$2 = new $TypeData().initClass({
+  Lclient_CommentAction$$anonfun$delete$2: 0
+}, false, "client.CommentAction$$anonfun$delete$2", {
+  Lclient_CommentAction$$anonfun$delete$2: 1,
+  sr_AbstractFunction1: 1,
+  O: 1,
+  F1: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lclient_CommentAction$$anonfun$delete$2.prototype.$classData = $d_Lclient_CommentAction$$anonfun$delete$2;
+/** @constructor */
 var $c_Lclient_CommentAction$$anonfun$list$2 = (function() {
   $c_sr_AbstractFunction1.call(this)
 });
@@ -11301,16 +11788,18 @@ $c_Lclient_CommentAction$$anonfun$list$2.prototype.apply__T__sc_Seq = (function(
   var jsx$1 = $m_Lupickle_Internal$();
   var v1 = new $c_Lupickle_Knot$R().init___s_PartialFunction(null);
   var this$3 = $m_Lupickle_Internal$();
-  var f = new $c_sjsr_AnonFunction2().init___sjs_js_Function2((function(author$2, text$2) {
+  var f = new $c_sjsr_AnonFunction3().init___sjs_js_Function3((function(id$2, author$2, text$2) {
+    var id = $uI(id$2);
     var author = $as_T(author$2);
     var text = $as_T(text$2);
-    return new $c_Lshared_model_Comment().init___T__T(author, text)
+    return new $c_Lshared_model_Comment().init___I__T__T(id, author, text)
   }));
-  var names = $asArrayOf_T($m_s_Array$().apply__sc_Seq__s_reflect_ClassTag__O(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["author", "text"]), $m_s_reflect_ClassTag$().apply__jl_Class__s_reflect_ClassTag($d_T.getClassOf())), 1);
-  var defaults = $asArrayOf_Lupickle_Js$Value($m_s_Array$().apply__sc_Seq__s_reflect_ClassTag__O(new $c_sjs_js_WrappedArray().init___sjs_js_Array([null, null]), $m_s_reflect_ClassTag$().apply__jl_Class__s_reflect_ClassTag($d_Lupickle_Js$Value.getClassOf())), 1);
-  var evidence$509 = $as_Lupickle_Reader($m_Lupickle_package$().StringRW$1);
-  var evidence$510 = $as_Lupickle_Reader($m_Lupickle_package$().StringRW$1);
-  var x$macro$2 = $s_Lupickle_GeneratedInternal$class__Case2R__Lupickle_GeneratedInternal__F2__AT__ALupickle_Js$Value__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader(this$3, f, names, defaults, evidence$509, evidence$510);
+  var names = $asArrayOf_T($m_s_Array$().apply__sc_Seq__s_reflect_ClassTag__O(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["id", "author", "text"]), $m_s_reflect_ClassTag$().apply__jl_Class__s_reflect_ClassTag($d_T.getClassOf())), 1);
+  var defaults = $asArrayOf_Lupickle_Js$Value($m_s_Array$().apply__sc_Seq__s_reflect_ClassTag__O(new $c_sjs_js_WrappedArray().init___sjs_js_Array([null, null, null]), $m_s_reflect_ClassTag$().apply__jl_Class__s_reflect_ClassTag($d_Lupickle_Js$Value.getClassOf())), 1);
+  var evidence$513 = $m_Lupickle_package$().IntRW$1;
+  var evidence$514 = $as_Lupickle_Reader($m_Lupickle_package$().StringRW$1);
+  var evidence$515 = $as_Lupickle_Reader($m_Lupickle_package$().StringRW$1);
+  var x$macro$2 = $s_Lupickle_GeneratedInternal$class__Case3R__Lupickle_GeneratedInternal__F3__AT__ALupickle_Js$Value__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader(this$3, f, names, defaults, evidence$513, evidence$514, evidence$515);
   v1.$$undread$1 = $s_Lupickle_Reader$class__read__Lupickle_Reader__s_PartialFunction(x$macro$2);
   var evidence$7 = jsx$1.validateReader__T__Lupickle_Reader__Lupickle_Reader("Tagged Object shared.model.Comment", x$macro$2);
   var this$4 = $m_s_Predef$();
@@ -11331,8 +11820,61 @@ var $d_Lclient_CommentAction$$anonfun$list$2 = new $TypeData().initClass({
 });
 $c_Lclient_CommentAction$$anonfun$list$2.prototype.$classData = $d_Lclient_CommentAction$$anonfun$list$2;
 /** @constructor */
+var $c_Lclient_CommentAction$$anonfun$update$3 = (function() {
+  $c_sr_AbstractFunction1.call(this)
+});
+$c_Lclient_CommentAction$$anonfun$update$3.prototype = new $h_sr_AbstractFunction1();
+$c_Lclient_CommentAction$$anonfun$update$3.prototype.constructor = $c_Lclient_CommentAction$$anonfun$update$3;
+/** @constructor */
+var $h_Lclient_CommentAction$$anonfun$update$3 = (function() {
+  /*<skip>*/
+});
+$h_Lclient_CommentAction$$anonfun$update$3.prototype = $c_Lclient_CommentAction$$anonfun$update$3.prototype;
+$c_Lclient_CommentAction$$anonfun$update$3.prototype.apply__O__O = (function(v1) {
+  return this.apply__T__sc_Seq($as_T(v1))
+});
+$c_Lclient_CommentAction$$anonfun$update$3.prototype.apply__T__sc_Seq = (function(x$2) {
+  var this$1 = $m_Lclient_PostClient$();
+  new $c_Lautowire_ClientProxy().init___Lautowire_Client(this$1).self$1;
+  var this$5 = $m_Lupickle_package$();
+  var jsx$1 = $m_Lupickle_Internal$();
+  var v1 = new $c_Lupickle_Knot$R().init___s_PartialFunction(null);
+  var this$3 = $m_Lupickle_Internal$();
+  var f = new $c_sjsr_AnonFunction3().init___sjs_js_Function3((function(id$2, author$2, text$2) {
+    var id = $uI(id$2);
+    var author = $as_T(author$2);
+    var text = $as_T(text$2);
+    return new $c_Lshared_model_Comment().init___I__T__T(id, author, text)
+  }));
+  var names = $asArrayOf_T($m_s_Array$().apply__sc_Seq__s_reflect_ClassTag__O(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["id", "author", "text"]), $m_s_reflect_ClassTag$().apply__jl_Class__s_reflect_ClassTag($d_T.getClassOf())), 1);
+  var defaults = $asArrayOf_Lupickle_Js$Value($m_s_Array$().apply__sc_Seq__s_reflect_ClassTag__O(new $c_sjs_js_WrappedArray().init___sjs_js_Array([null, null, null]), $m_s_reflect_ClassTag$().apply__jl_Class__s_reflect_ClassTag($d_Lupickle_Js$Value.getClassOf())), 1);
+  var evidence$513 = $m_Lupickle_package$().IntRW$1;
+  var evidence$514 = $as_Lupickle_Reader($m_Lupickle_package$().StringRW$1);
+  var evidence$515 = $as_Lupickle_Reader($m_Lupickle_package$().StringRW$1);
+  var x$macro$6 = $s_Lupickle_GeneratedInternal$class__Case3R__Lupickle_GeneratedInternal__F3__AT__ALupickle_Js$Value__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader(this$3, f, names, defaults, evidence$513, evidence$514, evidence$515);
+  v1.$$undread$1 = $s_Lupickle_Reader$class__read__Lupickle_Reader__s_PartialFunction(x$macro$6);
+  var evidence$7 = jsx$1.validateReader__T__Lupickle_Reader__Lupickle_Reader("Tagged Object shared.model.Comment", x$macro$6);
+  var this$4 = $m_s_Predef$();
+  var cbf = new $c_s_LowPriorityImplicits$$anon$4().init___s_LowPriorityImplicits(this$4);
+  var evidence$1 = $s_Lupickle_Implicits$class__SeqishR__Lupickle_Implicits__Lupickle_Reader__scg_CanBuildFrom__Lupickle_Reader(this$5, evidence$7, cbf);
+  var this$7 = $m_Lupickle_package$();
+  return $as_sc_Seq($s_Lupickle_Types$class__read__Lupickle_Types__T__Lupickle_Reader__O(this$7, x$2, evidence$1))
+});
+var $d_Lclient_CommentAction$$anonfun$update$3 = new $TypeData().initClass({
+  Lclient_CommentAction$$anonfun$update$3: 0
+}, false, "client.CommentAction$$anonfun$update$3", {
+  Lclient_CommentAction$$anonfun$update$3: 1,
+  sr_AbstractFunction1: 1,
+  O: 1,
+  F1: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lclient_CommentAction$$anonfun$update$3.prototype.$classData = $d_Lclient_CommentAction$$anonfun$update$3;
+/** @constructor */
 var $c_Lshared_model_Comment = (function() {
   $c_O.call(this);
+  this.id$1 = 0;
   this.author$1 = null;
   this.text$1 = null
 });
@@ -11343,23 +11885,22 @@ var $h_Lshared_model_Comment = (function() {
   /*<skip>*/
 });
 $h_Lshared_model_Comment.prototype = $c_Lshared_model_Comment.prototype;
-$c_Lshared_model_Comment.prototype.init___T__T = (function(author, text) {
-  this.author$1 = author;
-  this.text$1 = text;
-  return this
-});
 $c_Lshared_model_Comment.prototype.productPrefix__T = (function() {
   return "Comment"
 });
+$c_Lshared_model_Comment.prototype.init___T__T = (function(author, text) {
+  $c_Lshared_model_Comment.prototype.init___I__T__T.call(this, 0, author, text);
+  return this
+});
 $c_Lshared_model_Comment.prototype.productArity__I = (function() {
-  return 2
+  return 3
 });
 $c_Lshared_model_Comment.prototype.equals__O__Z = (function(x$1) {
   if ((this === x$1)) {
     return true
   } else if ($is_Lshared_model_Comment(x$1)) {
     var Comment$1 = $as_Lshared_model_Comment(x$1);
-    return ((this.author$1 === Comment$1.author$1) && (this.text$1 === Comment$1.text$1))
+    return (((this.id$1 === Comment$1.id$1) && (this.author$1 === Comment$1.author$1)) && (this.text$1 === Comment$1.text$1))
   } else {
     return false
   }
@@ -11367,10 +11908,14 @@ $c_Lshared_model_Comment.prototype.equals__O__Z = (function(x$1) {
 $c_Lshared_model_Comment.prototype.productElement__I__O = (function(x$1) {
   switch (x$1) {
     case 0: {
-      return this.author$1;
+      return this.id$1;
       break
     }
     case 1: {
+      return this.author$1;
+      break
+    }
+    case 2: {
       return this.text$1;
       break
     }
@@ -11383,11 +11928,20 @@ $c_Lshared_model_Comment.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
 });
 $c_Lshared_model_Comment.prototype.hashCode__I = (function() {
-  var this$2 = $m_s_util_hashing_MurmurHash3$();
-  return this$2.productHash__s_Product__I__I(this, (-889275714))
+  var acc = (-889275714);
+  acc = $m_sr_Statics$().mix__I__I__I(acc, this.id$1);
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().anyHash__O__I(this.author$1));
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().anyHash__O__I(this.text$1));
+  return $m_sr_Statics$().finalizeHash__I__I__I(acc, 3)
 });
 $c_Lshared_model_Comment.prototype.productIterator__sc_Iterator = (function() {
   return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+$c_Lshared_model_Comment.prototype.init___I__T__T = (function(id, author, text) {
+  this.id$1 = id;
+  this.author$1 = author;
+  this.text$1 = text;
+  return this
 });
 var $is_Lshared_model_Comment = (function(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lshared_model_Comment)))
@@ -11412,6 +11966,47 @@ var $d_Lshared_model_Comment = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_Lshared_model_Comment.prototype.$classData = $d_Lshared_model_Comment;
+/** @constructor */
+var $c_Lshared_model_Comment$ = (function() {
+  $c_sr_AbstractFunction3.call(this)
+});
+$c_Lshared_model_Comment$.prototype = new $h_sr_AbstractFunction3();
+$c_Lshared_model_Comment$.prototype.constructor = $c_Lshared_model_Comment$;
+/** @constructor */
+var $h_Lshared_model_Comment$ = (function() {
+  /*<skip>*/
+});
+$h_Lshared_model_Comment$.prototype = $c_Lshared_model_Comment$.prototype;
+$c_Lshared_model_Comment$.prototype.unapply__Lshared_model_Comment__s_Option = (function(x$0) {
+  return ((x$0 === null) ? $m_s_None$() : new $c_s_Some().init___O(new $c_T3().init___O__O__O(x$0.id$1, x$0.author$1, x$0.text$1)))
+});
+$c_Lshared_model_Comment$.prototype.toString__T = (function() {
+  return "Comment"
+});
+$c_Lshared_model_Comment$.prototype.apply__O__O__O__O = (function(v1, v2, v3) {
+  var id = $uI(v1);
+  var author = $as_T(v2);
+  var text = $as_T(v3);
+  return new $c_Lshared_model_Comment().init___I__T__T(id, author, text)
+});
+var $d_Lshared_model_Comment$ = new $TypeData().initClass({
+  Lshared_model_Comment$: 0
+}, false, "shared.model.Comment$", {
+  Lshared_model_Comment$: 1,
+  sr_AbstractFunction3: 1,
+  O: 1,
+  F3: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lshared_model_Comment$.prototype.$classData = $d_Lshared_model_Comment$;
+var $n_Lshared_model_Comment$ = (void 0);
+var $m_Lshared_model_Comment$ = (function() {
+  if ((!$n_Lshared_model_Comment$)) {
+    $n_Lshared_model_Comment$ = new $c_Lshared_model_Comment$().init___()
+  };
+  return $n_Lshared_model_Comment$
+});
 /** @constructor */
 var $c_Lupickle_Implicits$$anonfun$MapW$1 = (function() {
   $c_sr_AbstractFunction1.call(this);
@@ -12157,6 +12752,18 @@ $c_s_Option.prototype.init___ = (function() {
 });
 $c_s_Option.prototype.isDefined__Z = (function() {
   return (!this.isEmpty__Z())
+});
+var $is_s_Option = (function(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.s_Option)))
+});
+var $as_s_Option = (function(obj) {
+  return (($is_s_Option(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.Option"))
+});
+var $isArrayOf_s_Option = (function(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.s_Option)))
+});
+var $asArrayOf_s_Option = (function(obj, depth) {
+  return (($isArrayOf_s_Option(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.Option;", depth))
 });
 /** @constructor */
 var $c_s_Predef$$anon$1 = (function() {
@@ -13393,9 +14000,49 @@ var $d_sr_ScalaRunTime$$anon$1 = new $TypeData().initClass({
 });
 $c_sr_ScalaRunTime$$anon$1.prototype.$classData = $d_sr_ScalaRunTime$$anon$1;
 /** @constructor */
+var $c_Lclient_CommentAction$$anonfun$delete$1 = (function() {
+  $c_sr_AbstractPartialFunction.call(this);
+  this.comp$3$2 = null
+});
+$c_Lclient_CommentAction$$anonfun$delete$1.prototype = new $h_sr_AbstractPartialFunction();
+$c_Lclient_CommentAction$$anonfun$delete$1.prototype.constructor = $c_Lclient_CommentAction$$anonfun$delete$1;
+/** @constructor */
+var $h_Lclient_CommentAction$$anonfun$delete$1 = (function() {
+  /*<skip>*/
+});
+$h_Lclient_CommentAction$$anonfun$delete$1.prototype = $c_Lclient_CommentAction$$anonfun$delete$1.prototype;
+$c_Lclient_CommentAction$$anonfun$delete$1.prototype.init___Lclient_RiactComponent = (function(comp$3) {
+  this.comp$3$2 = comp$3;
+  return this
+});
+$c_Lclient_CommentAction$$anonfun$delete$1.prototype.isDefinedAt__sc_Seq__Z = (function(x3) {
+  return true
+});
+$c_Lclient_CommentAction$$anonfun$delete$1.prototype.isDefinedAt__O__Z = (function(x) {
+  return this.isDefinedAt__sc_Seq__Z($as_sc_Seq(x))
+});
+$c_Lclient_CommentAction$$anonfun$delete$1.prototype.applyOrElse__O__F1__O = (function(x, default$2) {
+  return this.applyOrElse__sc_Seq__F1__O($as_sc_Seq(x), default$2)
+});
+$c_Lclient_CommentAction$$anonfun$delete$1.prototype.applyOrElse__sc_Seq__F1__O = (function(x3, default$2) {
+  $m_Lclient_CommentAction$().setComments__Lclient_RiactComponent__sc_Seq__V(this.comp$3$2, x3)
+});
+var $d_Lclient_CommentAction$$anonfun$delete$1 = new $TypeData().initClass({
+  Lclient_CommentAction$$anonfun$delete$1: 0
+}, false, "client.CommentAction$$anonfun$delete$1", {
+  Lclient_CommentAction$$anonfun$delete$1: 1,
+  sr_AbstractPartialFunction: 1,
+  O: 1,
+  F1: 1,
+  s_PartialFunction: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lclient_CommentAction$$anonfun$delete$1.prototype.$classData = $d_Lclient_CommentAction$$anonfun$delete$1;
+/** @constructor */
 var $c_Lclient_CommentAction$$anonfun$list$1 = (function() {
   $c_sr_AbstractPartialFunction.call(this);
-  this.c$1$2 = null
+  this.comp$1$2 = null
 });
 $c_Lclient_CommentAction$$anonfun$list$1.prototype = new $h_sr_AbstractPartialFunction();
 $c_Lclient_CommentAction$$anonfun$list$1.prototype.constructor = $c_Lclient_CommentAction$$anonfun$list$1;
@@ -13404,8 +14051,8 @@ var $h_Lclient_CommentAction$$anonfun$list$1 = (function() {
   /*<skip>*/
 });
 $h_Lclient_CommentAction$$anonfun$list$1.prototype = $c_Lclient_CommentAction$$anonfun$list$1.prototype;
-$c_Lclient_CommentAction$$anonfun$list$1.prototype.init___Lclient_RiactComponent = (function(c$1) {
-  this.c$1$2 = c$1;
+$c_Lclient_CommentAction$$anonfun$list$1.prototype.init___Lclient_RiactComponent = (function(comp$1) {
+  this.comp$1$2 = comp$1;
   return this
 });
 $c_Lclient_CommentAction$$anonfun$list$1.prototype.isDefinedAt__sc_Seq__Z = (function(x1) {
@@ -13418,42 +14065,7 @@ $c_Lclient_CommentAction$$anonfun$list$1.prototype.applyOrElse__O__F1__O = (func
   return this.applyOrElse__sc_Seq__F1__O($as_sc_Seq(x), default$2)
 });
 $c_Lclient_CommentAction$$anonfun$list$1.prototype.applyOrElse__sc_Seq__F1__O = (function(x1, default$2) {
-  if (x1.isEmpty__Z()) {
-    this.c$1$2["setState"]([]);
-    return (void 0)
-  } else {
-    var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(t$2) {
-      var t = $as_Lshared_model_Comment(t$2);
-      var s = t.author$1;
-      var s$1 = t.text$1;
-      return {
-        "author": s,
-        "text": s$1
-      }
-    }));
-    var this$3 = $m_sc_Seq$();
-    var $$this = $as_sc_GenTraversableOnce(x1.map__F1__scg_CanBuildFrom__O(jsx$1, this$3.ReusableCBFInstance$2));
-    var this$6 = $m_sjsr_package$();
-    if ($is_sjs_js_ArrayOps($$this)) {
-      var x2 = $as_sjs_js_ArrayOps($$this);
-      var state = x2.scala$scalajs$js$ArrayOps$$array$f
-    } else if ($is_sjs_js_WrappedArray($$this)) {
-      var x3 = $as_sjs_js_WrappedArray($$this);
-      var state = x3.array$6
-    } else {
-      var result = [];
-      $$this.foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1, result$1) {
-        return (function(x$2) {
-          return $uI(result$1["push"](x$2))
-        })
-      })(this$6, result)));
-      var state = result
-    };
-    this.c$1$2["setState"]({
-      "data": state
-    });
-    return (void 0)
-  }
+  $m_Lclient_CommentAction$().setComments__Lclient_RiactComponent__sc_Seq__V(this.comp$1$2, x1)
 });
 var $d_Lclient_CommentAction$$anonfun$list$1 = new $TypeData().initClass({
   Lclient_CommentAction$$anonfun$list$1: 0
@@ -13467,6 +14079,46 @@ var $d_Lclient_CommentAction$$anonfun$list$1 = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_Lclient_CommentAction$$anonfun$list$1.prototype.$classData = $d_Lclient_CommentAction$$anonfun$list$1;
+/** @constructor */
+var $c_Lclient_CommentAction$$anonfun$update$1 = (function() {
+  $c_sr_AbstractPartialFunction.call(this);
+  this.comp$2$2 = null
+});
+$c_Lclient_CommentAction$$anonfun$update$1.prototype = new $h_sr_AbstractPartialFunction();
+$c_Lclient_CommentAction$$anonfun$update$1.prototype.constructor = $c_Lclient_CommentAction$$anonfun$update$1;
+/** @constructor */
+var $h_Lclient_CommentAction$$anonfun$update$1 = (function() {
+  /*<skip>*/
+});
+$h_Lclient_CommentAction$$anonfun$update$1.prototype = $c_Lclient_CommentAction$$anonfun$update$1.prototype;
+$c_Lclient_CommentAction$$anonfun$update$1.prototype.init___Lclient_RiactComponent = (function(comp$2) {
+  this.comp$2$2 = comp$2;
+  return this
+});
+$c_Lclient_CommentAction$$anonfun$update$1.prototype.isDefinedAt__sc_Seq__Z = (function(x2) {
+  return true
+});
+$c_Lclient_CommentAction$$anonfun$update$1.prototype.isDefinedAt__O__Z = (function(x) {
+  return this.isDefinedAt__sc_Seq__Z($as_sc_Seq(x))
+});
+$c_Lclient_CommentAction$$anonfun$update$1.prototype.applyOrElse__O__F1__O = (function(x, default$2) {
+  return this.applyOrElse__sc_Seq__F1__O($as_sc_Seq(x), default$2)
+});
+$c_Lclient_CommentAction$$anonfun$update$1.prototype.applyOrElse__sc_Seq__F1__O = (function(x2, default$2) {
+  $m_Lclient_CommentAction$().setComments__Lclient_RiactComponent__sc_Seq__V(this.comp$2$2, x2)
+});
+var $d_Lclient_CommentAction$$anonfun$update$1 = new $TypeData().initClass({
+  Lclient_CommentAction$$anonfun$update$1: 0
+}, false, "client.CommentAction$$anonfun$update$1", {
+  Lclient_CommentAction$$anonfun$update$1: 1,
+  sr_AbstractPartialFunction: 1,
+  O: 1,
+  F1: 1,
+  s_PartialFunction: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lclient_CommentAction$$anonfun$update$1.prototype.$classData = $d_Lclient_CommentAction$$anonfun$update$1;
 /** @constructor */
 var $c_Ljava_io_PrintStream = (function() {
   $c_Ljava_io_FilterOutputStream.call(this);
@@ -13519,64 +14171,70 @@ var $asArrayOf_Ljava_io_PrintStream = (function(obj, depth) {
   return (($isArrayOf_Ljava_io_PrintStream(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.io.PrintStream;", depth))
 });
 /** @constructor */
-var $c_Lupickle_Generated$$anonfun$Tuple2R$1 = (function() {
+var $c_Lupickle_Generated$$anonfun$Tuple3R$1 = (function() {
   $c_sr_AbstractPartialFunction.call(this);
   this.$$outer$2 = null;
-  this.evidence$5$1$2 = null;
-  this.evidence$6$1$2 = null
+  this.evidence$10$1$2 = null;
+  this.evidence$11$1$2 = null;
+  this.evidence$12$1$2 = null
 });
-$c_Lupickle_Generated$$anonfun$Tuple2R$1.prototype = new $h_sr_AbstractPartialFunction();
-$c_Lupickle_Generated$$anonfun$Tuple2R$1.prototype.constructor = $c_Lupickle_Generated$$anonfun$Tuple2R$1;
+$c_Lupickle_Generated$$anonfun$Tuple3R$1.prototype = new $h_sr_AbstractPartialFunction();
+$c_Lupickle_Generated$$anonfun$Tuple3R$1.prototype.constructor = $c_Lupickle_Generated$$anonfun$Tuple3R$1;
 /** @constructor */
-var $h_Lupickle_Generated$$anonfun$Tuple2R$1 = (function() {
+var $h_Lupickle_Generated$$anonfun$Tuple3R$1 = (function() {
   /*<skip>*/
 });
-$h_Lupickle_Generated$$anonfun$Tuple2R$1.prototype = $c_Lupickle_Generated$$anonfun$Tuple2R$1.prototype;
-$c_Lupickle_Generated$$anonfun$Tuple2R$1.prototype.applyOrElse__Lupickle_Js$Value__F1__O = (function(x4, default$2) {
-  if ($is_Lupickle_Js$Arr(x4)) {
-    var x2 = ((x4 === null) ? null : $as_Lupickle_Js$Arr(x4).value$1);
-    if (((x2 !== null) && (x2.lengthCompare__I__I(2) === 0))) {
+$h_Lupickle_Generated$$anonfun$Tuple3R$1.prototype = $c_Lupickle_Generated$$anonfun$Tuple3R$1.prototype;
+$c_Lupickle_Generated$$anonfun$Tuple3R$1.prototype.applyOrElse__Lupickle_Js$Value__F1__O = (function(x6, default$2) {
+  if ($is_Lupickle_Js$Arr(x6)) {
+    var x2 = ((x6 === null) ? null : $as_Lupickle_Js$Arr(x6).value$1);
+    if (((x2 !== null) && (x2.lengthCompare__I__I(3) === 0))) {
       var x1$2 = $as_Lupickle_Js$Value(x2.apply__I__O(0));
       var x2$2 = $as_Lupickle_Js$Value(x2.apply__I__O(1));
+      var x3 = $as_Lupickle_Js$Value(x2.apply__I__O(2));
       var this$1 = this.$$outer$2;
-      var evidence$4 = this.evidence$5$1$2;
-      var jsx$1 = $s_Lupickle_Types$class__readJs__Lupickle_Types__Lupickle_Js$Value__Lupickle_Reader__O(this$1, x1$2, evidence$4);
+      var evidence$4 = this.evidence$10$1$2;
+      var jsx$2 = $s_Lupickle_Types$class__readJs__Lupickle_Types__Lupickle_Js$Value__Lupickle_Reader__O(this$1, x1$2, evidence$4);
       var this$2 = this.$$outer$2;
-      var evidence$4$1 = this.evidence$6$1$2;
-      return new $c_T2().init___O__O(jsx$1, $s_Lupickle_Types$class__readJs__Lupickle_Types__Lupickle_Js$Value__Lupickle_Reader__O(this$2, x2$2, evidence$4$1))
+      var evidence$4$1 = this.evidence$11$1$2;
+      var jsx$1 = $s_Lupickle_Types$class__readJs__Lupickle_Types__Lupickle_Js$Value__Lupickle_Reader__O(this$2, x2$2, evidence$4$1);
+      var this$3 = this.$$outer$2;
+      var evidence$4$2 = this.evidence$12$1$2;
+      return new $c_T3().init___O__O__O(jsx$2, jsx$1, $s_Lupickle_Types$class__readJs__Lupickle_Types__Lupickle_Js$Value__Lupickle_Reader__O(this$3, x3, evidence$4$2))
     }
   };
-  return default$2.apply__O__O(x4)
+  return default$2.apply__O__O(x6)
 });
-$c_Lupickle_Generated$$anonfun$Tuple2R$1.prototype.isDefinedAt__O__Z = (function(x) {
+$c_Lupickle_Generated$$anonfun$Tuple3R$1.prototype.isDefinedAt__O__Z = (function(x) {
   return this.isDefinedAt__Lupickle_Js$Value__Z($as_Lupickle_Js$Value(x))
 });
-$c_Lupickle_Generated$$anonfun$Tuple2R$1.prototype.applyOrElse__O__F1__O = (function(x, default$2) {
+$c_Lupickle_Generated$$anonfun$Tuple3R$1.prototype.applyOrElse__O__F1__O = (function(x, default$2) {
   return this.applyOrElse__Lupickle_Js$Value__F1__O($as_Lupickle_Js$Value(x), default$2)
 });
-$c_Lupickle_Generated$$anonfun$Tuple2R$1.prototype.isDefinedAt__Lupickle_Js$Value__Z = (function(x4) {
-  if ($is_Lupickle_Js$Arr(x4)) {
-    var x2 = ((x4 === null) ? null : $as_Lupickle_Js$Arr(x4).value$1);
-    if (((x2 !== null) && (x2.lengthCompare__I__I(2) === 0))) {
+$c_Lupickle_Generated$$anonfun$Tuple3R$1.prototype.isDefinedAt__Lupickle_Js$Value__Z = (function(x6) {
+  if ($is_Lupickle_Js$Arr(x6)) {
+    var x2 = ((x6 === null) ? null : $as_Lupickle_Js$Arr(x6).value$1);
+    if (((x2 !== null) && (x2.lengthCompare__I__I(3) === 0))) {
       return true
     }
   };
   return false
 });
-$c_Lupickle_Generated$$anonfun$Tuple2R$1.prototype.init___Lupickle_Generated__Lupickle_Reader__Lupickle_Reader = (function($$outer, evidence$5$1, evidence$6$1) {
+$c_Lupickle_Generated$$anonfun$Tuple3R$1.prototype.init___Lupickle_Generated__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader = (function($$outer, evidence$10$1, evidence$11$1, evidence$12$1) {
   if (($$outer === null)) {
     throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
   } else {
     this.$$outer$2 = $$outer
   };
-  this.evidence$5$1$2 = evidence$5$1;
-  this.evidence$6$1$2 = evidence$6$1;
+  this.evidence$10$1$2 = evidence$10$1;
+  this.evidence$11$1$2 = evidence$11$1;
+  this.evidence$12$1$2 = evidence$12$1;
   return this
 });
-var $d_Lupickle_Generated$$anonfun$Tuple2R$1 = new $TypeData().initClass({
-  Lupickle_Generated$$anonfun$Tuple2R$1: 0
-}, false, "upickle.Generated$$anonfun$Tuple2R$1", {
-  Lupickle_Generated$$anonfun$Tuple2R$1: 1,
+var $d_Lupickle_Generated$$anonfun$Tuple3R$1 = new $TypeData().initClass({
+  Lupickle_Generated$$anonfun$Tuple3R$1: 0
+}, false, "upickle.Generated$$anonfun$Tuple3R$1", {
+  Lupickle_Generated$$anonfun$Tuple3R$1: 1,
   sr_AbstractPartialFunction: 1,
   O: 1,
   F1: 1,
@@ -13584,56 +14242,59 @@ var $d_Lupickle_Generated$$anonfun$Tuple2R$1 = new $TypeData().initClass({
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lupickle_Generated$$anonfun$Tuple2R$1.prototype.$classData = $d_Lupickle_Generated$$anonfun$Tuple2R$1;
+$c_Lupickle_Generated$$anonfun$Tuple3R$1.prototype.$classData = $d_Lupickle_Generated$$anonfun$Tuple3R$1;
 /** @constructor */
-var $c_Lupickle_GeneratedInternal$$anonfun$Case2R$1 = (function() {
+var $c_Lupickle_GeneratedInternal$$anonfun$Case3R$1 = (function() {
   $c_sr_AbstractPartialFunction.call(this);
   this.$$outer$2 = null;
-  this.f$2$2 = null;
-  this.evidence$509$1$2 = null;
-  this.evidence$510$1$2 = null
+  this.f$3$2 = null;
+  this.evidence$513$1$2 = null;
+  this.evidence$514$1$2 = null;
+  this.evidence$515$1$2 = null
 });
-$c_Lupickle_GeneratedInternal$$anonfun$Case2R$1.prototype = new $h_sr_AbstractPartialFunction();
-$c_Lupickle_GeneratedInternal$$anonfun$Case2R$1.prototype.constructor = $c_Lupickle_GeneratedInternal$$anonfun$Case2R$1;
+$c_Lupickle_GeneratedInternal$$anonfun$Case3R$1.prototype = new $h_sr_AbstractPartialFunction();
+$c_Lupickle_GeneratedInternal$$anonfun$Case3R$1.prototype.constructor = $c_Lupickle_GeneratedInternal$$anonfun$Case3R$1;
 /** @constructor */
-var $h_Lupickle_GeneratedInternal$$anonfun$Case2R$1 = (function() {
+var $h_Lupickle_GeneratedInternal$$anonfun$Case3R$1 = (function() {
   /*<skip>*/
 });
-$h_Lupickle_GeneratedInternal$$anonfun$Case2R$1.prototype = $c_Lupickle_GeneratedInternal$$anonfun$Case2R$1.prototype;
-$c_Lupickle_GeneratedInternal$$anonfun$Case2R$1.prototype.init___Lupickle_GeneratedInternal__F2__Lupickle_Reader__Lupickle_Reader = (function($$outer, f$2, evidence$509$1, evidence$510$1) {
+$h_Lupickle_GeneratedInternal$$anonfun$Case3R$1.prototype = $c_Lupickle_GeneratedInternal$$anonfun$Case3R$1.prototype;
+$c_Lupickle_GeneratedInternal$$anonfun$Case3R$1.prototype.init___Lupickle_GeneratedInternal__F3__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader = (function($$outer, f$3, evidence$513$1, evidence$514$1, evidence$515$1) {
   if (($$outer === null)) {
     throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
   } else {
     this.$$outer$2 = $$outer
   };
-  this.f$2$2 = f$2;
-  this.evidence$509$1$2 = evidence$509$1;
-  this.evidence$510$1$2 = evidence$510$1;
+  this.f$3$2 = f$3;
+  this.evidence$513$1$2 = evidence$513$1;
+  this.evidence$514$1$2 = evidence$514$1;
+  this.evidence$515$1$2 = evidence$515$1;
   return this
 });
-$c_Lupickle_GeneratedInternal$$anonfun$Case2R$1.prototype.applyOrElse__Lupickle_Js$Value__F1__O = (function(x24, default$2) {
-  var this$1 = this.f$2$2;
-  var jsx$1 = $s_s_Function2$class__tupled__F2__F1(this$1);
+$c_Lupickle_GeneratedInternal$$anonfun$Case3R$1.prototype.applyOrElse__Lupickle_Js$Value__F1__O = (function(x25, default$2) {
+  var this$1 = this.f$3$2;
+  var jsx$1 = $s_s_Function3$class__tupled__F3__F1(this$1);
   var this$3 = this.$$outer$2;
   var this$2 = this.$$outer$2;
-  var evidence$5 = this.evidence$509$1$2;
-  var evidence$6 = this.evidence$510$1$2;
-  var evidence$4 = $s_Lupickle_Generated$class__Tuple2R__Lupickle_Generated__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader(this$2, evidence$5, evidence$6);
-  return jsx$1.apply__O__O($s_Lupickle_Types$class__readJs__Lupickle_Types__Lupickle_Js$Value__Lupickle_Reader__O(this$3, x24, evidence$4))
+  var evidence$10 = this.evidence$513$1$2;
+  var evidence$11 = this.evidence$514$1$2;
+  var evidence$12 = this.evidence$515$1$2;
+  var evidence$4 = $s_Lupickle_Generated$class__Tuple3R__Lupickle_Generated__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader(this$2, evidence$10, evidence$11, evidence$12);
+  return jsx$1.apply__O__O($s_Lupickle_Types$class__readJs__Lupickle_Types__Lupickle_Js$Value__Lupickle_Reader__O(this$3, x25, evidence$4))
 });
-$c_Lupickle_GeneratedInternal$$anonfun$Case2R$1.prototype.isDefinedAt__O__Z = (function(x) {
+$c_Lupickle_GeneratedInternal$$anonfun$Case3R$1.prototype.isDefinedAt__O__Z = (function(x) {
   return this.isDefinedAt__Lupickle_Js$Value__Z($as_Lupickle_Js$Value(x))
 });
-$c_Lupickle_GeneratedInternal$$anonfun$Case2R$1.prototype.applyOrElse__O__F1__O = (function(x, default$2) {
+$c_Lupickle_GeneratedInternal$$anonfun$Case3R$1.prototype.applyOrElse__O__F1__O = (function(x, default$2) {
   return this.applyOrElse__Lupickle_Js$Value__F1__O($as_Lupickle_Js$Value(x), default$2)
 });
-$c_Lupickle_GeneratedInternal$$anonfun$Case2R$1.prototype.isDefinedAt__Lupickle_Js$Value__Z = (function(x24) {
+$c_Lupickle_GeneratedInternal$$anonfun$Case3R$1.prototype.isDefinedAt__Lupickle_Js$Value__Z = (function(x25) {
   return true
 });
-var $d_Lupickle_GeneratedInternal$$anonfun$Case2R$1 = new $TypeData().initClass({
-  Lupickle_GeneratedInternal$$anonfun$Case2R$1: 0
-}, false, "upickle.GeneratedInternal$$anonfun$Case2R$1", {
-  Lupickle_GeneratedInternal$$anonfun$Case2R$1: 1,
+var $d_Lupickle_GeneratedInternal$$anonfun$Case3R$1 = new $TypeData().initClass({
+  Lupickle_GeneratedInternal$$anonfun$Case3R$1: 0
+}, false, "upickle.GeneratedInternal$$anonfun$Case3R$1", {
+  Lupickle_GeneratedInternal$$anonfun$Case3R$1: 1,
   sr_AbstractPartialFunction: 1,
   O: 1,
   F1: 1,
@@ -13641,7 +14302,7 @@ var $d_Lupickle_GeneratedInternal$$anonfun$Case2R$1 = new $TypeData().initClass(
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lupickle_GeneratedInternal$$anonfun$Case2R$1.prototype.$classData = $d_Lupickle_GeneratedInternal$$anonfun$Case2R$1;
+$c_Lupickle_GeneratedInternal$$anonfun$Case3R$1.prototype.$classData = $d_Lupickle_GeneratedInternal$$anonfun$Case3R$1;
 /** @constructor */
 var $c_Lupickle_GeneratedUtil$$anonfun$readerCaseFunction$1 = (function() {
   $c_sr_AbstractPartialFunction.call(this);
@@ -14840,6 +15501,79 @@ var $d_T2 = new $TypeData().initClass({
 });
 $c_T2.prototype.$classData = $d_T2;
 /** @constructor */
+var $c_T3 = (function() {
+  $c_O.call(this);
+  this.$$und1$1 = null;
+  this.$$und2$1 = null;
+  this.$$und3$1 = null
+});
+$c_T3.prototype = new $h_O();
+$c_T3.prototype.constructor = $c_T3;
+/** @constructor */
+var $h_T3 = (function() {
+  /*<skip>*/
+});
+$h_T3.prototype = $c_T3.prototype;
+$c_T3.prototype.productPrefix__T = (function() {
+  return "Tuple3"
+});
+$c_T3.prototype.productArity__I = (function() {
+  return 3
+});
+$c_T3.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_T3(x$1)) {
+    var Tuple3$1 = $as_T3(x$1);
+    return (($m_sr_BoxesRunTime$().equals__O__O__Z(this.$$und1$1, Tuple3$1.$$und1$1) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.$$und2$1, Tuple3$1.$$und2$1)) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.$$und3$1, Tuple3$1.$$und3$1))
+  } else {
+    return false
+  }
+});
+$c_T3.prototype.productElement__I__O = (function(n) {
+  return $s_s_Product3$class__productElement__s_Product3__I__O(this, n)
+});
+$c_T3.prototype.toString__T = (function() {
+  return (((((("(" + this.$$und1$1) + ",") + this.$$und2$1) + ",") + this.$$und3$1) + ")")
+});
+$c_T3.prototype.init___O__O__O = (function(_1, _2, _3) {
+  this.$$und1$1 = _1;
+  this.$$und2$1 = _2;
+  this.$$und3$1 = _3;
+  return this
+});
+$c_T3.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_T3.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+var $is_T3 = (function(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.T3)))
+});
+var $as_T3 = (function(obj) {
+  return (($is_T3(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.Tuple3"))
+});
+var $isArrayOf_T3 = (function(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.T3)))
+});
+var $asArrayOf_T3 = (function(obj, depth) {
+  return (($isArrayOf_T3(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.Tuple3;", depth))
+});
+var $d_T3 = new $TypeData().initClass({
+  T3: 0
+}, false, "scala.Tuple3", {
+  T3: 1,
+  O: 1,
+  s_Product3: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_T3.prototype.$classData = $d_T3;
+/** @constructor */
 var $c_jl_NumberFormatException = (function() {
   $c_jl_IllegalArgumentException.call(this)
 });
@@ -15751,6 +16485,20 @@ var $d_sci_VectorIterator = new $TypeData().initClass({
 });
 $c_sci_VectorIterator.prototype.$classData = $d_sci_VectorIterator;
 /** @constructor */
+var $c_scm_ArrayBuilder = (function() {
+  $c_O.call(this)
+});
+$c_scm_ArrayBuilder.prototype = new $h_O();
+$c_scm_ArrayBuilder.prototype.constructor = $c_scm_ArrayBuilder;
+/** @constructor */
+var $h_scm_ArrayBuilder = (function() {
+  /*<skip>*/
+});
+$h_scm_ArrayBuilder.prototype = $c_scm_ArrayBuilder.prototype;
+$c_scm_ArrayBuilder.prototype.sizeHintBounded__I__sc_TraversableLike__V = (function(size, boundingColl) {
+  $s_scm_Builder$class__sizeHintBounded__scm_Builder__I__sc_TraversableLike__V(this, size, boundingColl)
+});
+/** @constructor */
 var $c_sjsr_UndefinedBehaviorError = (function() {
   $c_jl_Error.call(this)
 });
@@ -16217,6 +16965,120 @@ var $m_sci_Seq$ = (function() {
   };
   return $n_sci_Seq$
 });
+/** @constructor */
+var $c_scm_ArrayBuilder$ofRef = (function() {
+  $c_scm_ArrayBuilder.call(this);
+  this.evidence$2$2 = null;
+  this.elems$2 = null;
+  this.capacity$2 = 0;
+  this.size$2 = 0
+});
+$c_scm_ArrayBuilder$ofRef.prototype = new $h_scm_ArrayBuilder();
+$c_scm_ArrayBuilder$ofRef.prototype.constructor = $c_scm_ArrayBuilder$ofRef;
+/** @constructor */
+var $h_scm_ArrayBuilder$ofRef = (function() {
+  /*<skip>*/
+});
+$h_scm_ArrayBuilder$ofRef.prototype = $c_scm_ArrayBuilder$ofRef.prototype;
+$c_scm_ArrayBuilder$ofRef.prototype.init___s_reflect_ClassTag = (function(evidence$2) {
+  this.evidence$2$2 = evidence$2;
+  this.capacity$2 = 0;
+  this.size$2 = 0;
+  return this
+});
+$c_scm_ArrayBuilder$ofRef.prototype.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuilder$ofRef = (function(xs) {
+  if ($is_scm_WrappedArray$ofRef(xs)) {
+    var x2 = $as_scm_WrappedArray$ofRef(xs);
+    this.ensureSize__p2__I__V(((this.size$2 + x2.length__I()) | 0));
+    $m_s_Array$().copy__O__I__O__I__I__V(x2.array$6, 0, this.elems$2, this.size$2, x2.length__I());
+    this.size$2 = ((this.size$2 + x2.length__I()) | 0);
+    return this
+  } else {
+    return $as_scm_ArrayBuilder$ofRef($s_scg_Growable$class__$$plus$plus$eq__scg_Growable__sc_TraversableOnce__scg_Growable(this, xs))
+  }
+});
+$c_scm_ArrayBuilder$ofRef.prototype.equals__O__Z = (function(other) {
+  if ($is_scm_ArrayBuilder$ofRef(other)) {
+    var x2 = $as_scm_ArrayBuilder$ofRef(other);
+    return ((this.size$2 === x2.size$2) && (this.elems$2 === x2.elems$2))
+  } else {
+    return false
+  }
+});
+$c_scm_ArrayBuilder$ofRef.prototype.$$plus$eq__O__scg_Growable = (function(elem) {
+  return this.$$plus$eq__O__scm_ArrayBuilder$ofRef(elem)
+});
+$c_scm_ArrayBuilder$ofRef.prototype.toString__T = (function() {
+  return "ArrayBuilder.ofRef"
+});
+$c_scm_ArrayBuilder$ofRef.prototype.result__O = (function() {
+  return this.result__AO()
+});
+$c_scm_ArrayBuilder$ofRef.prototype.resize__p2__I__V = (function(size) {
+  this.elems$2 = this.mkArray__p2__I__AO(size);
+  this.capacity$2 = size
+});
+$c_scm_ArrayBuilder$ofRef.prototype.$$plus$eq__O__scm_ArrayBuilder$ofRef = (function(elem) {
+  this.ensureSize__p2__I__V(((1 + this.size$2) | 0));
+  this.elems$2.u[this.size$2] = elem;
+  this.size$2 = ((1 + this.size$2) | 0);
+  return this
+});
+$c_scm_ArrayBuilder$ofRef.prototype.result__AO = (function() {
+  return (((this.capacity$2 !== 0) && (this.capacity$2 === this.size$2)) ? this.elems$2 : this.mkArray__p2__I__AO(this.size$2))
+});
+$c_scm_ArrayBuilder$ofRef.prototype.$$plus$eq__O__scm_Builder = (function(elem) {
+  return this.$$plus$eq__O__scm_ArrayBuilder$ofRef(elem)
+});
+$c_scm_ArrayBuilder$ofRef.prototype.sizeHint__I__V = (function(size) {
+  if ((this.capacity$2 < size)) {
+    this.resize__p2__I__V(size)
+  }
+});
+$c_scm_ArrayBuilder$ofRef.prototype.ensureSize__p2__I__V = (function(size) {
+  if (((this.capacity$2 < size) || (this.capacity$2 === 0))) {
+    var newsize = ((this.capacity$2 === 0) ? 16 : $imul(2, this.capacity$2));
+    while ((newsize < size)) {
+      newsize = $imul(2, newsize)
+    };
+    this.resize__p2__I__V(newsize)
+  }
+});
+$c_scm_ArrayBuilder$ofRef.prototype.mkArray__p2__I__AO = (function(size) {
+  var newelems = $asArrayOf_O(this.evidence$2$2.newArray__I__O(size), 1);
+  if ((this.size$2 > 0)) {
+    $m_s_Array$().copy__O__I__O__I__I__V(this.elems$2, 0, newelems, 0, this.size$2)
+  };
+  return newelems
+});
+$c_scm_ArrayBuilder$ofRef.prototype.$$plus$plus$eq__sc_TraversableOnce__scg_Growable = (function(xs) {
+  return this.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuilder$ofRef(xs)
+});
+var $is_scm_ArrayBuilder$ofRef = (function(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.scm_ArrayBuilder$ofRef)))
+});
+var $as_scm_ArrayBuilder$ofRef = (function(obj) {
+  return (($is_scm_ArrayBuilder$ofRef(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.collection.mutable.ArrayBuilder$ofRef"))
+});
+var $isArrayOf_scm_ArrayBuilder$ofRef = (function(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.scm_ArrayBuilder$ofRef)))
+});
+var $asArrayOf_scm_ArrayBuilder$ofRef = (function(obj, depth) {
+  return (($isArrayOf_scm_ArrayBuilder$ofRef(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.collection.mutable.ArrayBuilder$ofRef;", depth))
+});
+var $d_scm_ArrayBuilder$ofRef = new $TypeData().initClass({
+  scm_ArrayBuilder$ofRef: 0
+}, false, "scala.collection.mutable.ArrayBuilder$ofRef", {
+  scm_ArrayBuilder$ofRef: 1,
+  scm_ArrayBuilder: 1,
+  O: 1,
+  scm_Builder: 1,
+  scg_Growable: 1,
+  scg_Clearable: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_scm_ArrayBuilder$ofRef.prototype.$classData = $d_scm_ArrayBuilder$ofRef;
 /** @constructor */
 var $c_scm_IndexedSeq$ = (function() {
   $c_scg_SeqFactory.call(this)
@@ -18326,11 +19188,11 @@ $c_sc_AbstractMap.prototype.hashCode__I = (function() {
 $c_sc_AbstractMap.prototype.applyOrElse__O__F1__O = (function(x, default$2) {
   return $s_s_PartialFunction$class__applyOrElse__s_PartialFunction__O__F1__O(this, x, default$2)
 });
-$c_sc_AbstractMap.prototype.newBuilder__scm_Builder = (function() {
-  return new $c_scm_MapBuilder().init___sc_GenMap(this.empty__sc_Map())
-});
 $c_sc_AbstractMap.prototype.stringPrefix__T = (function() {
   return "Map"
+});
+$c_sc_AbstractMap.prototype.newBuilder__scm_Builder = (function() {
+  return new $c_scm_MapBuilder().init___sc_GenMap(this.empty__sc_Map())
 });
 /** @constructor */
 var $c_sc_AbstractSet = (function() {
@@ -23391,6 +24253,18 @@ $c_scm_WrappedArray$ofRef.prototype.elemTag__s_reflect_ClassTag = (function() {
 });
 $c_scm_WrappedArray$ofRef.prototype.array__O = (function() {
   return this.array$6
+});
+var $is_scm_WrappedArray$ofRef = (function(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.scm_WrappedArray$ofRef)))
+});
+var $as_scm_WrappedArray$ofRef = (function(obj) {
+  return (($is_scm_WrappedArray$ofRef(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.collection.mutable.WrappedArray$ofRef"))
+});
+var $isArrayOf_scm_WrappedArray$ofRef = (function(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.scm_WrappedArray$ofRef)))
+});
+var $asArrayOf_scm_WrappedArray$ofRef = (function(obj, depth) {
+  return (($isArrayOf_scm_WrappedArray$ofRef(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.collection.mutable.WrappedArray$ofRef;", depth))
 });
 var $d_scm_WrappedArray$ofRef = new $TypeData().initClass({
   scm_WrappedArray$ofRef: 0

@@ -2,20 +2,27 @@ package servlets.api
 
 import shared.model.Comment
 import shared.api.CommentApi
+import scala.collection.mutable.Map
 
 object CommentApiImpl extends CommentApi {
 
-  var comments: Seq[Comment] = Seq(Comment("Pete Hunt", "comment"))
+  var idCounter = 3
 
-  def list(): Seq[Comment] = comments
+  val comments = Map[Int, Comment](
+    1 -> Comment(1, "Pete Hunt", "comment"),
+    2 -> Comment(2, "Body Geen", "comment comment"))
 
-  def get(id: String): Comment = comments.head
+  def list(): Seq[Comment] = comments.values.toSeq.sortBy { c => c.id }
 
-  def update(comment: Comment): Seq[Comment] = {
-    comments
+  def update(c: Comment): Seq[Comment] = {
+    c.id = idCounter
+    comments.put(idCounter, c)
+    idCounter = idCounter + 1
+    list()
   }
 
-  def delete(id: String): Seq[Comment] = {
-    comments
+  def delete(id: Int): Seq[Comment] = {
+    comments.remove(id)
+    list()
   }
 }

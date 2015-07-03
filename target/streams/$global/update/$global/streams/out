@@ -7,7 +7,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for root#root_2.10;0.1-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies root#root_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1e9e8ef5[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7f7d73ec[0m
+[0m[[0mdebug[0m] [0mno default cache defined: set to /home/matsushita/.ivy2/cache[0m
+[0m[[0mdebug[0m] [0mno default cache defined: set to /home/matsushita/.ivy2/cache[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.4] org.scala-lang#scala-library;2.10.4[0m
@@ -116,7 +118,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#jline;2.10.4->org.fusesource.jansi#jansi;1.4 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.fusesource.jansi#jansi;1.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.fusesource.jansi#jansi;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mno default cache defined: set to /home/matsushita/.ivy2/cache[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4[0m
 [0m[[0mdebug[0m] [0m	found org.fusesource.jansi#jansi;1.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#jline;2.10.4->org.fusesource.jansi#jansi;1.4 [compile->compile(*)][0m
@@ -132,7 +133,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.4!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 286ms :: artifacts dl 29ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 115ms :: artifacts dl 1ms[0m
 [0m[[0mdebug[0m] [0m	report for root#root_2.10;0.1-SNAPSHOT compile produced in /home/matsushita/workspace/github/scalajs-react-crud/target/resolution-cache/reports/root-root_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for root#root_2.10;0.1-SNAPSHOT runtime produced in /home/matsushita/workspace/github/scalajs-react-crud/target/resolution-cache/reports/root-root_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for root#root_2.10;0.1-SNAPSHOT test produced in /home/matsushita/workspace/github/scalajs-react-crud/target/resolution-cache/reports/root-root_2.10-test.xml[0m
@@ -146,5 +147,5 @@
 [0m[[0mdebug[0m] [0m	report for root#root_2.10;0.1-SNAPSHOT docs produced in /home/matsushita/workspace/github/scalajs-react-crud/target/resolution-cache/reports/root-root_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for root#root_2.10;0.1-SNAPSHOT pom produced in /home/matsushita/workspace/github/scalajs-react-crud/target/resolution-cache/reports/root-root_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for root#root_2.10;0.1-SNAPSHOT scala-tool produced in /home/matsushita/workspace/github/scalajs-react-crud/target/resolution-cache/reports/root-root_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (286ms resolve - 29ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (115ms resolve - 1ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

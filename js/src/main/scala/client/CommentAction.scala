@@ -1,39 +1,46 @@
 package client
 
-import scala.concurrent.Future
 import scala.scalajs.concurrent.JSExecutionContext.Implicits.runNow
 import scala.scalajs.js
-import scala.scalajs.js.Any.fromString
-import scala.scalajs.js.JSConverters.JSRichGenTraversableOnce
+import scala.scalajs.js.Dynamic._
+import scala.scalajs.js.JSConverters._
 import scala.scalajs.js.annotation.JSExport
-
-import org.scalajs.dom
-
+import autowire._
 import shared.api.CommentApi
 import shared.model.Comment
-import autowire._
 import upickle.MapW
+import scala.scalajs.js.annotation.JSExportAll
 
 @JSExport
 object CommentAction {
 
+  def setComments(comp: RiactComponent, comments: Seq[Comment]) {
+    if (comments.isEmpty) {
+      comp.setState(js.Array())
+    } else {
+      val data = comments.map(t => literal("key" -> t.id, "author" -> t.author, "text" -> t.text)).toJSArray
+      comp.setState(literal("data" -> data))
+    }
+  }
   @JSExport
-  def list(c: RiactComponent) {
+  def list(comp: RiactComponent) {
     PostClient[CommentApi].list().call().onSuccess {
-      case todos => {
-        if (todos.isEmpty) {
-          c.setState(js.Array())
-        } else {
-          val state = todos.map(t => js.Dynamic.literal("author" -> t.author, "text" -> t.text)).toJSArray
-          c.setState(js.Dynamic.literal("data" -> state))
-        }
-      }
+      case comments => setComments(comp, comments)
     }
   }
 
   @JSExport
-  def update(item: Comment): Seq[Comment] = Seq() //await(Post[Api].updateTodo(item).call())
+  def update(c: js.Dictionary[String], comp: RiactComponent) {
+    val comment = new Comment(c.getOrElse("author", ""), c.getOrElse("text", ""))
+    PostClient[CommentApi].update(comment).call().onSuccess {
+      case comments => setComments(comp, comments)
+    }
+  }
 
   @JSExport
-  def delete(itemId: String): Seq[Comment] = Seq() //await(Post[Api].deleteTodo(itemId).call())
+  def delete(id: Int, comp: RiactComponent) = {
+    PostClient[CommentApi].delete(id).call().onSuccess {
+      case comments => setComments(comp, comments)
+    }
+  }
 }
