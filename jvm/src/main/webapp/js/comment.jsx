@@ -2,7 +2,7 @@ var CommentList = React.createClass({
   render: function() {
     var commentNodes = this.props.data.map(function (comment) {
       return (
-        <Comment key={comment.key} author={comment.author} comment={comment.text}>
+        <Comment key={comment.key} index={comment.key}author={comment.author} comment={comment.text}>
           
         </Comment>
       );
@@ -94,7 +94,7 @@ var Comment = React.createClass({
 		// var rawMarkup = marked(this.props.children.toString(), {sanitize: true});
 	    return (
 	      <tr>
-	      <td>{this.props.key}</td>
+	      <td>{this.props.index}</td>
 	      <td>{this.props.author}</td>
 	      <td>{this.props.comment}</td>
 	      </tr>	      
