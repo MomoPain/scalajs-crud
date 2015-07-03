@@ -9,33 +9,26 @@ import scala.scalajs.js.annotation.JSExport
 
 import org.scalajs.dom
 
-import api.CommentApi
-import autowire.clientCallable
-import autowire.unwrapClientProxy
-import model.Comment
+import shared.api.CommentApi
+import shared.model.Comment
+import autowire._
 import upickle.MapW
 
 @JSExport
 object CommentAction {
 
   @JSExport
-  def getTodos(c: RiactComponent) {
-    Post[CommentApi].list().call().onSuccess {
+  def list(c: RiactComponent) {
+    PostClient[CommentApi].list().call().onSuccess {
       case todos => {
         if (todos.isEmpty) {
-          println("todos is empty")
           c.setState(js.Array())
         } else {
           val state = todos.map(t => js.Dynamic.literal("author" -> t.author, "text" -> t.text)).toJSArray
-          println(state)
           c.setState(js.Dynamic.literal("data" -> state))
         }
       }
     }
-
-    //    val a = Post[Api].getTodos().call().
-    //    Await.result(a, Duration.MinusInf)
-    //      Post.write(a.value)
   }
 
   @JSExport

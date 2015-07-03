@@ -1,17 +1,12 @@
 package servlets
 
-import org.scalatra._
-import scala.concurrent.ExecutionContext.Implicits.global
-import upickle._
-import autowire._
-import api._
-import model._
-import scala.concurrent.duration._
-import scala.concurrent.Await
-import scalatags.Text.all._
+import org.scalatra.ScalatraServlet
 import scalatags.Text.{ all => tags }
+import scalatags.Text.all.stringAttr
+import servlets.api.CommentApiImpl
+import shared.api.CommentApi
 
-class Servlet extends ScalatraServlet {
+class RootServlet extends ScalatraServlet {
 
   get("/") {
     contentType = "text/html"
@@ -27,5 +22,6 @@ class Servlet extends ScalatraServlet {
         tags.div(tags.id := "content"),
         tags.script(tags.`type` := "text/jsx", tags.src := "./js/sample.js")))
   }
-
 }
+
+

@@ -1024,32 +1024,32 @@ var $h_Lclient_CommentAction$ = (function() {
   /*<skip>*/
 });
 $h_Lclient_CommentAction$.prototype = $c_Lclient_CommentAction$.prototype;
-$c_Lclient_CommentAction$.prototype.getTodos__Lclient_RiactComponent__V = (function(c) {
-  var this$1 = $m_Lclient_Post$();
-  var this$2 = new $c_Lautowire_ClientProxy().init___Lautowire_Client(this$1).self$1.doCall__Lautowire_Core$Request__s_concurrent_Future(new $c_Lautowire_Core$Request().init___sc_Seq__sci_Map($as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["api", "CommentApi", "list"]))), $as_sci_Map($m_s_Predef$().Map$2.apply__sc_Seq__sc_GenMap($m_sci_Nil$()))));
-  var f = new $c_Lclient_CommentAction$$anonfun$getTodos$2().init___();
-  var executor = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
-  var this$3 = $s_s_concurrent_Future$class__map__s_concurrent_Future__F1__s_concurrent_ExecutionContext__s_concurrent_Future(this$2, f, executor);
-  var pf = new $c_Lclient_CommentAction$$anonfun$getTodos$1().init___Lclient_RiactComponent(c);
-  var executor$1 = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
-  $s_s_concurrent_Future$class__onSuccess__s_concurrent_Future__s_PartialFunction__s_concurrent_ExecutionContext__V(this$3, pf, executor$1)
-});
-$c_Lclient_CommentAction$.prototype.$$js$exported$meth$update__Lmodel_Comment__O = (function(item) {
+$c_Lclient_CommentAction$.prototype.$$js$exported$meth$update__Lshared_model_Comment__O = (function(item) {
   return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$()))
 });
-$c_Lclient_CommentAction$.prototype.$$js$exported$meth$getTodos__Lclient_RiactComponent__O = (function(c) {
-  this.getTodos__Lclient_RiactComponent__V(c)
+$c_Lclient_CommentAction$.prototype.$$js$exported$meth$list__Lclient_RiactComponent__O = (function(c) {
+  this.list__Lclient_RiactComponent__V(c)
+});
+$c_Lclient_CommentAction$.prototype.list__Lclient_RiactComponent__V = (function(c) {
+  var this$1 = $m_Lclient_PostClient$();
+  var this$2 = new $c_Lautowire_ClientProxy().init___Lautowire_Client(this$1).self$1.doCall__Lautowire_Core$Request__s_concurrent_Future(new $c_Lautowire_Core$Request().init___sc_Seq__sci_Map($as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["shared", "api", "CommentApi", "list"]))), $as_sci_Map($m_s_Predef$().Map$2.apply__sc_Seq__sc_GenMap($m_sci_Nil$()))));
+  var f = new $c_Lclient_CommentAction$$anonfun$list$2().init___();
+  var executor = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
+  var this$3 = $s_s_concurrent_Future$class__map__s_concurrent_Future__F1__s_concurrent_ExecutionContext__s_concurrent_Future(this$2, f, executor);
+  var pf = new $c_Lclient_CommentAction$$anonfun$list$1().init___Lclient_RiactComponent(c);
+  var executor$1 = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
+  $s_s_concurrent_Future$class__onSuccess__s_concurrent_Future__s_PartialFunction__s_concurrent_ExecutionContext__V(this$3, pf, executor$1)
 });
 $c_Lclient_CommentAction$.prototype.$$js$exported$meth$delete__T__O = (function(itemId) {
   return $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable($m_sci_Nil$()))
 });
-$c_Lclient_CommentAction$.prototype["getTodos"] = (function(arg$1) {
+$c_Lclient_CommentAction$.prototype["list"] = (function(arg$1) {
   var prep0 = arg$1;
-  return this.$$js$exported$meth$getTodos__Lclient_RiactComponent__O(prep0)
+  return this.$$js$exported$meth$list__Lclient_RiactComponent__O(prep0)
 });
 $c_Lclient_CommentAction$.prototype["update"] = (function(arg$1) {
-  var prep0 = $as_Lmodel_Comment(arg$1);
-  return this.$$js$exported$meth$update__Lmodel_Comment__O(prep0)
+  var prep0 = $as_Lshared_model_Comment(arg$1);
+  return this.$$js$exported$meth$update__Lshared_model_Comment__O(prep0)
 });
 $c_Lclient_CommentAction$.prototype["delete"] = (function(arg$1) {
   var prep0 = $as_T(arg$1);
@@ -7025,21 +7025,21 @@ var $d_sr_ObjectRef = new $TypeData().initClass({
 });
 $c_sr_ObjectRef.prototype.$classData = $d_sr_ObjectRef;
 /** @constructor */
-var $c_Lclient_Post$ = (function() {
+var $c_Lclient_PostClient$ = (function() {
   $c_O.call(this)
 });
-$c_Lclient_Post$.prototype = new $h_O();
-$c_Lclient_Post$.prototype.constructor = $c_Lclient_Post$;
+$c_Lclient_PostClient$.prototype = new $h_O();
+$c_Lclient_PostClient$.prototype.constructor = $c_Lclient_PostClient$;
 /** @constructor */
-var $h_Lclient_Post$ = (function() {
+var $h_Lclient_PostClient$ = (function() {
   /*<skip>*/
 });
-$h_Lclient_Post$.prototype = $c_Lclient_Post$.prototype;
-$c_Lclient_Post$.prototype.init___ = (function() {
-  $n_Lclient_Post$ = this;
+$h_Lclient_PostClient$.prototype = $c_Lclient_PostClient$.prototype;
+$c_Lclient_PostClient$.prototype.init___ = (function() {
+  $n_Lclient_PostClient$ = this;
   return this
 });
-$c_Lclient_Post$.prototype.doCall__Lautowire_Core$Request__s_concurrent_Future = (function(req) {
+$c_Lclient_PostClient$.prototype.doCall__Lautowire_Core$Request__s_concurrent_Future = (function(req) {
   var url = req.path$1.mkString__T__T("/");
   var this$5 = $m_Lorg_scalajs_dom_ext_Ajax$();
   var url$1 = ("http://localhost:8080/" + url);
@@ -7058,21 +7058,21 @@ $c_Lclient_Post$.prototype.doCall__Lautowire_Core$Request__s_concurrent_Future =
   var executor = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
   return $s_s_concurrent_Future$class__map__s_concurrent_Future__F1__s_concurrent_ExecutionContext__s_concurrent_Future(r, f, executor)
 });
-var $d_Lclient_Post$ = new $TypeData().initClass({
-  Lclient_Post$: 0
-}, false, "client.Post$", {
-  Lclient_Post$: 1,
+var $d_Lclient_PostClient$ = new $TypeData().initClass({
+  Lclient_PostClient$: 0
+}, false, "client.PostClient$", {
+  Lclient_PostClient$: 1,
   O: 1,
   Lautowire_Client: 1,
   Lautowire_Serializers: 1
 });
-$c_Lclient_Post$.prototype.$classData = $d_Lclient_Post$;
-var $n_Lclient_Post$ = (void 0);
-var $m_Lclient_Post$ = (function() {
-  if ((!$n_Lclient_Post$)) {
-    $n_Lclient_Post$ = new $c_Lclient_Post$().init___()
+$c_Lclient_PostClient$.prototype.$classData = $d_Lclient_PostClient$;
+var $n_Lclient_PostClient$ = (void 0);
+var $m_Lclient_PostClient$ = (function() {
+  if ((!$n_Lclient_PostClient$)) {
+    $n_Lclient_PostClient$ = new $c_Lclient_PostClient$().init___()
   };
-  return $n_Lclient_Post$
+  return $n_Lclient_PostClient$
 });
 /** @constructor */
 var $c_Ljava_io_OutputStream = (function() {
@@ -11281,21 +11281,21 @@ var $d_Lautowire_Core$Request = new $TypeData().initClass({
 });
 $c_Lautowire_Core$Request.prototype.$classData = $d_Lautowire_Core$Request;
 /** @constructor */
-var $c_Lclient_CommentAction$$anonfun$getTodos$2 = (function() {
+var $c_Lclient_CommentAction$$anonfun$list$2 = (function() {
   $c_sr_AbstractFunction1.call(this)
 });
-$c_Lclient_CommentAction$$anonfun$getTodos$2.prototype = new $h_sr_AbstractFunction1();
-$c_Lclient_CommentAction$$anonfun$getTodos$2.prototype.constructor = $c_Lclient_CommentAction$$anonfun$getTodos$2;
+$c_Lclient_CommentAction$$anonfun$list$2.prototype = new $h_sr_AbstractFunction1();
+$c_Lclient_CommentAction$$anonfun$list$2.prototype.constructor = $c_Lclient_CommentAction$$anonfun$list$2;
 /** @constructor */
-var $h_Lclient_CommentAction$$anonfun$getTodos$2 = (function() {
+var $h_Lclient_CommentAction$$anonfun$list$2 = (function() {
   /*<skip>*/
 });
-$h_Lclient_CommentAction$$anonfun$getTodos$2.prototype = $c_Lclient_CommentAction$$anonfun$getTodos$2.prototype;
-$c_Lclient_CommentAction$$anonfun$getTodos$2.prototype.apply__O__O = (function(v1) {
+$h_Lclient_CommentAction$$anonfun$list$2.prototype = $c_Lclient_CommentAction$$anonfun$list$2.prototype;
+$c_Lclient_CommentAction$$anonfun$list$2.prototype.apply__O__O = (function(v1) {
   return this.apply__T__sc_Seq($as_T(v1))
 });
-$c_Lclient_CommentAction$$anonfun$getTodos$2.prototype.apply__T__sc_Seq = (function(x$1) {
-  var this$1 = $m_Lclient_Post$();
+$c_Lclient_CommentAction$$anonfun$list$2.prototype.apply__T__sc_Seq = (function(x$1) {
+  var this$1 = $m_Lclient_PostClient$();
   new $c_Lautowire_ClientProxy().init___Lautowire_Client(this$1).self$1;
   var this$5 = $m_Lupickle_package$();
   var jsx$1 = $m_Lupickle_Internal$();
@@ -11304,7 +11304,7 @@ $c_Lclient_CommentAction$$anonfun$getTodos$2.prototype.apply__T__sc_Seq = (funct
   var f = new $c_sjsr_AnonFunction2().init___sjs_js_Function2((function(author$2, text$2) {
     var author = $as_T(author$2);
     var text = $as_T(text$2);
-    return new $c_Lmodel_Comment().init___T__T(author, text)
+    return new $c_Lshared_model_Comment().init___T__T(author, text)
   }));
   var names = $asArrayOf_T($m_s_Array$().apply__sc_Seq__s_reflect_ClassTag__O(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["author", "text"]), $m_s_reflect_ClassTag$().apply__jl_Class__s_reflect_ClassTag($d_T.getClassOf())), 1);
   var defaults = $asArrayOf_Lupickle_Js$Value($m_s_Array$().apply__sc_Seq__s_reflect_ClassTag__O(new $c_sjs_js_WrappedArray().init___sjs_js_Array([null, null]), $m_s_reflect_ClassTag$().apply__jl_Class__s_reflect_ClassTag($d_Lupickle_Js$Value.getClassOf())), 1);
@@ -11312,59 +11312,59 @@ $c_Lclient_CommentAction$$anonfun$getTodos$2.prototype.apply__T__sc_Seq = (funct
   var evidence$510 = $as_Lupickle_Reader($m_Lupickle_package$().StringRW$1);
   var x$macro$2 = $s_Lupickle_GeneratedInternal$class__Case2R__Lupickle_GeneratedInternal__F2__AT__ALupickle_Js$Value__Lupickle_Reader__Lupickle_Reader__Lupickle_Reader(this$3, f, names, defaults, evidence$509, evidence$510);
   v1.$$undread$1 = $s_Lupickle_Reader$class__read__Lupickle_Reader__s_PartialFunction(x$macro$2);
-  var evidence$7 = jsx$1.validateReader__T__Lupickle_Reader__Lupickle_Reader("Tagged Object model.Comment", x$macro$2);
+  var evidence$7 = jsx$1.validateReader__T__Lupickle_Reader__Lupickle_Reader("Tagged Object shared.model.Comment", x$macro$2);
   var this$4 = $m_s_Predef$();
   var cbf = new $c_s_LowPriorityImplicits$$anon$4().init___s_LowPriorityImplicits(this$4);
   var evidence$1 = $s_Lupickle_Implicits$class__SeqishR__Lupickle_Implicits__Lupickle_Reader__scg_CanBuildFrom__Lupickle_Reader(this$5, evidence$7, cbf);
   var this$7 = $m_Lupickle_package$();
   return $as_sc_Seq($s_Lupickle_Types$class__read__Lupickle_Types__T__Lupickle_Reader__O(this$7, x$1, evidence$1))
 });
-var $d_Lclient_CommentAction$$anonfun$getTodos$2 = new $TypeData().initClass({
-  Lclient_CommentAction$$anonfun$getTodos$2: 0
-}, false, "client.CommentAction$$anonfun$getTodos$2", {
-  Lclient_CommentAction$$anonfun$getTodos$2: 1,
+var $d_Lclient_CommentAction$$anonfun$list$2 = new $TypeData().initClass({
+  Lclient_CommentAction$$anonfun$list$2: 0
+}, false, "client.CommentAction$$anonfun$list$2", {
+  Lclient_CommentAction$$anonfun$list$2: 1,
   sr_AbstractFunction1: 1,
   O: 1,
   F1: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lclient_CommentAction$$anonfun$getTodos$2.prototype.$classData = $d_Lclient_CommentAction$$anonfun$getTodos$2;
+$c_Lclient_CommentAction$$anonfun$list$2.prototype.$classData = $d_Lclient_CommentAction$$anonfun$list$2;
 /** @constructor */
-var $c_Lmodel_Comment = (function() {
+var $c_Lshared_model_Comment = (function() {
   $c_O.call(this);
   this.author$1 = null;
   this.text$1 = null
 });
-$c_Lmodel_Comment.prototype = new $h_O();
-$c_Lmodel_Comment.prototype.constructor = $c_Lmodel_Comment;
+$c_Lshared_model_Comment.prototype = new $h_O();
+$c_Lshared_model_Comment.prototype.constructor = $c_Lshared_model_Comment;
 /** @constructor */
-var $h_Lmodel_Comment = (function() {
+var $h_Lshared_model_Comment = (function() {
   /*<skip>*/
 });
-$h_Lmodel_Comment.prototype = $c_Lmodel_Comment.prototype;
-$c_Lmodel_Comment.prototype.init___T__T = (function(author, text) {
+$h_Lshared_model_Comment.prototype = $c_Lshared_model_Comment.prototype;
+$c_Lshared_model_Comment.prototype.init___T__T = (function(author, text) {
   this.author$1 = author;
   this.text$1 = text;
   return this
 });
-$c_Lmodel_Comment.prototype.productPrefix__T = (function() {
+$c_Lshared_model_Comment.prototype.productPrefix__T = (function() {
   return "Comment"
 });
-$c_Lmodel_Comment.prototype.productArity__I = (function() {
+$c_Lshared_model_Comment.prototype.productArity__I = (function() {
   return 2
 });
-$c_Lmodel_Comment.prototype.equals__O__Z = (function(x$1) {
+$c_Lshared_model_Comment.prototype.equals__O__Z = (function(x$1) {
   if ((this === x$1)) {
     return true
-  } else if ($is_Lmodel_Comment(x$1)) {
-    var Comment$1 = $as_Lmodel_Comment(x$1);
+  } else if ($is_Lshared_model_Comment(x$1)) {
+    var Comment$1 = $as_Lshared_model_Comment(x$1);
     return ((this.author$1 === Comment$1.author$1) && (this.text$1 === Comment$1.text$1))
   } else {
     return false
   }
 });
-$c_Lmodel_Comment.prototype.productElement__I__O = (function(x$1) {
+$c_Lshared_model_Comment.prototype.productElement__I__O = (function(x$1) {
   switch (x$1) {
     case 0: {
       return this.author$1;
@@ -11379,39 +11379,39 @@ $c_Lmodel_Comment.prototype.productElement__I__O = (function(x$1) {
     }
   }
 });
-$c_Lmodel_Comment.prototype.toString__T = (function() {
+$c_Lshared_model_Comment.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
 });
-$c_Lmodel_Comment.prototype.hashCode__I = (function() {
+$c_Lshared_model_Comment.prototype.hashCode__I = (function() {
   var this$2 = $m_s_util_hashing_MurmurHash3$();
   return this$2.productHash__s_Product__I__I(this, (-889275714))
 });
-$c_Lmodel_Comment.prototype.productIterator__sc_Iterator = (function() {
+$c_Lshared_model_Comment.prototype.productIterator__sc_Iterator = (function() {
   return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
 });
-var $is_Lmodel_Comment = (function(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lmodel_Comment)))
+var $is_Lshared_model_Comment = (function(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lshared_model_Comment)))
 });
-var $as_Lmodel_Comment = (function(obj) {
-  return (($is_Lmodel_Comment(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "model.Comment"))
+var $as_Lshared_model_Comment = (function(obj) {
+  return (($is_Lshared_model_Comment(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "shared.model.Comment"))
 });
-var $isArrayOf_Lmodel_Comment = (function(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lmodel_Comment)))
+var $isArrayOf_Lshared_model_Comment = (function(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lshared_model_Comment)))
 });
-var $asArrayOf_Lmodel_Comment = (function(obj, depth) {
-  return (($isArrayOf_Lmodel_Comment(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lmodel.Comment;", depth))
+var $asArrayOf_Lshared_model_Comment = (function(obj, depth) {
+  return (($isArrayOf_Lshared_model_Comment(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lshared.model.Comment;", depth))
 });
-var $d_Lmodel_Comment = new $TypeData().initClass({
-  Lmodel_Comment: 0
-}, false, "model.Comment", {
-  Lmodel_Comment: 1,
+var $d_Lshared_model_Comment = new $TypeData().initClass({
+  Lshared_model_Comment: 0
+}, false, "shared.model.Comment", {
+  Lshared_model_Comment: 1,
   O: 1,
   s_Product: 1,
   s_Equals: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lmodel_Comment.prototype.$classData = $d_Lmodel_Comment;
+$c_Lshared_model_Comment.prototype.$classData = $d_Lshared_model_Comment;
 /** @constructor */
 var $c_Lupickle_Implicits$$anonfun$MapW$1 = (function() {
   $c_sr_AbstractFunction1.call(this);
@@ -13393,40 +13393,37 @@ var $d_sr_ScalaRunTime$$anon$1 = new $TypeData().initClass({
 });
 $c_sr_ScalaRunTime$$anon$1.prototype.$classData = $d_sr_ScalaRunTime$$anon$1;
 /** @constructor */
-var $c_Lclient_CommentAction$$anonfun$getTodos$1 = (function() {
+var $c_Lclient_CommentAction$$anonfun$list$1 = (function() {
   $c_sr_AbstractPartialFunction.call(this);
   this.c$1$2 = null
 });
-$c_Lclient_CommentAction$$anonfun$getTodos$1.prototype = new $h_sr_AbstractPartialFunction();
-$c_Lclient_CommentAction$$anonfun$getTodos$1.prototype.constructor = $c_Lclient_CommentAction$$anonfun$getTodos$1;
+$c_Lclient_CommentAction$$anonfun$list$1.prototype = new $h_sr_AbstractPartialFunction();
+$c_Lclient_CommentAction$$anonfun$list$1.prototype.constructor = $c_Lclient_CommentAction$$anonfun$list$1;
 /** @constructor */
-var $h_Lclient_CommentAction$$anonfun$getTodos$1 = (function() {
+var $h_Lclient_CommentAction$$anonfun$list$1 = (function() {
   /*<skip>*/
 });
-$h_Lclient_CommentAction$$anonfun$getTodos$1.prototype = $c_Lclient_CommentAction$$anonfun$getTodos$1.prototype;
-$c_Lclient_CommentAction$$anonfun$getTodos$1.prototype.init___Lclient_RiactComponent = (function(c$1) {
+$h_Lclient_CommentAction$$anonfun$list$1.prototype = $c_Lclient_CommentAction$$anonfun$list$1.prototype;
+$c_Lclient_CommentAction$$anonfun$list$1.prototype.init___Lclient_RiactComponent = (function(c$1) {
   this.c$1$2 = c$1;
   return this
 });
-$c_Lclient_CommentAction$$anonfun$getTodos$1.prototype.isDefinedAt__sc_Seq__Z = (function(x1) {
+$c_Lclient_CommentAction$$anonfun$list$1.prototype.isDefinedAt__sc_Seq__Z = (function(x1) {
   return true
 });
-$c_Lclient_CommentAction$$anonfun$getTodos$1.prototype.isDefinedAt__O__Z = (function(x) {
+$c_Lclient_CommentAction$$anonfun$list$1.prototype.isDefinedAt__O__Z = (function(x) {
   return this.isDefinedAt__sc_Seq__Z($as_sc_Seq(x))
 });
-$c_Lclient_CommentAction$$anonfun$getTodos$1.prototype.applyOrElse__O__F1__O = (function(x, default$2) {
+$c_Lclient_CommentAction$$anonfun$list$1.prototype.applyOrElse__O__F1__O = (function(x, default$2) {
   return this.applyOrElse__sc_Seq__F1__O($as_sc_Seq(x), default$2)
 });
-$c_Lclient_CommentAction$$anonfun$getTodos$1.prototype.applyOrElse__sc_Seq__F1__O = (function(x1, default$2) {
+$c_Lclient_CommentAction$$anonfun$list$1.prototype.applyOrElse__sc_Seq__F1__O = (function(x1, default$2) {
   if (x1.isEmpty__Z()) {
-    var this$2 = $m_s_Console$();
-    var this$3 = this$2.outVar$2;
-    $as_Ljava_io_PrintStream(this$3.tl$1.get__O()).println__O__V("todos is empty");
     this.c$1$2["setState"]([]);
     return (void 0)
   } else {
     var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(t$2) {
-      var t = $as_Lmodel_Comment(t$2);
+      var t = $as_Lshared_model_Comment(t$2);
       var s = t.author$1;
       var s$1 = t.text$1;
       return {
@@ -13434,9 +13431,9 @@ $c_Lclient_CommentAction$$anonfun$getTodos$1.prototype.applyOrElse__sc_Seq__F1__
         "text": s$1
       }
     }));
-    var this$6 = $m_sc_Seq$();
-    var $$this = $as_sc_GenTraversableOnce(x1.map__F1__scg_CanBuildFrom__O(jsx$1, this$6.ReusableCBFInstance$2));
-    var this$9 = $m_sjsr_package$();
+    var this$3 = $m_sc_Seq$();
+    var $$this = $as_sc_GenTraversableOnce(x1.map__F1__scg_CanBuildFrom__O(jsx$1, this$3.ReusableCBFInstance$2));
+    var this$6 = $m_sjsr_package$();
     if ($is_sjs_js_ArrayOps($$this)) {
       var x2 = $as_sjs_js_ArrayOps($$this);
       var state = x2.scala$scalajs$js$ArrayOps$$array$f
@@ -13449,22 +13446,19 @@ $c_Lclient_CommentAction$$anonfun$getTodos$1.prototype.applyOrElse__sc_Seq__F1__
         return (function(x$2) {
           return $uI(result$1["push"](x$2))
         })
-      })(this$9, result)));
+      })(this$6, result)));
       var state = result
     };
-    var this$11 = $m_s_Console$();
-    var this$12 = this$11.outVar$2;
-    $as_Ljava_io_PrintStream(this$12.tl$1.get__O()).println__O__V(state);
     this.c$1$2["setState"]({
       "data": state
     });
     return (void 0)
   }
 });
-var $d_Lclient_CommentAction$$anonfun$getTodos$1 = new $TypeData().initClass({
-  Lclient_CommentAction$$anonfun$getTodos$1: 0
-}, false, "client.CommentAction$$anonfun$getTodos$1", {
-  Lclient_CommentAction$$anonfun$getTodos$1: 1,
+var $d_Lclient_CommentAction$$anonfun$list$1 = new $TypeData().initClass({
+  Lclient_CommentAction$$anonfun$list$1: 0
+}, false, "client.CommentAction$$anonfun$list$1", {
+  Lclient_CommentAction$$anonfun$list$1: 1,
   sr_AbstractPartialFunction: 1,
   O: 1,
   F1: 1,
@@ -13472,7 +13466,7 @@ var $d_Lclient_CommentAction$$anonfun$getTodos$1 = new $TypeData().initClass({
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lclient_CommentAction$$anonfun$getTodos$1.prototype.$classData = $d_Lclient_CommentAction$$anonfun$getTodos$1;
+$c_Lclient_CommentAction$$anonfun$list$1.prototype.$classData = $d_Lclient_CommentAction$$anonfun$list$1;
 /** @constructor */
 var $c_Ljava_io_PrintStream = (function() {
   $c_Ljava_io_FilterOutputStream.call(this);

@@ -63,7 +63,9 @@ object Build extends Build {
           //"me.chrons" %%% "boopickle" % "0.1.3",
           "com.lihaoyi" %% "scalatags" % "0.5.2",
           "org.scalatra" %% "scalatra" % ScalatraVersion,
-          "org.scalatra" %% "scalatra-specs2" % ScalatraVersion % "test",
+          "org.scalatra" %% "scalatra-scalatest" % ScalatraVersion % "test",
+          "org.json4s" %% "json4s-native" % "3.2.11" % "test",
+//          "org.scalatra" %% "scalatra-specs2" % ScalatraVersion % "test",
           "ch.qos.logback" % "logback-classic" % "1.0.12" % "runtime",
           "javax.servlet" % "javax.servlet-api" % "3.1.0" % "provided;test")
           ).

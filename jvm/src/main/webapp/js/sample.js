@@ -45,7 +45,7 @@ var CommentForm = React.createClass({
 var CommentBox = React.createClass({
 	  loadCommentsFromServer: function() {
 		console.log('todo action');
-		client.TodoAction().getTodos(this);
+		client.CommentAction().list(this);
 	  },
 	  handleCommentSubmit: function(comment) {
 		  var comments = this.state.data;
@@ -69,7 +69,7 @@ var CommentBox = React.createClass({
 	  },
 	  componentDidMount: function() {
 	    this.loadCommentsFromServer();
-	    setInterval(this.loadCommentsFromServer, this.props.pollInterval);
+	    //setInterval(this.loadCommentsFromServer, this.props.pollInterval);
 	  },
 	  render: function() {
 	    return (
