@@ -1,10 +1,10 @@
 # scalajs-react-crud
 
-Sample project for single page web application with [React] http://facebook.github.io/react/ and [Scala.js](https://github.com/scala-js/scala-js).
+Sample project for single page web application with [facebook React](http://facebook.github.io/react/) and [Scala.js](https://github.com/scala-js/scala-js).
 
-This project is made up of "AS React file" and "Ajax of the API that have been compiled with Scala.js".
+This project is made up of "As it is of React file" and "javascript Ajax API is compiled with Scala.js".
 
-That means, The View layer is utilized in React(not use Scala.js), To exchange data with server by implemented api in Scala.js.
+That means, The View layer is utilized in React(not use Scala.js), To exchange data layer with server by implemented api in Scala.js.
 View layer is reference React Comment Tutorial and it is to change exchange data with server of code. 
 
 # Usage
