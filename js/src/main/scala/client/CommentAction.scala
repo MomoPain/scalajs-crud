@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.JSExportAll
 @JSExport
 object CommentAction {
 
-  def setComments(comp: RiactComponent, comments: Seq[Comment]) {
+  def setComments(comp: ReactComponent, comments: Seq[Comment]) {
     if (comments.isEmpty) {
       comp.setState(js.Array())
     } else {
@@ -23,14 +23,14 @@ object CommentAction {
     }
   }
   @JSExport
-  def list(comp: RiactComponent) {
+  def list(comp: ReactComponent) {
     PostClient[CommentApi].list().call().onSuccess {
       case comments => setComments(comp, comments)
     }
   }
 
   @JSExport
-  def update(c: js.Dictionary[String], comp: RiactComponent) {
+  def update(c: js.Dictionary[String], comp: ReactComponent) {
     val comment = new Comment(c.getOrElse("author", ""), c.getOrElse("text", ""))
     PostClient[CommentApi].update(comment).call().onSuccess {
       case comments => setComments(comp, comments)
@@ -38,7 +38,7 @@ object CommentAction {
   }
 
   @JSExport
-  def delete(id: Int, comp: RiactComponent) = {
+  def delete(id: Int, comp: ReactComponent) = {
     PostClient[CommentApi].delete(id).call().onSuccess {
       case comments => setComments(comp, comments)
     }
