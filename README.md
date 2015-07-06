@@ -5,7 +5,8 @@ Sample project for single page web application with [facebook React](http://face
 This project is made up of "As it is of React file" and "javascript Ajax API is compiled with Scala.js".
 
 That means, The View layer is utilized in React(not use Scala.js), To exchange data layer with server by implemented api in Scala.js.
-View layer is reference React Comment Tutorial and it is to change exchange data with server of code. 
+View layer is reference React Comment Tutorial and it is to change exchange data with server of code.
+
 
 # Usage
 
