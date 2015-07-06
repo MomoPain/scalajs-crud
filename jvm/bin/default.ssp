@@ -1,9 +1,0 @@
-
-<%@ val body:String %>
-<html>
-<head>..
-</head>
-<body>
-	<%=unescape(body)%>
-</body>
-</html>
