@@ -1,4 +1,3 @@
-reload
 eclipse
 reload
 eclipse
@@ -498,3 +497,4 @@ container:start
 containeupdate
 container:update
 ~container:start
+exit
