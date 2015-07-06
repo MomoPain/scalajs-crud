@@ -1,4 +1,3 @@
-*~
 *.class
 *.log
 
@@ -16,15 +15,17 @@ project/plugins/project/
 # Scala-IDE specific
 .scala_dependencies
 .worksheet
+
+# IntelliJ IDEA
+.idea
+*.iml
+out
+*.sc
+
+# Eclipse
+.project
+.settings/
+.classpath
+
 # GitBook
 doc/_book
-
-/server/
-/shared/
-.cache*
-target
-.project
-.settings
-.classpath
-/.idea/
-*.sjsir
