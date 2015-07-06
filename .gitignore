@@ -30,6 +30,7 @@ out
 .history
 .settings/
 .classpath
+bin/
 
 # GitBook
 doc/_book
