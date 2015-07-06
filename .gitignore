@@ -27,6 +27,7 @@ out
 
 # Eclipse
 .project
+.history
 .settings/
 .classpath
 
