@@ -1,3 +1,5 @@
+
+ 
 var CommentList = React.createClass({
   render: function() {
     var commentNodes = this.props.data.map(function (comment) {
@@ -35,21 +37,21 @@ var CommentForm = React.createClass({
 	    React.findDOMNode(this.refs.text).value = '';
 	    return;
 	  },
-	  render: function() {
-	    return (
-		<form className="form-inline" onSubmit={this.handleSubmit}>
-		  <div className="form-group">
-		    <input type="text" className="form-control" ref="author" placeholder="Your Name"/>
-		  </div>
-		  <div className="form-group">
-		    <input type="text" className="form-control" ref="text" placeholder="Say someting..."/>
-		  </div>
-		  <button type="submit" className="btn btn-success">Post</button>
-		</form>
-	
-	    );
-	  }
-	});
+  render: function() {
+    return (
+	<form className="form-inline" onSubmit={this.handleSubmit}>
+	  <div className="form-group">
+	    <input type="text" className="form-control" ref="author" placeholder="Your Name"/>
+	  </div>
+	  <div className="form-group">
+	    <input type="text" className="form-control" ref="text" placeholder="Say someting..."/>
+	  </div>
+	  <Button type="submit" bsStyle="success">Post</Button>
+	</form>
+
+    );
+  }
+});
 
 
 var CommentBox = React.createClass({
@@ -101,8 +103,8 @@ var Comment = React.createClass({
 	    );
 	  }
 	});
-
-React.render(
-  <CommentBox url="url" pollInterval={10000} />,
-  document.getElementById('content')
-);
+//
+//React.render(
+//  <CommentBox url="url" pollInterval={10000} />,
+//  document.getElementById('content')
+//);
