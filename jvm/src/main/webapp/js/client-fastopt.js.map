@@ -1160,7 +1160,9 @@ $c_Lclient_CommentAction$.prototype.list__Lclient_ReactComponent__V = (function(
 });
 $c_Lclient_CommentAction$.prototype.setComments__Lclient_ReactComponent__sc_Seq__V = (function(comp, comments) {
   if (comments.isEmpty__Z()) {
-    comp["setState"]([])
+    comp["setState"]({
+      "data": []
+    })
   } else {
     var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(t$2) {
       var t = $as_Lshared_model_Comment(t$2);

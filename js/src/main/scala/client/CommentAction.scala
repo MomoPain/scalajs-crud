@@ -16,7 +16,7 @@ object CommentAction {
 
   def setComments(comp: ReactComponent, comments: Seq[Comment]) {
     if (comments.isEmpty) {
-      comp.setState(js.Array())
+      comp.setState(literal("data" -> js.Array()))
     } else {
       val data = comments.map(t => literal("key" -> t.id, "author" -> t.author, "text" -> t.text)).toJSArray
       comp.setState(literal("data" -> data))

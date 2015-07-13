@@ -2,10 +2,16 @@
  
 var CommentList = React.createClass({
   render: function() {
+	var fanc = this.props.onDeleteSubmit; 
     var commentNodes = this.props.data.map(function (comment) {
       return (
-        <Comment key={comment.key} index={comment.key}author={comment.author} comment={comment.text}>
-          
+        <Comment 
+        	key={comment.key}
+        	index={comment.key}
+        	author={comment.author}
+    		comment={comment.text}
+        	onDeleteSubmit={fanc}
+        >          
         </Comment>
       );
     });
@@ -15,6 +21,7 @@ var CommentList = React.createClass({
     	<th>#</th>
     	<th>Name</th>
     	<th>Comment</th>
+    	<th>Action</th>
     	</thead>
     	<tbody>
     	{commentNodes}
@@ -24,9 +31,8 @@ var CommentList = React.createClass({
   }
 });
 
-
 var CommentForm = React.createClass({
-	getInitialState() {
+	getInitialState() {		
 		return {
 			errors: [],
 			bsStyle: 'success'
@@ -97,6 +103,10 @@ var CommentBox = React.createClass({
 		  var newComments = comments.concat([comment]);
 		  this.setState({data: newComments});
 	  },
+	  handleDeleteSubmit : function(index) {
+		  // call ajax api that is generated from scala.js
+		  client.CommentAction().delete(index, this);
+	  },
 	  getInitialState: function() {
 	    return {data: []};
 	  },
@@ -114,13 +124,27 @@ var CommentBox = React.createClass({
 			  <div className="panel-body">
 		        <CommentForm onCommentSubmit={this.handleCommentSubmit} />		        
 		       </div>
-		       <CommentList data={this.state.data} />	        
+		       <CommentList data={this.state.data} onDeleteSubmit={this.handleDeleteSubmit} />	        
 			</div>
 	        
 	      </div>
 	    );
 	  }
 	});
+
+var CommentDeleteButton = React.createClass({	
+	handleSubmit(e) {
+		this.props.onDeleteSubmit(this.props.index);				
+	},
+	render() {
+		return (
+			<Button 
+				bsSize="xsmall" 
+				bsStyle="warning"
+				onClick={this.handleSubmit}>Delete</Button>
+		);
+	}
+});
 
 var Comment = React.createClass({
   render: function() {
@@ -131,6 +155,7 @@ var Comment = React.createClass({
       <td>{this.props.index}</td>
       <td>{this.props.author}</td>
       <td>{this.props.comment}</td>
+      <td><CommentDeleteButton index={this.props.index} onDeleteSubmit={this.props.onDeleteSubmit} /></td>
       </tr>	      
     );
   }
