@@ -9,8 +9,12 @@ var ButtonLink = ReactRouterBootstrap.ButtonLink;
 var ListGroupItemLink = ReactRouterBootstrap.ListGroupItemLink;
 
 // Btootstrap
-var Alert = ReactBootstrap.Alert;
-var Nav = ReactBootstrap.Nav;
-var ListGroup = ReactBootstrap.ListGroup;
-var Button = ReactBootstrap.Button;
-var Jumbotron = ReactBootstrap.Jumbotron;
+var RB = ReactBootstrap
+var Alert = RB.Alert;
+var Nav = RB.Nav;
+var ListGroup = RB.ListGroup;
+var Button = RB.Button;
+var Jumbotron = RB.Jumbotron;
+var Table = RB.Table;
+var Input = RB.Input;
+var ButtonInput = RB.ButtonInput;

@@ -1,3 +1,7 @@
+
+<script type="text/jsx" src="./js/react-custom.jsx"></script>
+
 <script type="text/jsx" src="./js/comment.jsx"></script>
+
 <script type="text/jsx" src="./js/router.jsx"></script>
 

@@ -10,7 +10,7 @@ var CommentList = React.createClass({
       );
     });
     return (
-    <table className="table">
+    <Table striped bordered condensed hover>
     	<thead>
     	<th>#</th>
     	<th>Name</th>
@@ -19,34 +19,65 @@ var CommentList = React.createClass({
     	<tbody>
     	{commentNodes}
     	</tbody>
-    </table>
+    </Table>
     );
   }
 });
 
+
 var CommentForm = React.createClass({
-	handleSubmit: function(e) {
-	    e.preventDefault();
-	    var author = React.findDOMNode(this.refs.author).value.trim();
-	    var text = React.findDOMNode(this.refs.text).value.trim();
-	    if (!text || !author) {
-	      return;
-	    }
-	    this.props.onCommentSubmit({author: author, text: text});
-	    React.findDOMNode(this.refs.author).value = '';
-	    React.findDOMNode(this.refs.text).value = '';
-	    return;
-	  },
-  render: function() {
+	getInitialState() {
+		return {
+			errors: [],
+			bsStyle: 'success'
+		}
+	},
+//	handleValidate() {
+//		console.log('handle button');
+//		var author = this.refs.author;
+//		var text = this.refs.text;				
+//		if (author.hasError() || text.hasError()) {
+//			this.setState({bsStyle:'error'});
+//		} else {
+//			this.setState({bsStyle:'success'});
+//		}
+//		console.log(this.state.bsStyle);
+//	},
+	handleSubmit(e) {
+		e.preventDefault();
+		var author = this.refs.author;
+		var text = this.refs.text;				
+		if (author.validate() || text.validate()) {
+			console.log('error');
+			return;
+		}    
+		this.props.onCommentSubmit({author: author.state.value, text: text.state.value});
+		author.clear();
+		text.clear();
+		return;
+	},
+  render() {
     return (
 	<form className="form-inline" onSubmit={this.handleSubmit}>
 	  <div className="form-group">
-	    <input type="text" className="form-control" ref="author" placeholder="Your Name"/>
+	  	<TextInput 
+	  		value=''
+	  		placeholder='Enter Author'
+	  		label='Name'	  			
+	  		ref='author'
+	  		required={true}	
+	  	/>
 	  </div>
 	  <div className="form-group">
-	    <input type="text" className="form-control" ref="text" placeholder="Say someting..."/>
+		<TextInput 
+			value=''
+			placeholder='Say somting'
+			label=''	  			
+			ref='text'
+			required={false}	
+		/>
 	  </div>
-	  <Button type="submit" bsStyle="success">Post</Button>
+	  <ButtonInput type="submit" bsStyle={this.state.bsStyle} value="Post"/>
 	</form>
 
     );
@@ -56,7 +87,7 @@ var CommentForm = React.createClass({
 
 var CommentBox = React.createClass({
 	  loadCommentsFromServer: function() {
-		  //call ajax api that is generated from scala.js
+		  // call ajax api that is generated from scala.js
 		  client.CommentAction().list(this);
 	  },
 	  handleCommentSubmit: function(comment) {
@@ -92,19 +123,16 @@ var CommentBox = React.createClass({
 	});
 
 var Comment = React.createClass({
-	  render: function() {
-		// var rawMarkup = marked(this.props.children.toString(), {sanitize: true});
-	    return (
-	      <tr>
-	      <td>{this.props.index}</td>
-	      <td>{this.props.author}</td>
-	      <td>{this.props.comment}</td>
-	      </tr>	      
-	    );
-	  }
-	});
-//
-//React.render(
-//  <CommentBox url="url" pollInterval={10000} />,
-//  document.getElementById('content')
-//);
+  render: function() {
+	// var rawMarkup = marked(this.props.children.toString(), {sanitize:
+// true});
+    return (
+      <tr>
+      <td>{this.props.index}</td>
+      <td>{this.props.author}</td>
+      <td>{this.props.comment}</td>
+      </tr>	      
+    );
+  }
+})
+

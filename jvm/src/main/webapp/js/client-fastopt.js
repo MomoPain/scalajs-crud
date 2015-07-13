@@ -1036,10 +1036,13 @@ var $h_Lclient_CommentAction$ = (function() {
   /*<skip>*/
 });
 $h_Lclient_CommentAction$.prototype = $c_Lclient_CommentAction$.prototype;
-$c_Lclient_CommentAction$.prototype.$$js$exported$meth$update__sjs_js_Dictionary__Lclient_RiactComponent__O = (function(c, comp) {
-  this.update__sjs_js_Dictionary__Lclient_RiactComponent__V(c, comp)
+$c_Lclient_CommentAction$.prototype.$$js$exported$meth$update__sjs_js_Dictionary__Lclient_ReactComponent__O = (function(c, comp) {
+  this.update__sjs_js_Dictionary__Lclient_ReactComponent__V(c, comp)
 });
-$c_Lclient_CommentAction$.prototype.$delete__I__Lclient_RiactComponent__V = (function(id, comp) {
+$c_Lclient_CommentAction$.prototype.$$js$exported$meth$delete__I__Lclient_ReactComponent__O = (function(id, comp) {
+  this.$delete__I__Lclient_ReactComponent__V(id, comp)
+});
+$c_Lclient_CommentAction$.prototype.$delete__I__Lclient_ReactComponent__V = (function(id, comp) {
   var this$1 = $m_Lclient_PostClient$();
   var jsx$2 = new $c_Lautowire_ClientProxy().init___Lautowire_Client(this$1).self$1;
   var jsx$1 = $as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["shared", "api", "CommentApi", "delete"])));
@@ -1066,65 +1069,14 @@ $c_Lclient_CommentAction$.prototype.$delete__I__Lclient_RiactComponent__V = (fun
   var f = new $c_Lclient_CommentAction$$anonfun$delete$2().init___();
   var executor = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
   var this$10 = $s_s_concurrent_Future$class__map__s_concurrent_Future__F1__s_concurrent_ExecutionContext__s_concurrent_Future(this$9, f, executor);
-  var pf = new $c_Lclient_CommentAction$$anonfun$delete$1().init___Lclient_RiactComponent(comp);
+  var pf = new $c_Lclient_CommentAction$$anonfun$delete$1().init___Lclient_ReactComponent(comp);
   var executor$1 = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
   $s_s_concurrent_Future$class__onSuccess__s_concurrent_Future__s_PartialFunction__s_concurrent_ExecutionContext__V(this$10, pf, executor$1)
 });
-$c_Lclient_CommentAction$.prototype.setComments__Lclient_RiactComponent__sc_Seq__V = (function(comp, comments) {
-  if (comments.isEmpty__Z()) {
-    comp["setState"]([])
-  } else {
-    var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(t$2) {
-      var t = $as_Lshared_model_Comment(t$2);
-      var value = t.id$1;
-      var s = t.author$1;
-      var s$1 = t.text$1;
-      return {
-        "key": value,
-        "author": s,
-        "text": s$1
-      }
-    }));
-    var this$4 = $m_sc_Seq$();
-    var $$this = $as_sc_GenTraversableOnce(comments.map__F1__scg_CanBuildFrom__O(jsx$1, this$4.ReusableCBFInstance$2));
-    var this$7 = $m_sjsr_package$();
-    if ($is_sjs_js_ArrayOps($$this)) {
-      var x2 = $as_sjs_js_ArrayOps($$this);
-      var data = x2.scala$scalajs$js$ArrayOps$$array$f
-    } else if ($is_sjs_js_WrappedArray($$this)) {
-      var x3 = $as_sjs_js_WrappedArray($$this);
-      var data = x3.array$6
-    } else {
-      var result = [];
-      $$this.foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1, result$1) {
-        return (function(x$2) {
-          return $uI(result$1["push"](x$2))
-        })
-      })(this$7, result)));
-      var data = result
-    };
-    comp["setState"]({
-      "data": data
-    })
-  }
+$c_Lclient_CommentAction$.prototype.$$js$exported$meth$list__Lclient_ReactComponent__O = (function(comp) {
+  this.list__Lclient_ReactComponent__V(comp)
 });
-$c_Lclient_CommentAction$.prototype.$$js$exported$meth$delete__I__Lclient_RiactComponent__O = (function(id, comp) {
-  this.$delete__I__Lclient_RiactComponent__V(id, comp)
-});
-$c_Lclient_CommentAction$.prototype.$$js$exported$meth$list__Lclient_RiactComponent__O = (function(comp) {
-  this.list__Lclient_RiactComponent__V(comp)
-});
-$c_Lclient_CommentAction$.prototype.list__Lclient_RiactComponent__V = (function(comp) {
-  var this$1 = $m_Lclient_PostClient$();
-  var this$2 = new $c_Lautowire_ClientProxy().init___Lautowire_Client(this$1).self$1.doCall__Lautowire_Core$Request__s_concurrent_Future(new $c_Lautowire_Core$Request().init___sc_Seq__sci_Map($as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["shared", "api", "CommentApi", "list"]))), $as_sci_Map($m_s_Predef$().Map$2.apply__sc_Seq__sc_GenMap($m_sci_Nil$()))));
-  var f = new $c_Lclient_CommentAction$$anonfun$list$2().init___();
-  var executor = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
-  var this$3 = $s_s_concurrent_Future$class__map__s_concurrent_Future__F1__s_concurrent_ExecutionContext__s_concurrent_Future(this$2, f, executor);
-  var pf = new $c_Lclient_CommentAction$$anonfun$list$1().init___Lclient_RiactComponent(comp);
-  var executor$1 = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
-  $s_s_concurrent_Future$class__onSuccess__s_concurrent_Future__s_PartialFunction__s_concurrent_ExecutionContext__V(this$3, pf, executor$1)
-});
-$c_Lclient_CommentAction$.prototype.update__sjs_js_Dictionary__Lclient_RiactComponent__V = (function(c, comp) {
+$c_Lclient_CommentAction$.prototype.update__sjs_js_Dictionary__Lclient_ReactComponent__V = (function(c, comp) {
   var x1 = ($uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1["call"](c, "author")) ? new $c_s_Some().init___O(c["author"]) : $m_s_None$());
   if ($is_s_Some(x1)) {
     var x2 = $as_s_Some(x1);
@@ -1192,18 +1144,66 @@ $c_Lclient_CommentAction$.prototype.update__sjs_js_Dictionary__Lclient_RiactComp
   var f = new $c_Lclient_CommentAction$$anonfun$update$3().init___();
   var executor = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
   var this$16 = $s_s_concurrent_Future$class__map__s_concurrent_Future__F1__s_concurrent_ExecutionContext__s_concurrent_Future(this$15, f, executor);
-  var pf = new $c_Lclient_CommentAction$$anonfun$update$1().init___Lclient_RiactComponent(comp);
+  var pf = new $c_Lclient_CommentAction$$anonfun$update$1().init___Lclient_ReactComponent(comp);
   var executor$1 = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
   $s_s_concurrent_Future$class__onSuccess__s_concurrent_Future__s_PartialFunction__s_concurrent_ExecutionContext__V(this$16, pf, executor$1)
 });
+$c_Lclient_CommentAction$.prototype.list__Lclient_ReactComponent__V = (function(comp) {
+  var this$1 = $m_Lclient_PostClient$();
+  var this$2 = new $c_Lautowire_ClientProxy().init___Lautowire_Client(this$1).self$1.doCall__Lautowire_Core$Request__s_concurrent_Future(new $c_Lautowire_Core$Request().init___sc_Seq__sci_Map($as_sc_Seq($m_sc_Seq$().apply__sc_Seq__sc_GenTraversable(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["shared", "api", "CommentApi", "list"]))), $as_sci_Map($m_s_Predef$().Map$2.apply__sc_Seq__sc_GenMap($m_sci_Nil$()))));
+  var f = new $c_Lclient_CommentAction$$anonfun$list$2().init___();
+  var executor = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
+  var this$3 = $s_s_concurrent_Future$class__map__s_concurrent_Future__F1__s_concurrent_ExecutionContext__s_concurrent_Future(this$2, f, executor);
+  var pf = new $c_Lclient_CommentAction$$anonfun$list$1().init___Lclient_ReactComponent(comp);
+  var executor$1 = $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1;
+  $s_s_concurrent_Future$class__onSuccess__s_concurrent_Future__s_PartialFunction__s_concurrent_ExecutionContext__V(this$3, pf, executor$1)
+});
+$c_Lclient_CommentAction$.prototype.setComments__Lclient_ReactComponent__sc_Seq__V = (function(comp, comments) {
+  if (comments.isEmpty__Z()) {
+    comp["setState"]([])
+  } else {
+    var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(t$2) {
+      var t = $as_Lshared_model_Comment(t$2);
+      var value = t.id$1;
+      var s = t.author$1;
+      var s$1 = t.text$1;
+      return {
+        "key": value,
+        "author": s,
+        "text": s$1
+      }
+    }));
+    var this$4 = $m_sc_Seq$();
+    var $$this = $as_sc_GenTraversableOnce(comments.map__F1__scg_CanBuildFrom__O(jsx$1, this$4.ReusableCBFInstance$2));
+    var this$7 = $m_sjsr_package$();
+    if ($is_sjs_js_ArrayOps($$this)) {
+      var x2 = $as_sjs_js_ArrayOps($$this);
+      var data = x2.scala$scalajs$js$ArrayOps$$array$f
+    } else if ($is_sjs_js_WrappedArray($$this)) {
+      var x3 = $as_sjs_js_WrappedArray($$this);
+      var data = x3.array$6
+    } else {
+      var result = [];
+      $$this.foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1, result$1) {
+        return (function(x$2) {
+          return $uI(result$1["push"](x$2))
+        })
+      })(this$7, result)));
+      var data = result
+    };
+    comp["setState"]({
+      "data": data
+    })
+  }
+});
 $c_Lclient_CommentAction$.prototype["list"] = (function(arg$1) {
   var prep0 = arg$1;
-  return this.$$js$exported$meth$list__Lclient_RiactComponent__O(prep0)
+  return this.$$js$exported$meth$list__Lclient_ReactComponent__O(prep0)
 });
 $c_Lclient_CommentAction$.prototype["update"] = (function(arg$1, arg$2) {
   var prep0 = arg$1;
   var prep1 = arg$2;
-  return this.$$js$exported$meth$update__sjs_js_Dictionary__Lclient_RiactComponent__O(prep0, prep1)
+  return this.$$js$exported$meth$update__sjs_js_Dictionary__Lclient_ReactComponent__O(prep0, prep1)
 });
 $c_Lclient_CommentAction$.prototype["delete"] = (function(arg$1, arg$2) {
   if ((arg$1 === null)) {
@@ -1213,7 +1213,7 @@ $c_Lclient_CommentAction$.prototype["delete"] = (function(arg$1, arg$2) {
     var prep0 = $uI(arg$1)
   };
   var prep1 = arg$2;
-  return this.$$js$exported$meth$delete__I__Lclient_RiactComponent__O(prep0, prep1)
+  return this.$$js$exported$meth$delete__I__Lclient_ReactComponent__O(prep0, prep1)
 });
 var $d_Lclient_CommentAction$ = new $TypeData().initClass({
   Lclient_CommentAction$: 0
@@ -14011,12 +14011,12 @@ var $h_Lclient_CommentAction$$anonfun$delete$1 = (function() {
   /*<skip>*/
 });
 $h_Lclient_CommentAction$$anonfun$delete$1.prototype = $c_Lclient_CommentAction$$anonfun$delete$1.prototype;
-$c_Lclient_CommentAction$$anonfun$delete$1.prototype.init___Lclient_RiactComponent = (function(comp$3) {
-  this.comp$3$2 = comp$3;
-  return this
-});
 $c_Lclient_CommentAction$$anonfun$delete$1.prototype.isDefinedAt__sc_Seq__Z = (function(x3) {
   return true
+});
+$c_Lclient_CommentAction$$anonfun$delete$1.prototype.init___Lclient_ReactComponent = (function(comp$3) {
+  this.comp$3$2 = comp$3;
+  return this
 });
 $c_Lclient_CommentAction$$anonfun$delete$1.prototype.isDefinedAt__O__Z = (function(x) {
   return this.isDefinedAt__sc_Seq__Z($as_sc_Seq(x))
@@ -14025,7 +14025,7 @@ $c_Lclient_CommentAction$$anonfun$delete$1.prototype.applyOrElse__O__F1__O = (fu
   return this.applyOrElse__sc_Seq__F1__O($as_sc_Seq(x), default$2)
 });
 $c_Lclient_CommentAction$$anonfun$delete$1.prototype.applyOrElse__sc_Seq__F1__O = (function(x3, default$2) {
-  $m_Lclient_CommentAction$().setComments__Lclient_RiactComponent__sc_Seq__V(this.comp$3$2, x3)
+  $m_Lclient_CommentAction$().setComments__Lclient_ReactComponent__sc_Seq__V(this.comp$3$2, x3)
 });
 var $d_Lclient_CommentAction$$anonfun$delete$1 = new $TypeData().initClass({
   Lclient_CommentAction$$anonfun$delete$1: 0
@@ -14051,12 +14051,12 @@ var $h_Lclient_CommentAction$$anonfun$list$1 = (function() {
   /*<skip>*/
 });
 $h_Lclient_CommentAction$$anonfun$list$1.prototype = $c_Lclient_CommentAction$$anonfun$list$1.prototype;
-$c_Lclient_CommentAction$$anonfun$list$1.prototype.init___Lclient_RiactComponent = (function(comp$1) {
-  this.comp$1$2 = comp$1;
-  return this
-});
 $c_Lclient_CommentAction$$anonfun$list$1.prototype.isDefinedAt__sc_Seq__Z = (function(x1) {
   return true
+});
+$c_Lclient_CommentAction$$anonfun$list$1.prototype.init___Lclient_ReactComponent = (function(comp$1) {
+  this.comp$1$2 = comp$1;
+  return this
 });
 $c_Lclient_CommentAction$$anonfun$list$1.prototype.isDefinedAt__O__Z = (function(x) {
   return this.isDefinedAt__sc_Seq__Z($as_sc_Seq(x))
@@ -14065,7 +14065,7 @@ $c_Lclient_CommentAction$$anonfun$list$1.prototype.applyOrElse__O__F1__O = (func
   return this.applyOrElse__sc_Seq__F1__O($as_sc_Seq(x), default$2)
 });
 $c_Lclient_CommentAction$$anonfun$list$1.prototype.applyOrElse__sc_Seq__F1__O = (function(x1, default$2) {
-  $m_Lclient_CommentAction$().setComments__Lclient_RiactComponent__sc_Seq__V(this.comp$1$2, x1)
+  $m_Lclient_CommentAction$().setComments__Lclient_ReactComponent__sc_Seq__V(this.comp$1$2, x1)
 });
 var $d_Lclient_CommentAction$$anonfun$list$1 = new $TypeData().initClass({
   Lclient_CommentAction$$anonfun$list$1: 0
@@ -14091,12 +14091,12 @@ var $h_Lclient_CommentAction$$anonfun$update$1 = (function() {
   /*<skip>*/
 });
 $h_Lclient_CommentAction$$anonfun$update$1.prototype = $c_Lclient_CommentAction$$anonfun$update$1.prototype;
-$c_Lclient_CommentAction$$anonfun$update$1.prototype.init___Lclient_RiactComponent = (function(comp$2) {
-  this.comp$2$2 = comp$2;
-  return this
-});
 $c_Lclient_CommentAction$$anonfun$update$1.prototype.isDefinedAt__sc_Seq__Z = (function(x2) {
   return true
+});
+$c_Lclient_CommentAction$$anonfun$update$1.prototype.init___Lclient_ReactComponent = (function(comp$2) {
+  this.comp$2$2 = comp$2;
+  return this
 });
 $c_Lclient_CommentAction$$anonfun$update$1.prototype.isDefinedAt__O__Z = (function(x) {
   return this.isDefinedAt__sc_Seq__Z($as_sc_Seq(x))
@@ -14105,7 +14105,7 @@ $c_Lclient_CommentAction$$anonfun$update$1.prototype.applyOrElse__O__F1__O = (fu
   return this.applyOrElse__sc_Seq__F1__O($as_sc_Seq(x), default$2)
 });
 $c_Lclient_CommentAction$$anonfun$update$1.prototype.applyOrElse__sc_Seq__F1__O = (function(x2, default$2) {
-  $m_Lclient_CommentAction$().setComments__Lclient_RiactComponent__sc_Seq__V(this.comp$2$2, x2)
+  $m_Lclient_CommentAction$().setComments__Lclient_ReactComponent__sc_Seq__V(this.comp$2$2, x2)
 });
 var $d_Lclient_CommentAction$$anonfun$update$1 = new $TypeData().initClass({
   Lclient_CommentAction$$anonfun$update$1: 0
